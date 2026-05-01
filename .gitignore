@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# claude code workspace data
+.claude/
+
+# unrelated SEO audit outputs accidentally placed in this tree
+seo-audit-ecdysis/
+seo-audit-everline/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
