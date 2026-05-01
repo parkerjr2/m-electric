@@ -23,7 +23,7 @@ const bebasNeue = Bebas_Neue({
 
 const SITE_URL = "https://m-electricllc.com";
 const OG_IMAGE =
-  "https://images.unsplash.com/photo-1520975661595-6453be3f7070?w=1200&h=630&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 
 /** External profiles used in `sameAs` schema and visible credentials row. */
 const SAME_AS = [

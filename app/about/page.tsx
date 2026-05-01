@@ -24,7 +24,7 @@ const UNSPLASH = (id: string, w = 1600, q = 80) =>
   `https://images.unsplash.com/${id}?w=${w}&q=${q}&auto=format&fit=crop`;
 
 const POWER_LINES_IMG = "photo-1473341304170-971dccb5ac1e";
-const KITCHEN_IMG = "photo-1564540586988-aa4e53c3d799";
+const PANEL_WORK_IMG = "photo-1758101755915-462eddc23f57";
 
 const whatWeDo = [
   "New Home Construction",
@@ -236,8 +236,8 @@ export default function About() {
           className="relative aspect-[4/5] rounded-lg overflow-hidden border border-neutral-800"
         >
           <Image
-            src={UNSPLASH(KITCHEN_IMG, 1000)}
-            alt="Residential electrical wiring by M Electric in a Tulsa home"
+            src={UNSPLASH(PANEL_WORK_IMG, 1000)}
+            alt="M Electric technician testing a residential breaker panel with a multimeter — Tulsa electrician at work"
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"

@@ -26,8 +26,8 @@ const UNSPLASH = (id: string, w = 1600, q = 80) =>
 const POWER_LINES_IMG = "photo-1473341304170-971dccb5ac1e";
 const SMART_HOME_IMG = "photo-1558002038-1055907df827";
 const COMMERCIAL_IMG = "photo-1587293852726-70cdb56c2866";
-const CONSTRUCTION_IMG = "photo-1520975661595-6453be3f7070";
-const KITCHEN_IMG = "photo-1564540586988-aa4e53c3d799";
+const GENERATOR_IMG = "/job-gallery/generac-transfer-switch.png";
+const PANEL_WORK_IMG = "photo-1758101755915-462eddc23f57";
 const EV_CHARGER_IMG = "photo-1692052664566-477579a08e8c";
 
 const residentialServices: { name: string; href?: string }[] = [
@@ -63,8 +63,8 @@ const specialtyServices = [
   {
     title: "Standby Generators",
     body: "Whole-home standby generators sized to your panel — permitted, inspected, and tested under load.",
-    img: CONSTRUCTION_IMG,
-    alt: "Tulsa electrician installing a whole-home standby generator on a Tulsa property",
+    img: GENERATOR_IMG,
+    alt: "Generac whole-home standby generator transfer switch installed beside a residential breaker panel by M Electric in Tulsa",
     href: "/services/generator-installation",
   },
   {
@@ -269,7 +269,7 @@ export default function Home() {
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
-                      src={UNSPLASH(s.img, 800)}
+                      src={s.img.startsWith("/") ? s.img : UNSPLASH(s.img, 800)}
                       alt={s.alt}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -334,8 +334,8 @@ export default function Home() {
           className="relative aspect-[4/5] rounded-lg overflow-hidden border border-neutral-800"
         >
           <Image
-            src={UNSPLASH(KITCHEN_IMG, 1000)}
-            alt="Modern Tulsa kitchen with under-cabinet lighting installed by M Electric"
+            src={UNSPLASH(PANEL_WORK_IMG, 1000)}
+            alt="M Electric technician testing a residential breaker panel with a multimeter — Tulsa electrician at work"
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"
@@ -343,10 +343,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
           <div className="absolute bottom-6 left-6 right-6">
             <div className="text-xs uppercase tracking-widest text-red-400 font-semibold">
-              Featured Project
+              Licensed · Bonded · Insured
             </div>
             <div className="text-white font-semibold mt-1">
-              Whole-home lighting retrofit · Brookside
+              Tested, permitted, and inspection-ready.
             </div>
           </div>
         </motion.div>

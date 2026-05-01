@@ -5,7 +5,7 @@ const TITLE = "About M Electric — Tulsa Electrician Since 1999";
 const DESCRIPTION =
   "Since 1999, M Electric has been Tulsa's family-owned, Army-veteran-led electrician — licensed, bonded, insured. Residential, commercial, 24/7 emergency.";
 const OG_IMAGE =
-  "https://images.unsplash.com/photo-1520975661595-6453be3f7070?w=1200&h=630&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 
 export const metadata: Metadata = {
   title: TITLE,

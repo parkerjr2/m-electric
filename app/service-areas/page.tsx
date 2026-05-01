@@ -8,7 +8,7 @@ const TITLE =
 const DESCRIPTION =
   "M Electric serves the entire Tulsa metro — Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool. Licensed, bonded, insured.";
 const OG_IMAGE =
-  "https://images.unsplash.com/photo-1520975661595-6453be3f7070?w=1200&h=630&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 
 export const metadata: Metadata = {
   title: TITLE,

@@ -7,7 +7,7 @@ import { AreaContentView } from "./AreaContent";
 
 type RouteParams = { slug: string };
 
-const HERO_IMAGE_ID = "photo-1520975661595-6453be3f7070";
+const HERO_IMAGE_ID = "photo-1635335874521-7987db781153";
 const HERO_IMAGE_URL = `https://images.unsplash.com/${HERO_IMAGE_ID}?w=1200&h=630&q=80&auto=format&fit=crop`;
 
 export function generateStaticParams(): RouteParams[] {

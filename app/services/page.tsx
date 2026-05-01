@@ -8,7 +8,7 @@ const TITLE =
 const DESCRIPTION =
   "Full-service Tulsa residential electrician — repairs, panel upgrades, rewiring, lighting, outlets, ceiling fans, and surge protection. 24/7 emergency. Call (918) 992-6282.";
 const OG_IMAGE =
-  "https://images.unsplash.com/photo-1520975661595-6453be3f7070?w=1200&h=630&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 
 export const metadata: Metadata = {
   title: TITLE,

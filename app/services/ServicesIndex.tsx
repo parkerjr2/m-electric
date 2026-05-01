@@ -14,7 +14,7 @@ import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { linkify } from "@/lib/inline-links";
 import type { ServiceContent } from "./services-data";
 
-const HERO_IMG = "photo-1520975661595-6453be3f7070";
+const HERO_IMG = "photo-1635335874521-7987db781153";
 
 const unsplash = (id: string, w = 1920, q = 80) =>
   `https://images.unsplash.com/${id}?w=${w}&q=${q}&auto=format&fit=crop`;
