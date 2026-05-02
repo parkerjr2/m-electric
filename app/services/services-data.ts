@@ -275,9 +275,9 @@ export const services: ServiceContent[] = [
     h1Bottom: "& design in Tulsa.",
     heroLead:
       "Looking for professional indoor lighting installation in Tulsa? M Electric — owned and operated by US Army veteran Marshall Morgan since 1999 — specializes in transforming homes with expert lighting solutions that enhance both functionality and style. Proper indoor lighting creates ambiance, improves functionality, and increases home value.",
-    heroImageId: "photo-1564540586988-aa4e53c3d799",
+    heroImageId: "/job-gallery/chandelier-entryway.jpg",
     heroImageAlt:
-      "Modern Tulsa kitchen with under-cabinet and recessed lighting installed by M Electric",
+      "Alabaster chandelier installed by M Electric in a Tulsa home entryway — residential indoor lighting installation",
     body: [
       {
         kind: "paragraph",
@@ -385,9 +385,9 @@ export const services: ServiceContent[] = [
     h1Bottom: "services in Tulsa.",
     heroLead:
       "M Electric — owned and operated by US Army veteran Marshall Morgan since 1999 — provides complete home rewiring services throughout the Tulsa metro area, including Jenks, Liberty, and Sapulpa. Our licensed electricians modernize systems with minimal disruption. We handle outdated aluminum wiring and modern electrical demands. Inspections and permits are included in every project.",
-    heroImageId: "photo-1708980047954-1400f412d67c",
+    heroImageId: "photo-1768321911048-46171ac7d425",
     heroImageAlt:
-      "Tulsa electrician handling a bundle of new residential wiring during a whole-home rewire",
+      "Newly run armored cable feeding two metal junction boxes mounted on a wood stud — whole-home rewire in progress on a Tulsa home by M Electric",
     body: [
       {
         kind: "paragraph",
@@ -789,9 +789,9 @@ export const services: ServiceContent[] = [
     h1Bottom: "protection in Tulsa.",
     heroLead:
       "Protect your valuable electronics and appliances with professional whole-home surge protection in Tulsa, OK. M Electric — owned and operated by US Army veteran Marshall Morgan since 1999 — installs comprehensive surge protection systems at the panel level. Only a professionally installed whole-house surge protector can provide complete coverage for your entire electrical system.",
-    heroImageId: "photo-1773952136583-5175e906267c",
+    heroImageId: "photo-1732414887157-647ac19671fa",
     heroImageAlt:
-      "Close-up of a residential electrical main switch panel where M Electric installs whole-home surge protection in Tulsa",
+      "Lightning strikes behind a residential home at dusk — the type of severe weather event that whole-home surge protection defends against in the Tulsa metro",
     body: [
       {
         kind: "paragraph",
@@ -1347,9 +1347,9 @@ export const services: ServiceContent[] = [
     h1Bottom: "installation in Tulsa.",
     heroLead:
       "Is your Tulsa home prepared for the next ice storm or tornado-season outage? M Electric — owned and operated by US Army veteran Marshall Morgan since 1999 — is your trusted local expert for whole-home standby generator installation across the Tulsa metro. We handle sizing, transfer-switch wiring, gas-line coordination, permits, and inspection-ready installs.",
-    heroImageId: "photo-1759692071712-adc78a8516c8",
+    heroImageId: "/job-gallery/generac-transfer-switch.png",
     heroImageAlt:
-      "Industrial standby generator with electrical panel installed by M Electric in Tulsa",
+      "Generac whole-home standby generator transfer switch wired beside a residential breaker panel — installed by M Electric in a Tulsa home",
     body: [
       {
         kind: "paragraph",

@@ -170,11 +170,17 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={p.label}
-              className="px-3 py-1.5 rounded-full border border-neutral-800 hover:border-red-600 hover:text-white text-neutral-400 transition-colors duration-200"
+              className="px-4 py-2.5 text-sm rounded-full border border-neutral-800 hover:border-red-600 hover:text-white text-neutral-400 transition-colors duration-200"
             >
               {p.short}
             </a>
           ))}
+          <span
+            aria-label="Oklahoma Construction Industries Board electrical contractor license number 87288"
+            className="px-4 py-2.5 text-sm rounded-full border border-neutral-800 text-neutral-400"
+          >
+            OK LIC #87288
+          </span>
         </div>
       </div>
 

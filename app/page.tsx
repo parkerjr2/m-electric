@@ -27,7 +27,6 @@ const POWER_LINES_IMG = "photo-1473341304170-971dccb5ac1e";
 const SMART_HOME_IMG = "photo-1558002038-1055907df827";
 const COMMERCIAL_IMG = "photo-1587293852726-70cdb56c2866";
 const GENERATOR_IMG = "/job-gallery/generac-transfer-switch.png";
-const PANEL_WORK_IMG = "photo-1758101755915-462eddc23f57";
 const EV_CHARGER_IMG = "photo-1692052664566-477579a08e8c";
 
 const residentialServices: { name: string; href?: string }[] = [
@@ -129,7 +128,7 @@ const faqs = [
   },
   {
     q: "Is M Electric licensed and insured in Oklahoma?",
-    a: "Yes. M Electric, LLC is fully licensed by the Oklahoma Construction Industries Board, bonded, and insured for both residential and light-commercial electrical work. Owner Marshall Morgan is a US Army veteran and the company has been family-owned and operated since 1999. We carry general liability coverage in excess of state requirements and workers' compensation insurance for all on-site personnel. M Electric is also accredited by the Better Business Bureau and maintains a 4.9-star rating across 90+ verified Google reviews.",
+    a: "Yes. M Electric, LLC is fully licensed by the Oklahoma Construction Industries Board (license #87288), bonded, and insured for both residential and light-commercial electrical work. Owner Marshall Morgan is a US Army veteran and the company has been family-owned and operated since 1999. We carry general liability coverage in excess of state requirements and workers' compensation insurance for all on-site personnel. M Electric is also accredited by the Better Business Bureau and maintains a 4.9-star rating across 90+ verified Google reviews.",
   },
   {
     q: "What areas around Tulsa do you serve?",
@@ -331,22 +330,22 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="relative aspect-[4/5] rounded-lg overflow-hidden border border-neutral-800"
+          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800"
         >
           <Image
-            src={UNSPLASH(PANEL_WORK_IMG, 1000)}
-            alt="M Electric technician testing a residential breaker panel with a multimeter — Tulsa electrician at work"
+            src="/marshall-morgan-m-electric-van.jpg"
+            alt="Marshall Morgan, owner of M Electric, standing beside the M Electric service van outside the BBB-accredited business location in Tulsa, Oklahoma"
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
           <div className="absolute bottom-6 left-6 right-6">
             <div className="text-xs uppercase tracking-widest text-red-400 font-semibold">
-              Licensed · Bonded · Insured
+              Marshall Morgan · Owner &amp; Master Electrician
             </div>
             <div className="text-white font-semibold mt-1">
-              Tested, permitted, and inspection-ready.
+              OK LIC #87288 · BBB Accredited · US Army Veteran
             </div>
           </div>
         </motion.div>
@@ -450,6 +449,8 @@ export default function Home() {
               );
             })}
           </div>
+
+          <GbpMapEmbed />
         </div>
       </section>
 
@@ -594,6 +595,33 @@ function SectionHeader({
           {subtitle}
         </p>
       )}
+    </div>
+  );
+}
+
+/**
+ * Google Maps embed bound to the M Electric GBP listing.
+ *
+ * The `cid=` parameter is the GBP Customer ID — this is what makes the iframe
+ * a *local-SEO* citation (page ↔ specific GBP listing) rather than a generic
+ * map of Tulsa. Lives on the home page because the GBP "Website" field points
+ * to `/`, so the page-listing association is reciprocal.
+ */
+function GbpMapEmbed() {
+  const mapSrc =
+    "https://maps.google.com/maps?cid=17120687780645413912&output=embed";
+
+  return (
+    <div className="mt-16">
+      <div className="relative aspect-[16/10] sm:aspect-[16/9] max-w-5xl mx-auto rounded-lg overflow-hidden border border-neutral-800 bg-black">
+        <iframe
+          src={mapSrc}
+          title="M Electric, LLC on Google Maps — Tulsa, Oklahoma electrician"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          className="absolute inset-0 size-full"
+        />
+      </div>
     </div>
   );
 }

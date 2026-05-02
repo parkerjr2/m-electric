@@ -19,7 +19,14 @@ const TULSA_GEO = { latitude: 36.1539816, longitude: -95.992775 };
 const SERVICE_RADIUS_METERS = 48280; // ~30 miles
 
 const ogImageUrl = (id: string) =>
-  `https://images.unsplash.com/${id}?w=1200&h=630&q=80&auto=format&fit=crop`;
+  id.startsWith("/")
+    ? `${SITE_URL}${id}`
+    : `https://images.unsplash.com/${id}?w=1200&h=630&q=80&auto=format&fit=crop`;
+
+const schemaImageUrl = (id: string) =>
+  id.startsWith("/")
+    ? `${SITE_URL}${id}`
+    : `https://images.unsplash.com/${id}?w=1200&q=80&auto=format&fit=crop`;
 
 export function generateStaticParams(): RouteParams[] {
   return services.map((s) => ({ slug: s.slug }));
@@ -78,7 +85,7 @@ function buildSchema(service: ServiceContent) {
     serviceType: service.serviceType,
     description: service.metaDescription,
     url,
-    image: `https://images.unsplash.com/${service.heroImageId}?w=1200&q=80&auto=format&fit=crop`,
+    image: schemaImageUrl(service.heroImageId),
     provider: { "@id": businessId },
     areaServed: {
       "@type": "GeoCircle",

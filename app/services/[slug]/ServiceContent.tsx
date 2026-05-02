@@ -30,6 +30,9 @@ import {
 const unsplash = (id: string, w = 1200, q = 80) =>
   `https://images.unsplash.com/${id}?w=${w}&q=${q}&auto=format&fit=crop`;
 
+const heroSrc = (id: string, w = 1200) =>
+  id.startsWith("/") ? id : unsplash(id, w);
+
 export function ServiceContentView({ service }: { service: ServiceContent }) {
   const currentPath = `/services/${service.slug}`;
   return (
@@ -131,7 +134,7 @@ export function ServiceContentView({ service }: { service: ServiceContent }) {
               className="relative aspect-[4/5] lg:aspect-[5/6] rounded-lg overflow-hidden border border-neutral-800 shadow-2xl shadow-red-900/20"
             >
               <Image
-                src={unsplash(service.heroImageId, 1200)}
+                src={heroSrc(service.heroImageId, 1200)}
                 alt={service.heroImageAlt}
                 fill
                 priority

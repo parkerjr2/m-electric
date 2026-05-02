@@ -14,10 +14,13 @@ import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { linkify } from "@/lib/inline-links";
 import type { ServiceContent } from "./services-data";
 
-const HERO_IMG = "photo-1635335874521-7987db781153";
+const HERO_IMG = "/job-gallery/recessed-living-room.jpg";
 
 const unsplash = (id: string, w = 1920, q = 80) =>
   `https://images.unsplash.com/${id}?w=${w}&q=${q}&auto=format&fit=crop`;
+
+const heroSrc = (id: string, w = 1920) =>
+  id.startsWith("/") ? id : unsplash(id, w);
 
 export function ServicesIndex({ services }: { services: ServiceContent[] }) {
   return (
@@ -29,7 +32,7 @@ export function ServicesIndex({ services }: { services: ServiceContent[] }) {
         {/* Background photo */}
         <div aria-hidden className="absolute inset-0">
           <Image
-            src={unsplash(HERO_IMG, 1920)}
+            src={heroSrc(HERO_IMG, 1920)}
             alt=""
             fill
             priority

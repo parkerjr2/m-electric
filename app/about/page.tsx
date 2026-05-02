@@ -24,7 +24,6 @@ const UNSPLASH = (id: string, w = 1600, q = 80) =>
   `https://images.unsplash.com/${id}?w=${w}&q=${q}&auto=format&fit=crop`;
 
 const POWER_LINES_IMG = "photo-1473341304170-971dccb5ac1e";
-const PANEL_WORK_IMG = "photo-1758101755915-462eddc23f57";
 
 const whatWeDo = [
   "New Home Construction",
@@ -156,7 +155,7 @@ export default function About() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 font-[family-name:var(--font-display)] text-6xl sm:text-7xl lg:text-8xl tracking-tight leading-[0.95]"
+            className="mt-6 font-[family-name:var(--font-display)] text-5xl sm:text-7xl lg:text-8xl tracking-tight leading-[0.95]"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
               ABOUT
@@ -233,22 +232,23 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="relative aspect-[4/5] rounded-lg overflow-hidden border border-neutral-800"
+          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800"
         >
           <Image
-            src={UNSPLASH(PANEL_WORK_IMG, 1000)}
-            alt="M Electric technician testing a residential breaker panel with a multimeter — Tulsa electrician at work"
+            src="/marshall-morgan-m-electric-van.jpg"
+            alt="Marshall Morgan, owner and master electrician of M Electric, LLC, standing beside the M Electric service van outside the BBB-accredited Tulsa business location"
             fill
             sizes="(max-width: 1024px) 100vw, 42vw"
             className="object-cover"
+            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
           <div className="absolute bottom-6 left-6 right-6">
             <div className="text-xs uppercase tracking-widest text-red-400 font-semibold">
-              Tulsa Home
+              Marshall Morgan · Owner &amp; Master Electrician
             </div>
             <div className="text-white font-semibold mt-1">
-              Residential Electrical Wiring · M Electric
+              OK LIC #87288 · BBB Accredited · US Army Veteran
             </div>
           </div>
         </motion.div>
