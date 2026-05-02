@@ -17,7 +17,7 @@ import {
   ShieldIcon,
   SparkleIcon,
 } from "../components/icons";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { linkify } from "@/lib/inline-links";
 
 const UNSPLASH = (id: string, w = 1600, q = 80) =>
@@ -194,13 +194,13 @@ export default function About() {
               <PhoneIcon className="size-5" />
               Call {PHONE_DISPLAY}
             </a>
-            <a
-              href={`mailto:${EMAIL}`}
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white text-white font-semibold text-lg px-7 py-4 rounded-md transition-colors duration-200 cursor-pointer"
             >
               Get Wired Up
               <ArrowRightIcon className="size-5" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -273,13 +273,13 @@ export default function About() {
             training to stay at the forefront of electrical technology and
             safety standards.
           </p>
-          <a
-            href={`mailto:${EMAIL}`}
+          <Link
+            href="/contact"
             className="mt-8 inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200 cursor-pointer"
           >
             Get Wired Up!
             <ArrowRightIcon className="size-4" />
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -437,13 +437,13 @@ export default function About() {
               <PhoneIcon className="size-7" />
               {PHONE_DISPLAY}
             </a>
-            <a
-              href={`mailto:${EMAIL}`}
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 text-white border-2 border-white/40 hover:border-white font-semibold px-6 py-4 rounded-md transition-colors duration-200 cursor-pointer"
             >
-              Email Us
+              Request Free Estimate
               <ArrowRightIcon className="size-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

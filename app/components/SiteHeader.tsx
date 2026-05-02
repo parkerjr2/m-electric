@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import {
   ArrowRightIcon,
   CloseIcon,
@@ -214,13 +214,13 @@ export function SiteHeader({ active }: { active?: string }) {
                 <PhoneIcon className="size-5" />
                 Call {PHONE_DISPLAY}
               </a>
-              <a
-                href={`mailto:${EMAIL}`}
+              <Link
+                href="/contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200 cursor-pointer"
               >
-                Email for Free Estimate
-              </a>
+                Request a Free Estimate
+              </Link>
             </div>
           </motion.div>
         )}

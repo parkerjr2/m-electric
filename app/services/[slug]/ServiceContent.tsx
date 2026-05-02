@@ -13,7 +13,6 @@ import {
   StarIcon,
 } from "../../components/icons";
 import {
-  EMAIL,
   PHONE_DISPLAY,
   PHONE_TEL,
   SERVICE_AREAS,
@@ -116,13 +115,13 @@ export function ServiceContentView({ service }: { service: ServiceContent }) {
                   <PhoneIcon className="size-5" />
                   Call {PHONE_DISPLAY}
                 </a>
-                <a
-                  href={`mailto:${EMAIL}`}
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white text-white font-semibold text-lg px-7 py-4 rounded-md transition-colors duration-200 cursor-pointer"
                 >
                   Free Estimate
                   <ArrowRightIcon className="size-5" />
-                </a>
+                </Link>
               </motion.div>
             </div>
 
@@ -417,13 +416,13 @@ export function ServiceContentView({ service }: { service: ServiceContent }) {
               <PhoneIcon className="size-7" />
               {PHONE_DISPLAY}
             </a>
-            <a
-              href={`mailto:${EMAIL}`}
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 text-white border-2 border-white/40 hover:border-white font-semibold px-6 py-4 rounded-md transition-colors duration-200 cursor-pointer"
             >
-              Email Us
+              Request Free Estimate
               <ArrowRightIcon className="size-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
