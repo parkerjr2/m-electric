@@ -22,8 +22,6 @@ const bebasNeue = Bebas_Neue({
 });
 
 const SITE_URL = "https://m-electricllc.com";
-const OG_IMAGE =
-  "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 
 /** External profiles used in `sameAs` schema and visible credentials row. */
 const SAME_AS = [
@@ -38,6 +36,9 @@ export const metadata: Metadata = {
   description:
     "Tulsa's trusted electrician. Residential, commercial, and 24/7 emergency electrical service across the Tulsa metro. Licensed, bonded, and insured.",
   alternates: { canonical: "/" },
+  // OG image is generated dynamically via app/opengraph-image.tsx so
+  // share previews match the actual hero. Per-page metadata that doesn't
+  // override openGraph.images inherits this generated image.
   openGraph: {
     type: "website",
     siteName: "M Electric, LLC",
@@ -46,21 +47,12 @@ export const metadata: Metadata = {
       "Tulsa's trusted electrician since 1999. Residential, commercial, and 24/7 emergency electrical service across the Tulsa metro.",
     url: "/",
     locale: "en_US",
-    images: [
-      {
-        url: OG_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "M Electric — Licensed Tulsa electrician installing residential electrical equipment",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "M Electric — Licensed Electrician in Tulsa, OK",
     description:
       "Tulsa's trusted electrician since 1999. 24/7 emergency electrical service across the Tulsa metro.",
-    images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
   category: "electrician",
