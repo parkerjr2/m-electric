@@ -70,7 +70,7 @@ export function ServiceAreasIndex({ areas }: { areas: ServiceArea[] }) {
             className="mt-7 text-neutral-300 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto"
           >
             {linkify(
-              "M Electric serves the entire greater Tulsa metro — 12 cities, every zip code in Tulsa, plus Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, and Mounds. Licensed, bonded, insured. No travel surcharge anywhere in the metro.",
+              "M Electric serves the entire greater Tulsa metro — 16 cities, every zip code in Tulsa, plus Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty. Licensed, bonded, insured. No travel surcharge anywhere in the metro.",
               { currentPath: "/service-areas" }
             )}
           </motion.p>
@@ -105,7 +105,7 @@ export function ServiceAreasIndex({ areas }: { areas: ServiceArea[] }) {
         </h2>
         <p className="mt-8 text-neutral-300 text-lg leading-relaxed">
           {linkify(
-            "M Electric is owned and operated by US Army veteran Marshall Morgan, who founded the company in 1999. We cover a 12-city service area. That area includes every Tulsa neighborhood plus all of the surrounding metro. Our base of operations is inside Tulsa city limits, which keeps response times tight. Inside the loop, emergencies are typically reached in under 60 minutes. Broken Arrow, Owasso, Bixby, and Jenks are 60–90 minutes. Sapulpa, Sand Springs, Glenpool, Mounds, and the smaller unincorporated communities of Berryhill, Turley, and Oakhurst are 60–120 minutes. We do not charge a travel surcharge anywhere in our standard service area. Rates in Mounds match rates in Tulsa, and the same crew handles every job.",
+            "M Electric is owned and operated by US Army veteran Marshall Morgan, who founded the company in 1999. We cover a 16-city service area across Tulsa, Wagoner, and Creek counties. That area includes every Tulsa neighborhood plus all of the surrounding metro. Our base of operations is inside Tulsa city limits, which keeps response times tight. Inside the loop, emergencies are typically reached in under 60 minutes. Broken Arrow, Owasso, Bixby, and Jenks are 60–90 minutes. Sapulpa, Sand Springs, Glenpool, Mounds, Kiefer, Kellyville, and the smaller unincorporated communities of Berryhill, Turley, Oakhurst, Leonard, and Liberty are 60–120 minutes. We do not charge a travel surcharge anywhere in our standard service area. The same crew handles every job.",
             { currentPath: "/service-areas" }
           )}
         </p>
@@ -171,7 +171,7 @@ export function ServiceAreasIndex({ areas }: { areas: ServiceArea[] }) {
           </h2>
           <p className="mt-5 text-white/90 text-lg max-w-xl mx-auto">
             Live dispatch around the clock for the entire Tulsa metro. Same-day
-            service available across all 12 service areas.
+            service available across all 16 service areas.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

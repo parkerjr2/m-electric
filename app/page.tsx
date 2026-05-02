@@ -96,6 +96,10 @@ const serviceAreas = [
   "Oakhurst",
   "Glenpool",
   "Mounds",
+  "Kiefer",
+  "Kellyville",
+  "Leonard",
+  "Liberty",
 ];
 
 const testimonials = [
@@ -122,7 +126,7 @@ const testimonials = [
 const faqs = [
   {
     q: "How fast can a Tulsa electrician get to my house in an emergency?",
-    a: "M Electric provides 24/7 emergency electrical dispatch across the entire Tulsa metro. For homes inside Tulsa city limits, our typical response is under 60 minutes during the day and under 90 minutes overnight. For Broken Arrow, Owasso, Bixby, Jenks, and Sapulpa, expect 60–120 minutes depending on traffic and current job-site commitments. Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, and Mounds are typically reached within 75–150 minutes. Marshall Morgan answers the emergency line personally — there is no call center. When you call (918) 992-6282, you are talking directly to a licensed Oklahoma electrician who can often diagnose the issue over the phone. Same-day service is available for most non-emergency calls placed before 11 a.m.",
+    a: "M Electric provides 24/7 emergency electrical dispatch across the entire Tulsa metro. For homes inside Tulsa city limits, our typical response is under 60 minutes during the day and under 90 minutes overnight. For Broken Arrow, Owasso, Bixby, Jenks, and Sapulpa, expect 60–120 minutes depending on traffic and current job-site commitments. Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty are typically reached within 75–150 minutes. Marshall Morgan answers the emergency line personally — there is no call center. When you call (918) 992-6282, you are talking directly to a licensed Oklahoma electrician who can often diagnose the issue over the phone. Same-day service is available for most non-emergency calls placed before 11 a.m.",
   },
   {
     q: "Are electrical estimates free in Tulsa?",
@@ -134,7 +138,7 @@ const faqs = [
   },
   {
     q: "What areas around Tulsa do you serve?",
-    a: "M Electric serves the entire greater Tulsa metro, including every Tulsa neighborhood — Downtown, Midtown, South Tulsa, Brookside, East Tulsa, Admiral Place, Cherry Street, Maple Ridge, Riverside, and Kendall-Whittier — plus Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, and Mounds. Our standard service radius is roughly 30 miles from downtown Tulsa, which covers all of Tulsa County and most of Wagoner, Rogers, and Creek counties. If you are outside that radius but still in Green Country, call (918) 992-6282 — we will let you know whether we can reach you and whether a travel surcharge applies.",
+    a: "M Electric serves the entire greater Tulsa metro, including every Tulsa neighborhood — Downtown, Midtown, South Tulsa, Brookside, East Tulsa, Admiral Place, Cherry Street, Maple Ridge, Riverside, and Kendall-Whittier — plus Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty. Our standard service radius is roughly 30 miles from downtown Tulsa, which covers all of Tulsa County and most of Wagoner, Rogers, and Creek counties. If you are outside that radius but still in Green Country, call (918) 992-6282 — we will let you know whether we can reach you and whether a travel surcharge applies.",
   },
   {
     q: "What's the difference between 100-amp and 200-amp electrical service?",
@@ -357,7 +361,7 @@ export default function Home() {
             eyebrow="Why M Electric"
             title="No games. Just good work."
             subtitle={linkify(
-              "M Electric is the trusted Tulsa electrician families and small businesses have relied on since 1999. Marshall Morgan, a US Army veteran, founded the company. We've been family-owned for over 25 years. Our service area is the entire Tulsa metro: Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, and Mounds. The same crew that wires your living room wires the next strip mall down the road. Every job is licensed, bonded, and insured to Oklahoma standards. All work is warrantied. 24/7 emergency dispatch is available across the metro. M Electric carries a 4.9-star rating across 90+ verified Google reviews. That rating reflects upfront pricing, punctual service, and clean workmanship — and the trust of Tulsa neighbors earned one job at a time.",
+              "M Electric is the trusted Tulsa electrician families and small businesses have relied on since 1999. Marshall Morgan, a US Army veteran, founded the company. We've been family-owned for over 25 years. Our service area is the entire Tulsa metro: Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty. The same crew that wires your living room wires the next strip mall down the road. Every job is licensed, bonded, and insured to Oklahoma standards. All work is warrantied. 24/7 emergency dispatch is available across the metro. M Electric carries a 4.9-star rating across 90+ verified Google reviews. That rating reflects upfront pricing, punctual service, and clean workmanship — and the trust of Tulsa neighbors earned one job at a time.",
               { currentPath: "/" }
             )}
             align="left"

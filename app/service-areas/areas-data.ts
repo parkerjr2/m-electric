@@ -1,5 +1,5 @@
 /**
- * Source of truth for all 12 service-area landing pages.
+ * Source of truth for all 16 service-area landing pages.
  *
  * IMPORTANT — doorway-page risk:
  * Each entry below must contain genuinely city-specific content. If the swap
@@ -856,6 +856,238 @@ export const areas: ServiceArea[] = [
       {
         q: "What utility serves Mounds?",
         a: "PSO (AEP-Oklahoma) serves most of Mounds. Some surrounding rural acreage may be on a local rural electric cooperative — we coordinate any service-entrance work with whichever utility serves your address.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "kiefer",
+    city: "Kiefer",
+    state: "OK",
+    county: "Creek County",
+    population: "2,150",
+    geo: { lat: 35.9437, lng: -96.0628 },
+    metaTitle:
+      "Kiefer Electrician | M Electric — Licensed in Creek County, OK",
+    metaDescription:
+      "Licensed Kiefer electrician — residential repairs, panel upgrades, rewiring, generator and EV installs. Same-day service from Tulsa. Call (918) 992-6282.",
+    heroEyebrow: "Kiefer, OK",
+    h1Top: "Kiefer",
+    h1Bottom: "electrical services.",
+    heroLead:
+      "M Electric serves Kiefer with the same licensed residential electrical service we provide across the Tulsa metro. Located between Sapulpa and Glenpool along Highway 75, Kiefer is squarely inside our standard service area at no travel surcharge.",
+    introParagraph:
+      "Kiefer is a small incorporated town in Creek County, Oklahoma, sitting along Highway 75 between Sapulpa to the north and Glenpool / Mounds to the south. Population is around 2,150. The town was established during the early-1900s Oklahoma oil boom and the housing stock reflects that history — a meaningful share of homes are pre-WWII and have seen multiple generations of partial electrical updates layered on top of original wiring. That makes panel upgrades, partial rewires, ungrounded outlet conversions, and service-entrance replacements some of our most common Kiefer jobs. Newer subdivision growth on the edges of town adds standard residential service work and the occasional EV charger or generator install. Kiefer has its own town building authority for permits inside town limits, with Creek County handling rural-acreage permits. M Electric — owned by US Army veteran Marshall Morgan since 1999 — is licensed by the Oklahoma Construction Industries Board and is typically 25–35 minutes from a Kiefer address via Highway 75. No travel surcharge.",
+    responseTime: "60–100 minutes for emergencies; same-day standard service",
+    utilities: ["PSO"],
+    driveTimeFromTulsa: "25–30 minutes via Highway 75",
+    commonWork: [
+      {
+        title: "Oil-boom-era home updates",
+        body: "Kiefer's pre-WWII housing stock often has decades of layered electrical work — knob-and-tube remnants, ungrounded outlets, and undersized panels. Full panel upgrades and partial rewires are common.",
+      },
+      {
+        title: "Service-entrance replacement",
+        body: "Aging weatherheads, mast pipes, and meter bases are standard wear items on older Kiefer homes. We replace and repair them with PSO coordination.",
+      },
+      {
+        title: "Generator and EV installs in newer subdivisions",
+        body: "Newer Kiefer construction with modern 200A panels is a good fit for whole-home standby generators and Level 2 EV chargers — both common requests as the town grows.",
+      },
+      {
+        title: "Standard residential service",
+        body: "Tripping breakers, dead outlets, GFCI installs, ceiling fans — the standard residential troubleshooting and replacement that every home eventually needs.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you serve Kiefer?",
+        a: "Yes. Kiefer is fully inside our standard service area along the Highway 75 corridor. Same-day standard service, 24/7 emergency response, no travel surcharge.",
+      },
+      {
+        q: "How long does it take to get to Kiefer from Tulsa?",
+        a: "Kiefer is 25–30 minutes from our Tulsa base via Highway 75. For 24/7 emergencies, expect 60–100 minutes depending on traffic.",
+      },
+      {
+        q: "Who handles permits for electrical work in Kiefer?",
+        a: "Inside Kiefer town limits, electrical permits and inspections run through the Town of Kiefer. Rural-acreage work outside town limits runs through Creek County. We handle the permit process on your behalf either way.",
+      },
+      {
+        q: "Do you do older-home rewiring in Kiefer?",
+        a: "Yes — it's one of our most common Kiefer jobs given the town's oil-boom-era housing stock. Partial or whole-home rewires, knob-and-tube replacement, and aluminum-wiring updates are all in scope.",
+      },
+      {
+        q: "What utility serves Kiefer?",
+        a: "PSO (AEP-Oklahoma) serves Kiefer. We coordinate any service-entrance work, meter pulls, and panel changes directly with PSO.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "kellyville",
+    city: "Kellyville",
+    state: "OK",
+    county: "Creek County",
+    population: "1,150",
+    geo: { lat: 35.9445, lng: -96.2114 },
+    metaTitle:
+      "Kellyville Electrician | M Electric — Licensed in Creek County, OK",
+    metaDescription:
+      "Licensed Kellyville electrician — residential repairs, panel upgrades, rewiring, generator and EV installs. Same-day service from Tulsa. Call (918) 992-6282.",
+    heroEyebrow: "Kellyville, OK",
+    h1Top: "Kellyville",
+    h1Bottom: "electrical services.",
+    heroLead:
+      "M Electric serves Kellyville with licensed residential electrical service at our standard Tulsa-area rates. West of Sapulpa along Route 66, Kellyville is at the western edge of our standard service area — covered with no travel surcharge.",
+    introParagraph:
+      "Kellyville is a small incorporated town in Creek County, located along historic US-66 (Route 66) about 8 miles west of Sapulpa. Population is around 1,150 and the community is anchored by Kellyville Public Schools. Like much of Creek County, Kellyville's roots trace to the early-1900s oil boom, and the older housing stock — a mix of small bungalows, mid-century single-family homes, and rural acreage — is what we most commonly see in the work we do here. Panel upgrades, service-entrance replacements, GFCI conversions, and partial rewires are typical Kellyville jobs, alongside rural sub-panel runs to detached shops, well-pump circuits, and outbuilding wiring. Kellyville has its own town building authority for in-town permits; rural acreage outside town limits is permitted through Creek County. M Electric — owned by US Army veteran Marshall Morgan since 1999 — is roughly 30–40 minutes from a Kellyville address via Highway 64 or US-66. No travel surcharge.",
+    responseTime: "75–120 minutes for emergencies; same-day standard service",
+    utilities: ["PSO"],
+    driveTimeFromTulsa: "30–35 minutes via US-66 / Highway 64",
+    commonWork: [
+      {
+        title: "Older-home panel upgrades",
+        body: "Kellyville's older housing stock typically runs on undersized panels. Upgrading to a modern 200A panel — often paired with a service-entrance replacement — is one of our most common Kellyville jobs.",
+      },
+      {
+        title: "Rural acreage and outbuilding wiring",
+        body: "Surrounding Kellyville acreage means sub-panels for detached shops and barns, dedicated circuits for well pumps and irrigation, and trenched service runs to outbuildings.",
+      },
+      {
+        title: "GFCI conversions and code updates",
+        body: "Bringing older Kellyville homes up to current code — GFCI in kitchens, baths, garages, and exterior outlets, AFCI breakers in living areas — is a regular service-call category.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you serve Kellyville?",
+        a: "Yes. Kellyville is at the western edge of our standard service area along Route 66. Same-day standard service, 24/7 emergency response, no travel surcharge.",
+      },
+      {
+        q: "How long does it take to get to Kellyville from Tulsa?",
+        a: "Kellyville is 30–35 minutes from our Tulsa base via US-66 or Highway 64. For 24/7 emergencies, expect 75–120 minutes depending on traffic and current job-site commitments.",
+      },
+      {
+        q: "Who handles permits for electrical work in Kellyville?",
+        a: "Inside Kellyville town limits, permits run through the Town of Kellyville. Rural-acreage work outside town limits is permitted through Creek County. We handle the permit process on your behalf.",
+      },
+      {
+        q: "What utility serves Kellyville?",
+        a: "PSO (AEP-Oklahoma) serves most of Kellyville. Some surrounding rural acreage may be served by a local rural electric cooperative — we coordinate any service-entrance work with whichever utility serves your address.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "leonard",
+    city: "Leonard",
+    state: "OK",
+    county: "Tulsa County",
+    population: "200",
+    geo: { lat: 35.9286, lng: -95.8311 },
+    metaTitle:
+      "Leonard Electrician | M Electric — Licensed in SE Tulsa County",
+    metaDescription:
+      "Licensed Leonard electrician serving the southeast Tulsa County / Wagoner County line area. Residential, rural, panel upgrades. Call (918) 992-6282.",
+    heroEyebrow: "Leonard, OK",
+    h1Top: "Leonard",
+    h1Bottom: "electrical services.",
+    heroLead:
+      "M Electric serves the Leonard area with licensed residential electrical service at our standard Tulsa-area rates. Tucked into southeast Tulsa County near the Wagoner County line, Leonard is fully inside our standard service area — no travel surcharge.",
+    introParagraph:
+      "Leonard is a small unincorporated community in southeastern Tulsa County, near the Wagoner County line, anchored by Leonard Public Schools. The area is rural-residential — a mix of single-family homes on larger lots and surrounding acreage rather than a dense town center. Most of the electrical work we do in Leonard reflects that mix: rural sub-panel runs to detached garages and shops, dedicated circuits for well pumps and irrigation, panel upgrades on older homes, and standard residential service work. Because Leonard is unincorporated, electrical permits and inspections run through Tulsa County (or Wagoner County for properties on that side of the line). M Electric — owned by US Army veteran Marshall Morgan since 1999 — is roughly 25–30 minutes from a Leonard address via 71st Street or Highway 64. No travel surcharge — Leonard rates match Tulsa rates.",
+    responseTime: "60–100 minutes for emergencies; same-day standard service",
+    utilities: ["PSO"],
+    driveTimeFromTulsa: "25–30 minutes via 71st Street or Highway 64",
+    commonWork: [
+      {
+        title: "Rural acreage and outbuilding wiring",
+        body: "Leonard's rural-residential character means sub-panels for detached garages and shops, well-pump circuits, irrigation runs, and trenched service to outbuildings are common service calls.",
+      },
+      {
+        title: "Older-home panel upgrades",
+        body: "Older Leonard-area homes often run on undersized panels. Upgrading to 200A — frequently paired with a service-entrance replacement — is one of our most common jobs here.",
+      },
+      {
+        title: "Standard residential service",
+        body: "Tripping breakers, dead outlets, GFCI installs, ceiling fans, fixture replacements — the standard residential troubleshooting that every home eventually needs.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you serve Leonard?",
+        a: "Yes. Leonard is fully inside our standard service area. Same-day standard service, 24/7 emergency response, no travel surcharge.",
+      },
+      {
+        q: "How long does it take to get to Leonard from Tulsa?",
+        a: "Leonard is 25–30 minutes from our Tulsa base via 71st Street or Highway 64. For 24/7 emergencies, expect 60–100 minutes depending on traffic.",
+      },
+      {
+        q: "Who handles permits for electrical work in Leonard?",
+        a: "Leonard is unincorporated, so permits run through Tulsa County (or Wagoner County for properties on the eastern side of the line). We handle the permit process on your behalf.",
+      },
+      {
+        q: "What utility serves Leonard?",
+        a: "PSO (AEP-Oklahoma) serves most of the Leonard area. Some surrounding rural acreage may be served by a local rural electric cooperative — we coordinate any service-entrance work with whichever utility serves your address.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "liberty",
+    city: "Liberty",
+    state: "OK",
+    county: "Tulsa County",
+    population: "Small unincorporated area",
+    geo: { lat: 35.9778, lng: -96.0317 },
+    metaTitle:
+      "Liberty Electrician | M Electric — Licensed Tulsa-Area Electrician",
+    metaDescription:
+      "Licensed electrician serving the Liberty area of southwest Tulsa County. Residential repairs, panel upgrades, rewiring. Same-day service. (918) 992-6282.",
+    heroEyebrow: "Liberty, OK",
+    h1Top: "Liberty",
+    h1Bottom: "electrical services.",
+    heroLead:
+      "M Electric serves the Liberty area with licensed residential electrical service at our standard Tulsa-area rates. Tucked between Jenks and Sapulpa in southwest Tulsa County, Liberty is fully inside our standard service area — no travel surcharge.",
+    introParagraph:
+      "Liberty is a small unincorporated area in southwest Tulsa County, between Jenks and Sapulpa. It's rural-residential — single-family homes on larger lots interspersed with acreage rather than a formal town center. The work we do here reflects that mix: panel upgrades on older homes, sub-panel runs to detached shops and garages, well-pump and irrigation circuits, service-entrance replacements, and standard residential service. Because Liberty is unincorporated, electrical permits and inspections run through Tulsa County. M Electric — owned by US Army veteran Marshall Morgan since 1999 — is roughly 20–30 minutes from a Liberty address depending on the exact location, with no travel surcharge applied anywhere in our standard service area.",
+    responseTime: "60–100 minutes for emergencies; same-day standard service",
+    utilities: ["PSO"],
+    driveTimeFromTulsa: "20–30 minutes from south Tulsa",
+    commonWork: [
+      {
+        title: "Rural-residential panel upgrades",
+        body: "Older Liberty-area homes often run on undersized panels. Upgrading to 200A — typically paired with a service-entrance replacement — is one of our most common jobs in the area.",
+      },
+      {
+        title: "Sub-panels and outbuilding wiring",
+        body: "Liberty's larger-lot character means sub-panels for detached garages, shops, and barns are regular service calls, alongside dedicated circuits for well pumps and irrigation.",
+      },
+      {
+        title: "Standard residential service",
+        body: "Tripping breakers, dead outlets, GFCI installs, ceiling fans — the standard service work every home eventually needs.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you serve Liberty?",
+        a: "Yes. The Liberty area in southwest Tulsa County is fully inside our standard service area. Same-day standard service, 24/7 emergency response, no travel surcharge.",
+      },
+      {
+        q: "How long does it take to get to Liberty from Tulsa?",
+        a: "Liberty is 20–30 minutes from south Tulsa depending on the exact location. For 24/7 emergencies, expect 60–100 minutes from our Tulsa base.",
+      },
+      {
+        q: "Who handles permits for electrical work in Liberty?",
+        a: "Liberty is unincorporated, so electrical permits and inspections run through Tulsa County. We handle the County permit process on your behalf.",
+      },
+      {
+        q: "What utility serves Liberty?",
+        a: "PSO (AEP-Oklahoma) serves the Liberty area. We coordinate any service-entrance work directly with PSO.",
       },
     ],
   },

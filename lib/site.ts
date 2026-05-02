@@ -17,6 +17,10 @@ export const SERVICE_AREAS = [
   "Oakhurst",
   "Glenpool",
   "Mounds",
+  "Kiefer",
+  "Kellyville",
+  "Leonard",
+  "Liberty",
 ] as const;
 
 /** Specific Tulsa neighborhoods we cover — used for local-SEO body copy. */

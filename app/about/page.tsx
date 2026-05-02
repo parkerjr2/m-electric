@@ -81,6 +81,10 @@ const serviceAreas = [
   "Oakhurst",
   "Glenpool",
   "Mounds",
+  "Kiefer",
+  "Kellyville",
+  "Leonard",
+  "Liberty",
 ];
 
 export default function About() {

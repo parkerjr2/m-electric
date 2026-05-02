@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const TITLE =
   "Service Areas | M Electric — Tulsa Metro Electrician Coverage";
 const DESCRIPTION =
-  "M Electric serves the entire Tulsa metro — Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds. Licensed, bonded, insured.";
+  "M Electric serves the entire Tulsa metro — Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, Liberty. Licensed, bonded, insured.";
 const OG_IMAGE =
   "https://images.unsplash.com/photo-1635335874521-7987db781153?w=1200&h=630&q=80&auto=format&fit=crop";
 

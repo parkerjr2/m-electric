@@ -126,11 +126,12 @@ export default function TermsPage() {
             <p>
               Where required by local code, M Electric obtains electrical and
               mechanical permits and coordinates inspections with the
-              applicable City of Tulsa, Broken Arrow, Owasso, Bixby, Jenks,
-              Sapulpa, Sand Springs, Glenpool, or Mounds building department,
-              or with Tulsa County or Creek County for unincorporated work.
-              Permit fees are passed through to the customer at cost unless
-              quoted otherwise.
+              applicable City or Town of Tulsa, Broken Arrow, Owasso, Bixby,
+              Jenks, Sapulpa, Sand Springs, Glenpool, Mounds, Kiefer, or
+              Kellyville building department, or with Tulsa County, Creek
+              County, or Wagoner County for unincorporated work. Permit fees
+              are passed through to the customer at cost unless quoted
+              otherwise.
             </p>
 
             <h2 className="text-xl font-semibold text-white pt-4">
