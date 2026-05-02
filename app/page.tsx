@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import { GbpMapEmbed } from "./components/GbpMapEmbed";
 import { HeroGeometric } from "./components/HeroGeometric";
 import { SiteHeader } from "./components/SiteHeader";
 import { SiteFooter } from "./components/SiteFooter";
@@ -450,7 +451,7 @@ export default function Home() {
             })}
           </div>
 
-          <GbpMapEmbed />
+          <GbpMapEmbed className="mt-16" />
         </div>
       </section>
 
@@ -599,30 +600,4 @@ function SectionHeader({
   );
 }
 
-/**
- * Google Maps embed bound to the M Electric GBP listing.
- *
- * The `cid=` parameter is the GBP Customer ID — this is what makes the iframe
- * a *local-SEO* citation (page ↔ specific GBP listing) rather than a generic
- * map of Tulsa. Lives on the home page because the GBP "Website" field points
- * to `/`, so the page-listing association is reciprocal.
- */
-function GbpMapEmbed() {
-  const mapSrc =
-    "https://maps.google.com/maps?cid=17120687780645413912&output=embed";
-
-  return (
-    <div className="mt-16">
-      <div className="relative aspect-[16/10] sm:aspect-[16/9] max-w-5xl mx-auto rounded-lg overflow-hidden border border-neutral-800 bg-black">
-        <iframe
-          src={mapSrc}
-          title="M Electric, LLC on Google Maps — Tulsa, Oklahoma electrician"
-          referrerPolicy="no-referrer-when-downgrade"
-          allowFullScreen
-          className="absolute inset-0 size-full"
-        />
-      </div>
-    </div>
-  );
-}
 

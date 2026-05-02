@@ -72,6 +72,12 @@ export function SiteFooter() {
             >
               Job Gallery
             </Link>
+            <Link
+              href="/contact"
+              className="text-neutral-400 hover:text-white transition-colors"
+            >
+              Contact
+            </Link>
             <a
               href={`tel:${PHONE_TEL}`}
               className="text-red-500 hover:text-red-400 font-semibold transition-colors"
