@@ -7,8 +7,9 @@ import { AreaContentView } from "./AreaContent";
 
 type RouteParams = { slug: string };
 
-const HERO_IMAGE_ID = "photo-1635335874521-7987db781153";
-const HERO_IMAGE_URL = `https://images.unsplash.com/${HERO_IMAGE_ID}?w=1200&h=630&q=80&auto=format&fit=crop`;
+// OG / Twitter share image is rendered per-city by app/service-areas/[slug]/
+// opengraph-image.tsx. Don't set openGraph.images / twitter.images here —
+// explicit metadata fields would override the file-based convention.
 
 export function generateStaticParams(): RouteParams[] {
   return areas.map((a) => ({ slug: a.slug }));
@@ -33,20 +34,11 @@ export async function generateMetadata({
       title: area.metaTitle,
       description: area.metaDescription,
       url,
-      images: [
-        {
-          url: HERO_IMAGE_URL,
-          width: 1200,
-          height: 630,
-          alt: `M Electric — Licensed electrician serving ${area.city}, ${area.state}`,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: area.metaTitle,
       description: area.metaDescription,
-      images: [HERO_IMAGE_URL],
     },
   };
 }
@@ -66,7 +58,7 @@ function buildSchema(area: ServiceArea) {
     serviceType: "Electrical Service",
     description: area.metaDescription,
     url,
-    image: HERO_IMAGE_URL,
+    image: `${SITE_URL}/service-areas/${area.slug}/opengraph-image.png`,
     provider: { "@id": businessId },
     areaServed: {
       "@type": "City",
