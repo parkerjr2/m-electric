@@ -226,11 +226,11 @@ export default function ContactPage() {
                 Service Area
               </div>
               <div className="mt-2 text-white font-semibold leading-snug">
-                Tulsa metro · 11 cities · ~30-mile radius
+                Tulsa metro · 12 cities · ~30-mile radius
               </div>
               <div className="mt-2 text-neutral-400 text-sm">
                 Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand
-                Springs, Berryhill, Turley, Oakhurst, Glenpool.
+                Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds.
               </div>
               <div className="mt-3 inline-flex items-center gap-1 text-sm text-red-500 font-semibold">
                 See coverage <ArrowRightIcon className="size-4" />

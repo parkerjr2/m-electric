@@ -5,7 +5,7 @@ import { reviews, reviewStats } from "@/lib/reviews";
 
 /**
  * Geographic centroid used for `geo` and `serviceArea` GeoCircle schema.
- * Tulsa, OK city center; ~30 mile radius covers all 11 service-area cities.
+ * Tulsa, OK city center; ~30 mile radius covers all 12 service-area cities.
  */
 const TULSA_GEO = { latitude: 36.1539816, longitude: -95.992775 };
 const SERVICE_RADIUS_METERS = 48280; // ~30 miles
@@ -139,6 +139,7 @@ const electricianSchema = {
     "Turley",
     "Oakhurst",
     "Glenpool",
+    "Mounds",
   ].map((name) => ({ "@type": "City", name })),
   geo: {
     "@type": "GeoCoordinates",

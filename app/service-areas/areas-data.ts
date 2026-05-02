@@ -1,5 +1,5 @@
 /**
- * Source of truth for all 11 service-area landing pages.
+ * Source of truth for all 12 service-area landing pages.
  *
  * IMPORTANT — doorway-page risk:
  * Each entry below must contain genuinely city-specific content. If the swap
@@ -792,6 +792,70 @@ export const areas: ServiceArea[] = [
       {
         q: "What utility serves Glenpool?",
         a: "PSO (AEP-Oklahoma) serves Glenpool. We coordinate any service-entrance work directly with PSO.",
+      },
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "mounds",
+    city: "Mounds",
+    state: "OK",
+    county: "Creek County",
+    population: "1,200",
+    geo: { lat: 35.876, lng: -96.063 },
+    metaTitle:
+      "Mounds Electrician | M Electric — Licensed in Creek County, OK",
+    metaDescription:
+      "Licensed Mounds electrician — residential repairs, panel upgrades, rewiring, generator and EV installs. Same-day service from Tulsa. Call (918) 992-6282.",
+    heroEyebrow: "Mounds, OK",
+    h1Top: "Mounds",
+    h1Bottom: "electrical services.",
+    heroLead:
+      "M Electric serves Mounds with the same licensed residential electrical service we provide across the Tulsa metro. Just south of Glenpool along Highway 75, Mounds is at the southern edge of our standard service area — covered at our standard Tulsa rates with no travel surcharge.",
+    introParagraph:
+      "Mounds is a small incorporated town in southern Creek County, located along US-75 about 30 miles south-southwest of downtown Tulsa and just south of Glenpool. Population is around 1,200, and the community is anchored by Mounds Public Schools. Most of Mounds is single-family residential on larger lots, with rural acreage outside the town limits — a mix that means the electrical work we see here ranges from standard residential repair and panel upgrades inside town to rural service-entrance work, well-pump circuits, and outbuilding wiring on the surrounding acreage. Older housing stock is common, and panel upgrades from undersized 60A or 100A boxes to a modern 200A standard are some of our most frequent Mounds jobs. M Electric — owned by US Army veteran Marshall Morgan since 1999 — is licensed by the Oklahoma Construction Industries Board. Permits inside Mounds town limits run through the City of Mounds; rural-acreage work is permitted through Creek County. Mounds is at the edge of our 30-mile service radius — drive time from our Tulsa base is 30–40 minutes via Highway 75, with no travel surcharge.",
+    responseTime: "75–120 minutes for emergencies; same-day standard service",
+    utilities: ["PSO"],
+    driveTimeFromTulsa: "30–40 minutes via Highway 75",
+    commonWork: [
+      {
+        title: "Older-home panel upgrades",
+        body: "Mounds' older residential stock often runs on undersized panels. Upgrading to 200A is one of our most common Mounds jobs, frequently paired with a service-entrance replacement.",
+      },
+      {
+        title: "Rural acreage and outbuilding wiring",
+        body: "Surrounding rural acreage means we regularly run sub-panels to detached garages, shops, and barns; install dedicated circuits for well pumps and irrigation; and trench in service to outbuildings.",
+      },
+      {
+        title: "Whole-home generators",
+        body: "Mounds' rural location and Tornado Alley exposure makes whole-home standby generators a sensible investment. We size, install, and permit Generac, Kohler, and Champion units for Mounds homes.",
+      },
+      {
+        title: "Standard residential service",
+        body: "Tripping breakers, dead outlets, GFCI installs, ceiling fans, light fixture replacements — the standard service calls every home eventually needs.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you serve Mounds?",
+        a: "Yes. Mounds is at the southern edge of our standard service area along Highway 75. Same-day standard service, 24/7 emergency response, no travel surcharge.",
+      },
+      {
+        q: "How long does it take to get to Mounds from Tulsa?",
+        a: "Mounds is 30–40 minutes from our Tulsa base via Highway 75. For 24/7 emergencies, expect 75–120 minutes depending on traffic and current job-site commitments.",
+      },
+      {
+        q: "Who handles permits for electrical work in Mounds?",
+        a: "Inside Mounds town limits, electrical permits and inspections run through the City of Mounds. For rural acreage outside town limits, permits run through Creek County. We handle the permit process on your behalf either way.",
+      },
+      {
+        q: "Do you do rural acreage and outbuilding electrical work in Mounds?",
+        a: "Yes. Sub-panels for detached shops and barns, dedicated circuits for well pumps and irrigation, and trenched service runs to outbuildings are common Mounds-area jobs for us.",
+      },
+      {
+        q: "What utility serves Mounds?",
+        a: "PSO (AEP-Oklahoma) serves most of Mounds. Some surrounding rural acreage may be on a local rural electric cooperative — we coordinate any service-entrance work with whichever utility serves your address.",
       },
     ],
   },

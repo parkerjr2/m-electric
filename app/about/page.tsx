@@ -80,6 +80,7 @@ const serviceAreas = [
   "Turley",
   "Oakhurst",
   "Glenpool",
+  "Mounds",
 ];
 
 export default function About() {

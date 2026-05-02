@@ -7,7 +7,7 @@
 Owner: Marshall Morgan (US Army veteran)
 Phone: (918) 992-6282
 Email: info@m-electricllc.com
-Service area: Greater Tulsa metro — Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool
+Service area: Greater Tulsa metro — Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds
 Service radius: ~30 miles from downtown Tulsa
 Hours: 24/7 emergency dispatch · standard service available same-day for most non-emergency calls
 
@@ -39,7 +39,7 @@ Hours: 24/7 emergency dispatch · standard service available same-day for most n
 - 24/7 emergency electrical service across the Tulsa metro
 
 ## Service Area Pages (per-city detail with neighborhoods, response time, common work)
-- [Service Areas Overview](https://m-electricllc.com/service-areas): All 11 cities served
+- [Service Areas Overview](https://m-electricllc.com/service-areas): All 12 cities served
 - [Tulsa, OK](https://m-electricllc.com/service-areas/tulsa): Base of operations · 411k pop · Maple Ridge, Brookside, Deco District, Cherry Street
 - [Broken Arrow, OK](https://m-electricllc.com/service-areas/broken-arrow): 117k pop · Rose District, Battle Creek, Forest Ridge
 - [Owasso, OK](https://m-electricllc.com/service-areas/owasso): 39k pop · Bailey Ranch, Stone Canyon, Three Lakes
@@ -51,6 +51,7 @@ Hours: 24/7 emergency dispatch · standard service available same-day for most n
 - [Berryhill, OK](https://m-electricllc.com/service-areas/berryhill): 4k pop · Unincorporated Tulsa County
 - [Turley, OK](https://m-electricllc.com/service-areas/turley): 3k pop · Unincorporated north Tulsa County
 - [Oakhurst, OK](https://m-electricllc.com/service-areas/oakhurst): 2k pop · Unincorporated west Tulsa County
+- [Mounds, OK](https://m-electricllc.com/service-areas/mounds): 1.2k pop · Creek County · Highway 75 corridor, south of Glenpool
 
 ## Authority & Verification
 - Oklahoma Construction Industries Board electrical contractor license #87288 (issued to M Electric, LLC)
@@ -65,7 +66,7 @@ Hours: 24/7 emergency dispatch · standard service available same-day for most n
 - Founded: 1999
 - Owner: Marshall Morgan (US Army veteran)
 - Business type: Service Area Business (mobile electrician operating across the Tulsa metro)
-- Coverage: 11 named cities + ~30-mile radius around downtown Tulsa
+- Coverage: 12 named cities + ~30-mile radius around downtown Tulsa
 - Service categories: Residential, light commercial, smart home, generators, EV charging, 24/7 emergency
 - License posture: Oklahoma Construction Industries Board license #87288, bonded, and insured
 - Estimates: Free, written, no obligation
