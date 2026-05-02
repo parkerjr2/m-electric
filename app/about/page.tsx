@@ -47,6 +47,7 @@ const residentialServices: ServiceLink[] = [
   { name: "EV charger installations", href: "/services/ev-charger-installation" },
   { name: "Standby generator installation", href: "/services/generator-installation" },
   { name: "Whole-home surge protection", href: "/services/surge-protection" },
+  { name: "Smart home wiring and integrated systems", href: "/services/smart-home-wiring" },
   { name: "Home rewiring", href: "/services/home-rewiring" },
   { name: "Outlet installation & repair", href: "/services/outlet-installation" },
   { name: "Electrical wiring repair", href: "/services/wiring-repair" },
@@ -64,7 +65,6 @@ const commercialServices: ServiceLink[] = [
   },
   { name: "Energy-efficient LED lighting upgrades", href: "/services/commercial-lighting" },
   { name: "Power distribution and panel upgrades", href: "/services/panel-upgrades" },
-  { name: "Smart home and integrated systems", href: "/services/smart-home-wiring" },
   { name: "24/7 emergency commercial service", href: "/commercial" },
 ];
 
