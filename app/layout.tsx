@@ -92,6 +92,7 @@ const electricianSchema = {
   },
   founder: {
     "@type": "Person",
+    "@id": `${SITE_URL}#marshall-morgan`,
     name: "Marshall Morgan",
     jobTitle: "Master Electrician & Owner",
     image: `${SITE_URL}/marshall-morgan-m-electric-van.jpg`,

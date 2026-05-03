@@ -124,10 +124,18 @@ async function main() {
     process.exit(2);
   }
 
+  // Build a set of prerendered routes for blog internal-link existence checks.
+  const knownRoutes = new Set(files.map(fileToRoute));
+  // Synthetic top-level routes Next derives from special files (sitemap,
+  // robots, opengraph-image) won't appear as .html. We don't link to them
+  // from blog content, so it's safe to omit.
+
   const failures = [];
+  const blogLinkFailures = [];
   const summary = [];
   let totalChecks = 0;
   let totalLinks = 0;
+  let totalBlogLinkChecks = 0;
 
   for (const file of files) {
     const html = await readFile(file, "utf8");
@@ -149,6 +157,34 @@ async function main() {
     const body = doc.body;
     if (!body) continue;
 
+    const route = fileToRoute(file);
+
+    // Blog posts (and the blog index, which renders post excerpts) are
+    // author-curated: every link is hand-placed with intent (specific anchor
+    // text, frequency, position). The dictionary coverage walker would
+    // false-positive on intentional repeated mentions whose links are
+    // placed elsewhere on the page. Skip the dictionary check for /blog
+    // and /blog/* routes — but for post-detail pages, verify every internal
+    // <a href="/..."> in the body resolves to a known prerendered route
+    // (catches typos).
+    if (route === "/blog" || route.startsWith("/blog/")) {
+      const articleEl = body.querySelector("article") || body;
+      const anchors = articleEl.querySelectorAll("a[href^='/']");
+      for (const a of anchors) {
+        const href = a.getAttribute("href") || "";
+        // Strip hash + query for route comparison.
+        const path = href.split("#")[0].split("?")[0].replace(/\/$/, "") || "/";
+        // Skip self-anchors (#some-id only), those are caught by hash strip → "/"
+        if (href.startsWith("#")) continue;
+        totalBlogLinkChecks += 1;
+        if (!knownRoutes.has(path)) {
+          blogLinkFailures.push({ post: route, brokenHref: href });
+        }
+      }
+      summary.push({ route });
+      continue;
+    }
+
     // Build prose text WITHOUT text that cannot host inline links:
     //   <a>          — wrapping anchors (card links); nested anchors invalid
     //   <button>     — interactive elements; nested anchors invalid
@@ -156,7 +192,6 @@ async function main() {
     const clone = body.cloneNode(true);
     clone.querySelectorAll("a, button, blockquote").forEach((n) => n.remove());
     const proseText = clone.textContent || "";
-    const route = fileToRoute(file);
 
     for (const entry of DICT) {
       if (entry.url === route) continue;
@@ -187,8 +222,22 @@ async function main() {
     process.exit(1);
   }
 
+  if (blogLinkFailures.length) {
+    console.error(
+      `\n❌ Blog internal-link verification FAILED: ${blogLinkFailures.length} broken link(s)\n`
+    );
+    console.table(blogLinkFailures);
+    console.error(
+      "\nFor each row: a blog post links to an internal path that does not"
+    );
+    console.error(
+      "resolve to any prerendered route. Fix the typo in posts-data.ts.\n"
+    );
+    process.exit(1);
+  }
+
   console.log(
-    `✅ Inline-link verification OK — ${files.length} HTML pages walked, ${totalChecks} dictionary mentions, ${totalLinks} matching inline links found.`
+    `✅ Inline-link verification OK — ${files.length} HTML pages walked, ${totalChecks} dictionary mentions, ${totalLinks} matching inline links found, ${totalBlogLinkChecks} blog internal links verified.`
   );
 }
 

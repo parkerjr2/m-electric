@@ -73,6 +73,12 @@ export function SiteFooter() {
               Job Gallery
             </Link>
             <Link
+              href="/blog"
+              className="text-neutral-400 hover:text-white transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               className="text-neutral-400 hover:text-white transition-colors"
             >

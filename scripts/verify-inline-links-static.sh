@@ -20,8 +20,9 @@ MISSING=""
 while IFS= read -r line; do
   [ -z "$line" ] && continue
 
-  # Skip if the line itself contains linkify(
-  if echo "$line" | grep -q "linkify("; then
+  # Skip if the line itself contains linkify( (sitewide auto-linker)
+  # OR <InlineMarkdown ... text= (blog explicit-link parser; equivalent role)
+  if echo "$line" | grep -qE "linkify\(|<InlineMarkdown[^>]*text="; then
     continue
   fi
 

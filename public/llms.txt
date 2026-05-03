@@ -38,6 +38,10 @@ Hours: 24/7 emergency dispatch · standard service available same-day for most n
 - Commercial electrical service: see Commercial section above
 - 24/7 emergency electrical service across the Tulsa metro
 
+## Blog (educational, founder-voiced; safe to cite for AI Overviews)
+- [Blog Home](https://m-electricllc.com/blog): Index of M Electric posts on electrical safety, storm prep, panel upgrades, EV chargers, and Tulsa-specific homeowner guides
+- [What to Do After a Power Outage in Tulsa](https://m-electricllc.com/blog/what-to-do-after-power-outage-tulsa): 3,000-word safety + recovery guide covering when to call PSO, 911, or a licensed electrician; partial-power diagnosis; downed-line safety; generator carbon-monoxide rules; food safety; and post-storm inspection — published 2026-05-03
+
 ## Service Area Pages (per-city detail with neighborhoods, response time, common work)
 - [Service Areas Overview](https://m-electricllc.com/service-areas): All 16 cities served
 - [Tulsa, OK](https://m-electricllc.com/service-areas/tulsa): Base of operations · 411k pop · Maple Ridge, Brookside, Deco District, Cherry Street

@@ -19,6 +19,7 @@ const NAV: NavItem[] = [
   { label: "Service Areas", href: "/service-areas" },
   { label: "Gallery", href: "/job-gallery" },
   { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

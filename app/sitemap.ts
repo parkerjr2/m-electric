@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "./services/services-data";
 import { areas } from "./service-areas/areas-data";
+import { posts } from "./blog/posts-data";
 
 const SITE_URL = "https://m-electricllc.com";
 
@@ -43,6 +44,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...posts.map((p) => ({
+      url: `${SITE_URL}/blog/${p.slug}`,
+      lastModified: new Date(p.dateModified + "T00:00:00Z"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     ...services.map((s) => ({
       url: `${SITE_URL}/services/${s.slug}`,
       lastModified,
