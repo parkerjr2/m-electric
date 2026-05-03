@@ -3,6 +3,7 @@ import type { PostSection } from "../posts-data";
 import { InlineMarkdown } from "./InlineMarkdown";
 import { QuickAnswerBox } from "./QuickAnswerBox";
 import { PowerOutageDecisionChart } from "./PowerOutageDecisionChart";
+import { StormSafetyChecklist } from "./StormSafetyChecklist";
 
 /**
  * Maps `embed.component` string keys to actual React components. Keeping the
@@ -11,6 +12,7 @@ import { PowerOutageDecisionChart } from "./PowerOutageDecisionChart";
  */
 const EMBEDS = {
   PowerOutageDecisionChart,
+  StormSafetyChecklist,
 } as const;
 
 const UNSPLASH = (id: string, w = 1600, q = 80) =>

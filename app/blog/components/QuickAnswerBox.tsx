@@ -26,26 +26,82 @@ const VARIANT_STYLES: Record<
 
 /**
  * Body text supports the same lightweight markdown subset as paragraphs
- * (links, **bold**) plus newline-separated paragraphs/list items. Numbered
- * items in `body` (`1. ...`) render as an ordered list; other newline-
- * separated lines render as separate paragraphs.
+ * (links, **bold**) plus newline-separated content blocks:
+ *
+ *   `**Title:**`         → subheader (bold + nothing else on the line)
+ *   `- text` / `* text`  → unordered list item
+ *   `1. text`            → ordered list item
+ *   anything else        → paragraph
+ *
+ * Consecutive items of the same kind are grouped into one list.
  */
+type Block =
+  | { kind: "subheader"; text: string }
+  | { kind: "ul"; lines: string[] }
+  | { kind: "ol"; lines: string[] }
+  | { kind: "p"; text: string };
+
+function classifyLine(line: string): Block {
+  // Subheader: line is exactly `**Some Text:**` (optionally with trailing punctuation only)
+  const headerMatch = line.match(/^\*\*([^*]+)\*\*\s*$/);
+  if (headerMatch) return { kind: "subheader", text: headerMatch[1] };
+  if (/^[-*]\s+/.test(line)) {
+    return { kind: "ul", lines: [line.replace(/^[-*]\s+/, "")] };
+  }
+  if (/^\d+\.\s+/.test(line)) {
+    return { kind: "ol", lines: [line.replace(/^\d+\.\s+/, "")] };
+  }
+  return { kind: "p", text: line };
+}
+
 function renderBody(body: string) {
   const lines = body.split("\n").map((l) => l.trim()).filter(Boolean);
-  const blocks: { kind: "ol" | "p"; lines: string[] }[] = [];
+  const blocks: Block[] = [];
 
   for (const line of lines) {
-    const isListItem = /^\d+\.\s/.test(line);
+    const next = classifyLine(line);
     const last = blocks[blocks.length - 1];
-    if (isListItem) {
-      if (last && last.kind === "ol") last.lines.push(line.replace(/^\d+\.\s/, ""));
-      else blocks.push({ kind: "ol", lines: [line.replace(/^\d+\.\s/, "")] });
+    // Merge consecutive ul/ol blocks
+    if (last && last.kind === "ul" && next.kind === "ul") {
+      last.lines.push(...next.lines);
+    } else if (last && last.kind === "ol" && next.kind === "ol") {
+      last.lines.push(...next.lines);
     } else {
-      blocks.push({ kind: "p", lines: [line] });
+      blocks.push(next);
     }
   }
 
   return blocks.map((b, i) => {
+    if (b.kind === "subheader") {
+      return (
+        <div
+          key={i}
+          className="text-xs uppercase tracking-widest text-red-400 font-bold pt-1"
+        >
+          {b.text}
+        </div>
+      );
+    }
+    if (b.kind === "ul") {
+      return (
+        <ul
+          key={i}
+          className="space-y-2 text-neutral-200 leading-relaxed"
+        >
+          {b.lines.map((line, j) => (
+            <li key={j} className="flex gap-2.5">
+              <span
+                aria-hidden
+                className="mt-2 size-1.5 shrink-0 rounded-full bg-red-500"
+              />
+              <span>
+                <InlineMarkdown text={line} />
+              </span>
+            </li>
+          ))}
+        </ul>
+      );
+    }
     if (b.kind === "ol") {
       return (
         <ol
@@ -62,7 +118,7 @@ function renderBody(body: string) {
     }
     return (
       <p key={i} className="text-neutral-200 leading-relaxed">
-        <InlineMarkdown text={b.lines[0]} />
+        <InlineMarkdown text={b.text} />
       </p>
     );
   });
