@@ -180,7 +180,7 @@ export function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <p className="text-base sm:text-lg md:text-xl text-white/50 mb-10 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-white/65 mb-10 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
               {linkify(subtitle, { currentPath: "/" })}
             </p>
           </motion.div>

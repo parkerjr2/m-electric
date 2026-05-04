@@ -13,6 +13,7 @@ import {
   BoltIcon,
   CheckShieldIcon,
   DollarIcon,
+  GoogleGIcon,
   HouseIcon,
   PhoneIcon,
   ShieldIcon,
@@ -107,19 +108,22 @@ const testimonials = [
     quote:
       "Marshal did a fantastic job with our electric panel replacement. We initially brought a “larger” company out — ridiculously high price and pressure to add things on. M Electric was night-and-day better — fair quote, no upsells, excellent work.",
     name: "Austin C.",
-    location: "Tulsa, OK · Verified Google Review",
+    location: "Tulsa, OK",
+    sourceLabel: "Verified Google Review",
   },
   {
     quote:
       "An incredible job. 10/10 on everything. Worked super hard and got everything done with perfection and meticulous attention to detail. We are having him come back to do more work because he’s so amazing and trustworthy.",
     name: "FaithAnn C.",
-    location: "Tulsa, OK · Verified Google Review",
+    location: "Tulsa, OK",
+    sourceLabel: "Verified Google Review",
   },
   {
     quote:
       "Outdoor outlet, ceiling fan, switches and plates, and a panel repair — all done in one visit. Punctual, professional, and reasonable. Will definitely use him again.",
     name: "Susan C.",
-    location: "Tulsa, OK · Verified Google Review",
+    location: "Tulsa, OK",
+    sourceLabel: "Verified Google Review",
   },
 ];
 
@@ -216,7 +220,7 @@ export default function Home() {
           title="Tulsa whole-house electrical, top to bottom."
           subtitle="From a single dead outlet to wiring a brand-new build, our team handles it cleanly and to code."
         />
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {residentialServices.map((service, i) => {
             const inner = (
               <>
@@ -259,7 +263,7 @@ export default function Home() {
             title="Beyond the basics — Tulsa specialty electrical work."
             subtitle="Smart home systems, commercial retrofits, generators, and EV chargers — all by the same crew you'd trust in your living room."
           />
-          <div className="mt-14 grid md:grid-cols-2 gap-6">
+          <div className="mt-16 grid md:grid-cols-2 gap-6">
             {specialtyServices.map((s, i) => (
               <motion.article
                 key={s.title}
@@ -336,7 +340,7 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800"
+          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800 shadow-2xl shadow-red-900/30"
         >
           <Image
             src="/marshall-morgan-m-electric-van.jpg"
@@ -360,10 +364,20 @@ export default function Home() {
           <SectionHeader
             eyebrow="Why M Electric"
             title="No games. Just good work."
-            subtitle={linkify(
-              "M Electric is the trusted Tulsa electrician families and small businesses have relied on since 1999. Marshall Morgan, a US Army veteran, founded the company. We've been family-owned for over 25 years. Our service area is the entire Tulsa metro: Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty. The same crew that wires your living room wires the next strip mall down the road. Every job is licensed, bonded, and insured to Oklahoma standards. All work is warrantied. 24/7 emergency dispatch is available across the metro. M Electric carries a 4.9-star rating across 90+ verified Google reviews. That rating reflects upfront pricing, punctual service, and clean workmanship — and the trust of Tulsa neighbors earned one job at a time.",
-              { currentPath: "/" }
-            )}
+            subtitle={[
+              linkify(
+                "M Electric is the trusted Tulsa electrician families and small businesses have relied on since 1999. Marshall Morgan, a US Army veteran, founded the company — and it's stayed family-owned for over 25 years.",
+                { currentPath: "/" }
+              ),
+              linkify(
+                "Our service area is the entire Tulsa metro: Tulsa, Broken Arrow, Owasso, Bixby, Jenks, Sapulpa, Sand Springs, Berryhill, Turley, Oakhurst, Glenpool, Mounds, Kiefer, Kellyville, Leonard, and Liberty. The same crew that wires your living room wires the next strip mall down the road.",
+                { currentPath: "/" }
+              ),
+              linkify(
+                "Every job is licensed, bonded, and insured to Oklahoma standards, and all work is warrantied. 24/7 emergency dispatch is available across the metro. M Electric carries a 4.9-star rating across 90+ verified Google reviews — earned one job at a time.",
+                { currentPath: "/" }
+              ),
+            ]}
             align="left"
           />
 
@@ -456,7 +470,17 @@ export default function Home() {
             })}
           </div>
 
-          <GbpMapEmbed className="mt-16" />
+          <div className="mt-20 text-center">
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-red-500 font-semibold">
+              <span className="h-px w-8 bg-red-600" />
+              Find Us on Google
+              <span className="h-px w-8 bg-red-600" />
+            </div>
+            <p className="mt-4 text-neutral-400 text-base sm:text-lg">
+              M Electric, LLC · 4.9★ across 90+ verified Google reviews
+            </p>
+          </div>
+          <GbpMapEmbed className="mt-8" />
         </div>
       </section>
 
@@ -466,7 +490,7 @@ export default function Home() {
           eyebrow="What Tulsa Says"
           title="Trusted by Tulsa neighbors since 1999."
         />
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <motion.figure
               key={t.name}
@@ -485,8 +509,14 @@ export default function Home() {
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-6 text-sm">
-                <span className="text-white font-semibold">{t.name}</span>
-                <span className="text-neutral-500"> · {t.location}</span>
+                <div>
+                  <span className="text-white font-semibold">{t.name}</span>
+                  <span className="text-neutral-500"> · {t.location}</span>
+                </div>
+                <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-neutral-500">
+                  <GoogleGIcon className="size-3.5" />
+                  <span>{t.sourceLabel}</span>
+                </div>
               </figcaption>
             </motion.figure>
           ))}
@@ -504,7 +534,7 @@ export default function Home() {
             title="Tulsa electrician FAQs."
             subtitle="The questions homeowners ask before they pick up the phone."
           />
-          <div className="mt-12 space-y-3">
+          <div className="mt-12 space-y-4">
             {faqs.map((faq, i) => (
               <motion.details
                 key={faq.q}
@@ -583,7 +613,12 @@ function SectionHeader({
 }: {
   eyebrow: string;
   title: string;
-  subtitle?: React.ReactNode;
+  /**
+   * Accepts a single ReactNode (rendered as one <p>) or an array of nodes
+   * (rendered as a stack of <p> blocks with vertical rhythm — used when the
+   * intro is dense enough to deserve breathing room between paragraphs).
+   */
+  subtitle?: React.ReactNode | React.ReactNode[];
   align?: "center" | "left";
 }) {
   const alignment = align === "center" ? "text-center mx-auto" : "text-left";
@@ -596,11 +631,17 @@ function SectionHeader({
       <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[0.95]">
         {title}
       </h2>
-      {subtitle && (
+      {Array.isArray(subtitle) ? (
+        <div className="mt-5 space-y-4 text-neutral-400 text-lg leading-relaxed">
+          {subtitle.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+      ) : subtitle ? (
         <p className="mt-5 text-neutral-400 text-lg leading-relaxed">
           {subtitle}
         </p>
-      )}
+      ) : null}
     </div>
   );
 }

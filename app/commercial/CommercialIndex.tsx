@@ -500,7 +500,7 @@ export function CommercialIndex({
               Tulsa commercial electrical FAQs.
             </h2>
           </div>
-          <div className="mt-12 space-y-3">
+          <div className="mt-12 space-y-4">
             {faqs.map((faq, i) => (
               <motion.details
                 key={faq.q}

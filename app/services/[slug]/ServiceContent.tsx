@@ -318,7 +318,7 @@ export function ServiceContentView({ service }: { service: ServiceContent }) {
       {service.faqs.length > 0 && (
         <section className="mx-auto max-w-4xl px-4 sm:px-6 py-20 sm:py-24">
           <SectionHeader title="Frequently asked questions" />
-          <div className="mt-12 space-y-3">
+          <div className="mt-12 space-y-4">
             {service.faqs.map((faq, i) => (
               <motion.details
                 key={faq.q}

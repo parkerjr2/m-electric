@@ -148,7 +148,7 @@ export function PostContentView({ post }: { post: PostContent }) {
             <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-[0.95]">
               Frequently asked questions.
             </h2>
-            <div className="mt-10 space-y-3">
+            <div className="mt-10 space-y-4">
               {post.faqs.map((faq) => (
                 <details
                   key={faq.q}

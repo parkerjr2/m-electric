@@ -237,7 +237,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800"
+          className="relative aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800 shadow-2xl shadow-red-900/30"
         >
           <Image
             src="/marshall-morgan-m-electric-van.jpg"
@@ -325,7 +325,7 @@ export default function About() {
             { currentPath: "/about" }
           )}
         />
-        <div className="mt-14 grid lg:grid-cols-2 gap-6">
+        <div className="mt-16 grid lg:grid-cols-2 gap-6">
           <ServiceColumn
             title="Residential Services"
             items={residentialServices}
@@ -345,7 +345,7 @@ export default function About() {
             title="Why Tulsa neighbors keep calling back."
             subtitle="What sets us apart is our unwavering commitment to quality and customer satisfaction. As a local Tulsa business, we take pride in contributing to our community's growth."
           />
-          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {differentiators.map((d, i) => (
               <motion.div
                 key={d.title}

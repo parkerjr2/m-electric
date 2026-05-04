@@ -56,6 +56,9 @@ export function SiteFooter() {
             Family-owned, Army-veteran-led electrical contractor serving the
             Tulsa metro since 1999.
           </p>
+          <p className="mt-3 text-xs uppercase tracking-widest text-red-400 font-semibold">
+            Licensed · Bonded · Insured · OK Lic #87288
+          </p>
           <p className="mt-3 text-xs text-neutral-500 italic">
             &ldquo;Get Wired Up!&rdquo;
           </p>
