@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { areas, getArea, type ServiceArea } from "../areas-data";
 import { SITE_URL } from "@/lib/site";
-import { reviewStats, reviewsForService } from "@/lib/reviews";
+import { reviewsForService } from "@/lib/reviews";
 import { AreaContentView } from "./AreaContent";
 
 type RouteParams = { slug: string };
@@ -73,12 +73,10 @@ function buildSchema(area: ServiceArea) {
         longitude: area.geo.lng,
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: reviewStats.ratingValue,
-      bestRating: reviewStats.bestRating,
-      reviewCount: reviewStats.reviewCount,
-    },
+    // AggregateRating is intentionally NOT nested here. Google's rich-results
+    // spec only honors AggregateRating on parent types like LocalBusiness,
+    // Organization, Product — not Service. The sitewide Electrician schema
+    // in app/layout.tsx carries the rating on a valid parent.
   };
 
   // Place schema for the service area itself — helps AI systems and

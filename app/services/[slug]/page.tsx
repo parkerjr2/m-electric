@@ -7,7 +7,6 @@ import {
 } from "../services-data";
 import { SITE_URL } from "@/lib/site";
 import {
-  reviewStats,
   reviewsForService,
   type ReviewServiceTag,
 } from "@/lib/reviews";
@@ -96,12 +95,9 @@ function buildSchema(service: ServiceContent) {
       },
       geoRadius: SERVICE_RADIUS_METERS,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: reviewStats.ratingValue,
-      bestRating: reviewStats.bestRating,
-      reviewCount: reviewStats.reviewCount,
-    },
+    // AggregateRating is intentionally NOT nested here — Google's rich-
+    // results spec disallows it on Service. The sitewide Electrician
+    // schema (app/layout.tsx) carries the rating on a valid parent.
     ...(serviceReviews.length > 0
       ? {
           review: serviceReviews.map((r) => ({

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CommercialIndex } from "./CommercialIndex";
 import { getService } from "../services/services-data";
 import { SITE_URL } from "@/lib/site";
-import { reviewStats, reviewsForService } from "@/lib/reviews";
+import { reviewsForService } from "@/lib/reviews";
 
 const TITLE =
   "Commercial Electrical Services in Tulsa, OK | M Electric";
@@ -105,12 +105,9 @@ export default function CommercialPage() {
       },
       geoRadius: SERVICE_RADIUS_METERS,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: reviewStats.ratingValue,
-      bestRating: reviewStats.bestRating,
-      reviewCount: reviewStats.reviewCount,
-    },
+    // AggregateRating is intentionally NOT nested here — Google's rich-
+    // results spec disallows it on Service. The sitewide Electrician
+    // schema (app/layout.tsx) carries the rating on a valid parent.
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Commercial Electrical Services",
