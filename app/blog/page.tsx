@@ -25,6 +25,12 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
+  // Newest post first. posts-data.ts is in chronological-add order; we sort
+  // for display + ItemList schema so the index is always reverse-chronological.
+  const sortedPosts = [...posts].sort((a, b) =>
+    b.datePublished.localeCompare(a.datePublished),
+  );
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -43,7 +49,7 @@ export default function BlogIndexPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "M Electric Blog",
-    itemListElement: posts.map((p, i) => ({
+    itemListElement: sortedPosts.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
       url: `${SITE_URL}/blog/${p.slug}`,
@@ -61,7 +67,7 @@ export default function BlogIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
-      <BlogIndex posts={posts} />
+      <BlogIndex posts={sortedPosts} />
     </>
   );
 }

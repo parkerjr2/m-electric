@@ -4,6 +4,8 @@ import { InlineMarkdown } from "./InlineMarkdown";
 import { QuickAnswerBox } from "./QuickAnswerBox";
 import { PowerOutageDecisionChart } from "./PowerOutageDecisionChart";
 import { StormSafetyChecklist } from "./StormSafetyChecklist";
+import { SurgeProtectionCoverage } from "./SurgeProtectionCoverage";
+import { PanelUpgradeWarningSigns } from "./PanelUpgradeWarningSigns";
 
 /**
  * Maps `embed.component` string keys to actual React components. Keeping the
@@ -13,6 +15,8 @@ import { StormSafetyChecklist } from "./StormSafetyChecklist";
 const EMBEDS = {
   PowerOutageDecisionChart,
   StormSafetyChecklist,
+  SurgeProtectionCoverage,
+  PanelUpgradeWarningSigns,
 } as const;
 
 const UNSPLASH = (id: string, w = 1600, q = 80) =>

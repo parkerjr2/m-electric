@@ -31,7 +31,11 @@ export type PostSection =
     }
   | {
       kind: "embed";
-      component: "PowerOutageDecisionChart" | "StormSafetyChecklist";
+      component:
+        | "PowerOutageDecisionChart"
+        | "StormSafetyChecklist"
+        | "SurgeProtectionCoverage"
+        | "PanelUpgradeWarningSigns";
       caption?: string;
     }
   | { kind: "image"; src: string; alt: string; caption?: string };
@@ -1256,6 +1260,1144 @@ export const posts: PostContent[] = [
       },
     ],
     related: ["what-to-do-after-power-outage-tulsa"],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "is-whole-home-surge-protection-worth-it-tulsa",
+    title: "Is Whole-Home Surge Protection Worth It in Tulsa?",
+    metaTitle: "Is Whole-Home Surge Protection Worth It in Tulsa?",
+    metaDescription:
+      "Tulsa storms, outages, and appliance loads can cause damaging power surges. Learn when whole-home surge protection is worth it.",
+    excerpt:
+      "Spring storms, summer AC cycling, and PSO switching events create power surges every week — but most homeowners only protect what's plugged into a power strip. A Tulsa-specific guide to what whole-home surge protection actually does, what it doesn't, and when it's worth it.",
+    pillar: "code-safety",
+    datePublished: "2026-05-07",
+    dateModified: "2026-05-07",
+    author: "marshall-morgan",
+    heroImageId: "/eaton-spd-panel-installed.jpg",
+    heroImageAlt:
+      "Eaton Type 2 surge protective device installed alongside a residential electrical panel — the topical visual for whole-home surge protection in a Tulsa home",
+    wordCount: 2400,
+    body: [
+      {
+        kind: "paragraph",
+        body: "If you live in Tulsa, your home's electrical system takes more abuse than most. Spring thunderstorms and lightning, summer heat that runs your AC nonstop, occasional ice storms, and the unavoidable Public Service Company of Oklahoma (PSO) switching events that follow every outage — all of those create power surges. Some are dramatic. Most are small, quiet, and cumulative.",
+      },
+      {
+        kind: "paragraph",
+        body: "This guide explains exactly what whole-home surge protection does, what it doesn't do, when it's worth it for a Tulsa homeowner, and when you should call a licensed electrician to install one as part of a broader electrical safety upgrade.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title: "Quick Answer: Is Whole-Home Surge Protection Worth It?",
+        body: "**Yes — for many Tulsa homes, whole-home surge protection is worth considering.** It's especially valuable if your home has expensive appliances, modern HVAC equipment, smart devices, a home office, an EV charger, or a history of storm-related outages.\n\nImportant nuance: whole-home surge protection significantly reduces the risk of surge damage, but it does not make a home lightning-proof. The Electrical Safety Foundation International (ESFI) is clear that **no surge protective device can handle a direct lightning strike**, and whole-home protection should be installed by a qualified electrician.\n\nConcerned about storm-related surge damage? [M Electric](/contact) can inspect your panel and recommend the right [whole-home surge protection setup](/services/surge-protection) for your Tulsa home.",
+        jumpLinks: [
+          { label: "What is a power surge", toId: "what-is-a-surge" },
+          { label: "Causes", toId: "causes" },
+          { label: "What it does", toId: "what-it-does" },
+          { label: "Is it worth it", toId: "worth-it" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "What Is a Power Surge?",
+        id: "what-is-a-surge",
+      },
+      { kind: "h3", text: "A Power Surge Is a Sudden Spike in Voltage" },
+      {
+        kind: "paragraph",
+        body: "In simple terms, a power surge is a brief increase in electrical voltage above the normal level your home is designed for. That spike can damage, degrade, or outright destroy electronics, appliances, HVAC equipment, garage door openers, smart devices, and almost anything else that's plugged in or hard-wired.",
+      },
+      {
+        kind: "paragraph",
+        body: "ESFI describes surges as unwanted voltage increases that can damage, degrade, or destroy electronic equipment. The damage isn't always instant — and that's part of what makes surge events sneaky.",
+      },
+      { kind: "h3", text: "Surges Aren't Always Dramatic" },
+      {
+        kind: "paragraph",
+        body: "When most homeowners hear \"power surge,\" they picture lightning. In reality, most surges are small and repeated, not single catastrophic events. They may not blow up your TV the moment they happen, but each one shortens the life of microprocessors, control boards, and motor windings. Over months and years, that adds up to appliances and electronics that fail \"early\" without an obvious cause.",
+      },
+      { kind: "h3", text: "Common Signs of Surge-Related Problems" },
+      {
+        kind: "paragraph",
+        body: "Some warning signs to watch for around your Tulsa home:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Lights that flicker or briefly dim, especially during storms or when AC kicks on",
+          "Buzzing outlets, switches, or devices",
+          "Electronics that randomly shut off, lock up, or reboot",
+          "GFCI outlets or breakers that trip more often than they used to",
+          "A burning smell near outlets or equipment",
+          "Failed appliance control boards (range, dishwasher, washer, dryer)",
+          "Routers, TVs, computers, or smart-home equipment that fail in the days after a storm",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If you ever notice **smoke, a burning smell, arcing, or a hot panel/outlet,** stop using the affected circuit immediately and call a licensed electrician. See [Electrical Repair](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "What Causes Power Surges in Tulsa Homes?",
+        id: "causes",
+      },
+      { kind: "h3", text: "Lightning and Spring Storms" },
+      {
+        kind: "paragraph",
+        body: "Tulsa's location in eastern Oklahoma puts it squarely in spring storm country. Lightning, high winds, hail, and wind-blown debris all create conditions where surges spike across PSO's distribution network. A nearby strike doesn't have to hit your house to send a damaging voltage spike through power, cable, phone, or even buried conduit. The [National Weather Service Tulsa office](https://www.weather.gov/tsa/) issues hundreds of severe thunderstorm and tornado warnings every spring — each one is a surge risk for your home.",
+      },
+      { kind: "h3", text: "Power Coming Back After an Outage" },
+      {
+        kind: "paragraph",
+        body: "When PSO restores a circuit, voltage doesn't always return cleanly. Brief over- and under-voltage events during restoration are common, and they're hard on sensitive electronics. This is why we tell Tulsa homeowners to **unplug sensitive devices before turning them back on after an outage**, and to wait a few minutes after restoration before powering up major equipment.",
+      },
+      { kind: "h3", text: "Large Appliances Cycling On and Off" },
+      {
+        kind: "paragraph",
+        body: "Here's the part most homeowners don't know: most surges don't come from outside the home — they come from inside it.",
+      },
+      {
+        kind: "paragraph",
+        body: "NEMA estimates that **60–80% of power surges originate inside a home or business**, often when large motorized appliances start and stop. Common culprits include:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Central air conditioners and heat pumps",
+          "Refrigerators and freezers",
+          "Washing machines and dryers",
+          "Well pumps and sump pumps",
+          "Power tools",
+          "Other large motors",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Each cycle creates small voltage transients on your home's wiring. Plug-in surge strips can't see them — they only protect what's plugged into them. A panel-level device, by contrast, sits right at the source.",
+      },
+      { kind: "h3", text: "Utility-Side Grid Events" },
+      {
+        kind: "paragraph",
+        body: "Routine utility activity also produces surges: capacitor switching, transformer operations, downed-line restoration, neighborhood reconnects after storms. None of this is unusual or unsafe for the grid — but every event is a small ride on your wiring.",
+      },
+
+      {
+        kind: "h2",
+        text: "What Does Whole-Home Surge Protection Actually Do?",
+        id: "what-it-does",
+      },
+      { kind: "h3", text: "It's Installed at or Near the Electrical Panel" },
+      {
+        kind: "paragraph",
+        body: "A whole-home surge protective device (SPD) is hard-wired at the main electrical panel or service equipment by a licensed electrician. ESFI is clear that this is professional work — whole-home surge protection must be installed by a qualified electrician, not a homeowner.",
+      },
+      {
+        kind: "h3",
+        text: "It Diverts Excess Voltage Away From the Home's Electrical System",
+      },
+      {
+        kind: "paragraph",
+        body: "When a voltage spike comes through the service entrance, the SPD provides a low-resistance path that absorbs and redirects the excess energy, keeping it from reaching your wiring, outlets, and equipment. The technical term is \"clamping\" — the device clamps voltage at a safe level for milliseconds at a time.",
+      },
+      { kind: "h3", text: "It Protects More Than Plug-In Electronics" },
+      {
+        kind: "paragraph",
+        body: "This is the single biggest reason whole-home surge protection is worth talking about. A power strip can only protect what's plugged into it. Most of the expensive, surge-vulnerable equipment in a modern home **isn't plugged into a wall outlet at all**:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "HVAC system",
+          "Refrigerator (in many newer kitchens, hard-wired or behind built-in panels)",
+          "Ovens and ranges",
+          "Dishwashers",
+          "Built-in washer and dryer hookups",
+          "Garage door openers",
+          "Built-in lighting and smart switches",
+          "Hardwired smoke and CO alarms",
+          "Home office circuits with multiple devices",
+          "EV charger circuits (depending on configuration)",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "ESFI specifically distinguishes point-of-use surge protection from whole-home surge protection, noting that whole-home protection helps protect the entire electrical system, including large appliances, outlets, and light switches. That's the part power strips simply can't reach.",
+      },
+      {
+        kind: "paragraph",
+        body: "Want this for your home? See [Whole-Home Surge Protection](/services/surge-protection).",
+      },
+      {
+        kind: "embed",
+        component: "SurgeProtectionCoverage",
+        caption:
+          "What's actually behind the panel — and why a power strip can't reach most of it.",
+      },
+
+      {
+        kind: "h2",
+        text: "Whole-Home Surge Protection vs. Power Strips",
+        id: "vs-power-strips",
+      },
+      { kind: "h3", text: "Power Strips Are Not the Same as Surge Protectors" },
+      {
+        kind: "paragraph",
+        body: "Walk into any hardware store and you'll see both products on the same shelf. Most homeowners use the terms interchangeably. They shouldn't. ESFI specifically notes that **power strips and surge protectors are not the same**. A basic power strip is just an extension cord with extra outlets — it offers no surge clamping at all.",
+      },
+      {
+        kind: "h3",
+        text: "Plug-In Surge Protectors Only Protect What's Plugged Into Them",
+      },
+      {
+        kind: "paragraph",
+        body: "Quality plug-in surge protectors are useful — for TVs, computers, routers, gaming consoles, and home office equipment. But by design, they protect only the devices physically plugged into them. They do nothing for hard-wired HVAC, kitchen appliances, garage door openers, smart switches, or your panel itself.",
+      },
+      { kind: "h3", text: "The Best Setup Is Layered Protection" },
+      {
+        kind: "paragraph",
+        body: "ESFI recommends combining device types: a Type 1 or Type 2 SPD at the service or panel level, plus Type 3 (point-of-use) protection for sensitive electronics. In practical terms, that means:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "**Whole-home surge protection at the panel** — first line of defense.",
+          "**Quality point-of-use surge protectors** for TVs, computers, routers, and home office equipment.",
+          "**Proper grounding and bonding** at the service.",
+          "**An updated panel and safe wiring** to make all of the above effective.",
+          "**Smart storm habits** — unplug sensitive electronics before lightning is overhead, not during.",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If you're not sure your current power strips are actually protecting anything, [M Electric](/contact) can inspect your panel, grounding, and surge protection options. See [Whole-Home Surge Protection](/services/surge-protection).",
+      },
+      {
+        kind: "image",
+        src: "/eaton-chspt2ultra-spd.jpg",
+        alt: "Eaton CHSPT2ULTRA Type 2 surge protective device — installs at or near the residential electrical panel",
+        caption:
+          "An Eaton CHSPT2ULTRA Type 2 SPD — the class of device that mounts to or alongside a residential panel.",
+      },
+
+      {
+        kind: "h2",
+        text: "What Whole-Home Surge Protection Does Not Do",
+        id: "limitations",
+      },
+      {
+        kind: "paragraph",
+        body: "This section matters as much as the rest. Surge protection is a fantastic tool — but it isn't magic, and it isn't a substitute for the rest of a healthy electrical system.",
+      },
+      { kind: "h3", text: "It Does Not Make Your Home Lightning-Proof" },
+      {
+        kind: "paragraph",
+        body: "Per ESFI, no surge protective device can handle a direct lightning strike. SPDs are engineered to absorb induced surges (from nearby strikes, utility events, or appliance cycling) — not the energy of a direct hit. Homes with very high lightning exposure may also benefit from a dedicated **lightning protection system** (the rooftop air terminals you sometimes see, often called \"lightning rods\"), which is different from a panel SPD and serves a different purpose.",
+      },
+      { kind: "h3", text: "It Does Not Fix Bad Wiring or an Overloaded Panel" },
+      {
+        kind: "paragraph",
+        body: "If your home has outdated wiring, loose neutrals, undersized service, missing ground rods, or chronically overloaded circuits, a surge protector cannot compensate for those issues. Address the foundation first — see [Wiring Repair](/services/wiring-repair) and [Panel Upgrades](/services/panel-upgrades).",
+      },
+      {
+        kind: "h3",
+        text: "It Does Not Replace Generator Safety or Backup Power Planning",
+      },
+      {
+        kind: "paragraph",
+        body: "Surge protection and generators solve different problems. An SPD reduces damage during voltage events; a generator keeps you running through outages. Both have a place in a serious storm-prep plan. See [Generator Installation](/services/generator-installation).",
+      },
+      { kind: "h3", text: "It Does Not Last Forever" },
+      {
+        kind: "paragraph",
+        body: "Every SPD has a finite \"absorption capacity.\" After enough surge events — or one big one — the device may need replacement. Most quality units have indicator lights or status LEDs that tell you when they've worn out. Ask your electrician how to read them, and check the device after every major Tulsa storm.",
+      },
+
+      {
+        kind: "h2",
+        text: "Is Whole-Home Surge Protection Worth It for Your Tulsa Home?",
+        id: "worth-it",
+      },
+      {
+        kind: "paragraph",
+        body: "The honest answer: it depends on your home, your equipment, and your tolerance for surprise repair bills. Here are the situations where it's most clearly worth it.",
+      },
+      { kind: "h3", text: "You Have Expensive Electronics" },
+      {
+        kind: "paragraph",
+        body: "Most modern households now have thousands of dollars of microprocessor-driven equipment connected to the same wiring as a 1995-era refrigerator:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Home office setup (computers, monitors, docks)",
+          "Gaming systems and consoles",
+          "High-end TVs and AV gear",
+          "Wi-Fi routers and mesh systems",
+          "Security cameras and smart locks",
+          "Smart thermostats",
+          "Smart appliances",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Replacing any one of those typically costs more than installing a whole-home SPD.",
+      },
+      { kind: "h3", text: "You Have Modern HVAC Equipment" },
+      {
+        kind: "paragraph",
+        body: "A modern variable-speed compressor or inverter-driven heat pump can have a control board that costs $400–$1,500 to replace, plus labor. HVAC equipment is one of the most surge-vulnerable hard-wired systems in a Tulsa home, especially during summer when it's running constantly.",
+      },
+      { kind: "h3", text: "You Have Frequent Outages or Flickering Lights" },
+      {
+        kind: "paragraph",
+        body: "Recurrent flickers and trips aren't normal. They're often a sign of grid issues, wiring problems, or equipment that's near end-of-life. Surge protection is part of the answer, but the symptom itself usually deserves an inspection. Don't just bandage it.",
+      },
+      { kind: "h3", text: "You Live in an Older Tulsa Home" },
+      {
+        kind: "paragraph",
+        body: "Older homes — especially those built before grounding requirements changed — may have ungrounded outlets, two-prong receptacles, aluminum branch wiring, or outdated panels. Surge protection in those homes works best when paired with a grounding upgrade, panel inspection, or wiring repair. See [Panel Upgrades](/services/panel-upgrades) and [Wiring Repair](/services/wiring-repair).",
+      },
+      { kind: "h3", text: "You're Planning an EV Charger or Generator Install" },
+      {
+        kind: "paragraph",
+        body: "Both upgrades dramatically increase the value of having clean, well-protected power. If you're planning either one this year, fold surge protection and a panel review into the same project. See [Generator Installation](/services/generator-installation).",
+      },
+
+      {
+        kind: "h2",
+        text: "When Surge Protection May Not Be Enough by Itself",
+        id: "not-enough",
+      },
+      {
+        kind: "paragraph",
+        body: "Sometimes a whole-home SPD is the right product, but it isn't the *whole* answer. Here are the situations where surge protection should be paired with other electrical work.",
+      },
+      { kind: "h3", text: "Your Panel Is Outdated or Overloaded" },
+      {
+        kind: "paragraph",
+        body: "Common signs:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Breakers trip often",
+          "Lights dim noticeably when appliances start",
+          "Panel feels warm or has a faint burning smell",
+          "Visible scorching, rust, or water staining inside the panel door",
+          "No room for new circuits",
+          "Older fuse box, or a panel from a brand widely flagged by insurers as unsafe",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If any of those describe your panel, surge protection should be part of a [Panel Upgrade](/services/panel-upgrades), not a workaround.",
+      },
+      { kind: "h3", text: "Your Home Has Grounding Problems" },
+      {
+        kind: "paragraph",
+        body: "Surge protection depends on a working grounding electrode system. If your ground rods are missing, corroded, undersized, or improperly bonded, the SPD has nowhere to send absorbed energy. A licensed electrician can verify grounding during the same visit they evaluate surge protection.",
+      },
+      { kind: "h3", text: "Your Outlets or Wiring Are Damaged" },
+      {
+        kind: "paragraph",
+        body: "Warm, loose, dead, discolored, sparking, or scorched outlets aren't a \"live with it\" situation. They need [Electrical Repair](/services/electrical-repair) or [Wiring Repair](/services/wiring-repair) before any surge upgrade is meaningful.",
+      },
+
+      {
+        kind: "h2",
+        text: "What to Expect When an Electrician Installs Whole-Home Surge Protection",
+        id: "what-to-expect",
+      },
+      {
+        kind: "paragraph",
+        body: "This is professional work — not a DIY project. Here's what a typical M Electric install looks like.",
+      },
+      { kind: "h3", text: "Step 1: Panel and Grounding Inspection" },
+      {
+        kind: "paragraph",
+        body: "Before recommending a device, the electrician evaluates:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Panel age, brand, and condition",
+          "Available space for the SPD (some panels need a sub-panel adapter or dedicated breaker space)",
+          "Service type (overhead or underground), main breaker rating, and amperage",
+          "Grounding electrode system and bonding",
+          "Any existing safety issues that need to be resolved first",
+        ],
+      },
+      { kind: "h3", text: "Step 2: Selecting the Right Surge Protection Device" },
+      {
+        kind: "paragraph",
+        body: "The right device depends on your panel, electrical loads, exposure, and protection goals. Type 1 SPDs install on the line side of the main breaker (sometimes outside near the meter) and offer the strongest protection against externally generated surges including nearby lightning. Type 2 SPDs install on the load side, inside the main panel. Many homes do best with one of each, plus point-of-use Type 3 devices on sensitive electronics.",
+      },
+      { kind: "h3", text: "Step 3: Installation at the Panel" },
+      {
+        kind: "paragraph",
+        body: "The electrician shuts off the main, hard-wires the SPD to a dedicated breaker (or to the line side, depending on type), torques connections to spec, and verifies grounding. This typically takes 30–60 minutes for the device itself, longer if other work is being done at the same time.",
+      },
+      { kind: "h3", text: "Step 4: Testing and Homeowner Walkthrough" },
+      {
+        kind: "paragraph",
+        body: "Before leaving, the electrician should:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Confirm the device is energized and its status indicators are normal",
+          "Walk you through the indicator lights and what to check after storms",
+          "Document the install for warranty purposes",
+          "Recommend a re-check schedule, typically annually and after any major storm",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "[Schedule a surge protection evaluation](/contact) with M Electric before the next Tulsa storm season.",
+      },
+
+      {
+        kind: "h2",
+        text: "How Much Does Whole-Home Surge Protection Cost in Tulsa?",
+        id: "cost",
+      },
+      { kind: "h3", text: "Cost Depends on the Home and Panel" },
+      {
+        kind: "paragraph",
+        body: "Pricing varies based on:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Panel type, brand, and condition",
+          "Whether panel space is available (or whether a sub-panel/dedicated breaker is needed)",
+          "Grounding condition",
+          "Type of device (Type 1, Type 2, or both)",
+          "Whether other work is being done at the same time (panel upgrade, EV charger, generator)",
+          "Warranty tier",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "For an exact quote, [Contact M Electric](/contact) — we'll give you a flat number after the panel and grounding check.",
+      },
+      { kind: "h3", text: "Compare the Cost to Replacement" },
+      {
+        kind: "paragraph",
+        body: "Surge protection is one of the few electrical upgrades that pays for itself the first time it does its job. Compare a typical whole-home SPD install to the cost of replacing what it protects:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "HVAC control board: $400–$1,500 (plus labor and downtime)",
+          "Refrigerator: $1,500–$4,000",
+          "Washer or dryer: $700–$2,000",
+          "Smart TV: $500–$3,000",
+          "Home office desktop, monitors, dock: $1,000–$5,000",
+          "Wi-Fi router, mesh system, security NVR: $300–$1,500",
+          "Garage door opener: $300–$700",
+          "Smart switches and home automation hubs: $500–$2,000",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "One surge event can easily total more than the device, the install, and several years of inspections combined.",
+      },
+      { kind: "h3", text: "Ask About Warranties and Equipment Ratings" },
+      {
+        kind: "paragraph",
+        body: "Before saying yes to any product, ask:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "What is the surge current rating (in kA)?",
+          "What is the clamping voltage?",
+          "What's the manufacturer warranty? Is there a connected-equipment warranty?",
+          "How do I read the status indicator?",
+          "After a major storm, what should I check?",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "A good Tulsa electrician will answer all of those without hesitation.",
+      },
+
+      {
+        kind: "h2",
+        text: "Bottom Line: Should Tulsa Homeowners Install Whole-Home Surge Protection?",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "For many Tulsa homes, whole-home surge protection is a smart preventive upgrade — especially if you have expensive electronics, modern HVAC equipment, smart devices, a home office, or recurring storm-related outages. The cost is modest relative to what it protects, and the install takes a single appointment.",
+      },
+      {
+        kind: "paragraph",
+        body: "But it should be installed as part of a complete electrical safety approach: an updated panel, proper grounding and bonding, safe wiring, quality point-of-use surge protectors for sensitive electronics, and smart storm habits during severe weather.",
+      },
+      {
+        kind: "image",
+        src: "/marshall-morgan-m-electric-van.jpg",
+        alt: "Marshall Morgan, owner of M Electric, standing beside the M Electric service van in Tulsa, Oklahoma",
+        caption:
+          "Local, licensed, and same-day for Tulsa-area homeowners.",
+      },
+      {
+        kind: "paragraph",
+        body: "Want to know whether whole-home surge protection makes sense for your home? [M Electric](/contact) can inspect your panel, check your grounding, and recommend the right setup for your [Tulsa property](/service-areas/tulsa).",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is whole-home surge protection worth it in Tulsa?",
+        a: "Yes, it is worth considering for many Tulsa homes. Storms, outages, utility switching, and large appliances cycling can all create damaging surges, and whole-home protection covers hard-wired equipment that plug-in strips cannot reach. It is especially useful for homes with expensive electronics, HVAC equipment, smart devices, EV chargers, or home office setups.",
+      },
+      {
+        q: "Does whole-home surge protection protect against lightning?",
+        a: "It can significantly reduce damage from many surge events, including those induced by nearby lightning, but it cannot guarantee protection from a direct lightning strike. ESFI states that no surge protective device can handle a direct lightning strike.",
+      },
+      {
+        q: "Do I still need plug-in surge protectors?",
+        a: "Yes. ESFI recommends a layered approach: whole-home surge protection at the panel plus quality point-of-use surge protectors for sensitive electronics like computers, TVs, routers, and gaming systems.",
+      },
+      {
+        q: "Are power strips the same as surge protectors?",
+        a: "No. Many power strips are simply extension cords with extra outlets and provide no surge protection. ESFI specifically notes that power strips and surge protectors are not the same.",
+      },
+      {
+        q: "Can I install a whole-home surge protector myself?",
+        a: "No. Whole-home surge protection connects at or near the main electrical panel and must be installed by a qualified electrician. ESFI identifies whole-home surge protection as professional work.",
+      },
+      {
+        q: "How do I know if my home needs surge protection?",
+        a: "Consider it if you have frequent outages, flickering lights, expensive electronics, modern HVAC equipment, smart devices, an EV charger, or an older electrical panel. A licensed electrician can inspect your panel and grounding and recommend the right setup.",
+      },
+      {
+        q: "Will surge protection stop breakers from tripping?",
+        a: "No. Surge protection is not designed to fix overloaded circuits, bad wiring, or a failing panel. If breakers keep tripping, you need an electrical inspection — not just a surge protective device.",
+      },
+      {
+        q: "How long does a whole-home surge protector last?",
+        a: "It depends on the device and the number and size of surge events it absorbs. Many units have indicator lights that signal when they have worn out and need replacement. Ask your electrician how to monitor the device, especially after major Tulsa storms.",
+      },
+    ],
+    sources: [
+      {
+        label: "ESFI — Surge Protective Devices",
+        url: "https://www.esfi.org/surge-protective-devices/",
+      },
+      {
+        label: "ESFI — Home Surge Protective Devices",
+        url: "https://www.esfi.org/home-surge-protective-devices/",
+      },
+      {
+        label: "ESFI — What Are Surge Protective Devices",
+        url: "https://www.esfi.org/what-are-surge-protective-devices/",
+      },
+      {
+        label: "ESFI — Lightning Electrical Safety",
+        url: "https://www.esfi.org/lightning-electrical-safety/",
+      },
+      {
+        label: "ESFI — Lightning Protection: Preventing a Direct Strike",
+        url: "https://www.esfi.org/lightning-protection-preventing-a-direct-strike/",
+      },
+      {
+        label:
+          "Schneider Electric — Pros and Cons of Whole House Surge Protectors",
+        url: "https://blog.se.com/sustainability/2022/04/08/what-are-the-pros-and-cons-of-whole-house-surge-protectors/",
+      },
+      {
+        label: "PSO — Outage Reporting and Map",
+        url: "https://www.psoklahoma.com/outages/",
+      },
+      {
+        label: "National Weather Service — Tulsa Forecast Office",
+        url: "https://www.weather.gov/tsa/",
+      },
+      {
+        label: "Ready.gov — Thunderstorms & Lightning",
+        url: "https://www.ready.gov/thunderstorms-lightning",
+      },
+    ],
+    related: [
+      "spring-storm-electrical-checklist-tulsa",
+      "what-to-do-after-power-outage-tulsa",
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "signs-you-need-electrical-panel-upgrade-tulsa",
+    title: "Signs Your Tulsa Home Needs an Electrical Panel Upgrade",
+    metaTitle: "Signs You Need a Panel Upgrade in Tulsa | M Electric",
+    metaDescription:
+      "Breakers tripping, flickering lights, or adding new appliances? Learn the signs your Tulsa home may need an electrical panel upgrade.",
+    excerpt:
+      "Tulsa neighborhoods are full of homes built when 100-amp service was generous. Ten warning signs that your panel is on the way out, what 100A vs 200A really means, and what to expect during a panel upgrade.",
+    pillar: "panel-load",
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    author: "marshall-morgan",
+    heroImageId: "photo-1758101755915-462eddc23f57",
+    heroImageAlt:
+      "Electrician testing a residential breaker panel with a multimeter — the kind of inspection that answers most panel-upgrade questions",
+    wordCount: 2900,
+    body: [
+      {
+        kind: "paragraph",
+        body: "Most Tulsa homeowners don't think about their electrical panel until something tells them to: a breaker that won't stay reset, lights that dim every time the AC kicks on, or a new EV charger, generator, or appliance that pushes the home past what the existing panel was built for.",
+      },
+      {
+        kind: "paragraph",
+        body: "That's especially common here. A lot of Tulsa neighborhoods are full of homes built when 100-amp service was generous, and many of those panels have been quietly carrying the extra load of remodels, additions, and modern equipment for decades. Eventually they catch up.",
+      },
+      {
+        kind: "paragraph",
+        body: "This guide walks through the ten clearest signs an electrical panel upgrade is on the horizon, what 100-amp vs. 200-amp service really means, and what to expect when a licensed electrician handles the work.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title: "Quick Answer: When Does a Tulsa Home Need a Panel Upgrade?",
+        body: "A Tulsa home may need an electrical panel upgrade if:\n\n- Breakers trip often (or won't stay reset)\n- Lights dim when appliances start\n- The panel feels warm, buzzes, crackles, or smells burned\n- The home still has a fuse box or older panel\n- There's no room for new circuits\n- You're adding a major load — EV charger, generator, hot tub, HVAC equipment, workshop, addition, or remodel\n- You're correcting unsafe wiring or bringing an older home up to modern needs\n\n**Important safety note:** Don't remove the panel cover or try to inspect anything inside it. If you see scorch marks, hear buzzing, smell burning, or feel heat at the panel, stop and call a licensed electrician.\n\nIf your panel is buzzing, hot, damaged, or breakers keep tripping, [schedule a panel inspection](/services/panel-upgrades) with M Electric.",
+        jumpLinks: [
+          { label: "10 warning signs", toId: "warning-signs" },
+          { label: "100A vs 200A", toId: "amp-service" },
+          { label: "What to expect", toId: "what-to-expect" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+
+      {
+        kind: "embed",
+        component: "PanelUpgradeWarningSigns",
+        caption:
+          "If you see two or more of these in your home, it's time for a panel inspection.",
+      },
+
+      {
+        kind: "h2",
+        text: "What Does an Electrical Panel Do?",
+        id: "what-it-does",
+      },
+      {
+        kind: "h3",
+        text: "The Panel Is the Distribution Center for Your Home's Power",
+      },
+      {
+        kind: "paragraph",
+        body: "Your electrical panel takes the power coming in from PSO and distributes it across the circuits that feed every outlet, switch, and hard-wired appliance in the house. Each breaker is designed to protect a specific circuit by shutting off power when there's too much load, a short, a ground fault, or another unsafe condition. When the panel is working correctly, you barely notice it. When it isn't, you start to notice it everywhere.",
+      },
+      { kind: "h3", text: "A Panel Upgrade Is Not Just \"More Breakers\"" },
+      {
+        kind: "paragraph",
+        body: "A real panel upgrade can involve any combination of:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Replacing the electrical panel itself (the box, breakers, and bus bars)",
+          "Increasing service capacity (for example, going from 100-amp to 200-amp)",
+          "Reworking circuits that were over-loaded or improperly combined",
+          "Updating grounding and bonding to current code",
+          "Coordinating permits and inspections with the local jurisdiction",
+          "Coordinating with PSO if the service drop or meter base is involved",
+          "Making physical room for modern equipment (surge protective devices, EV charger circuits, generator transfer switch)",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "That's why \"just swap the panel\" estimates from anyone other than a licensed electrician should be treated with caution.",
+      },
+      {
+        kind: "h3",
+        text: "Panel Upgrades Should Be Handled by Licensed Electricians",
+      },
+      {
+        kind: "paragraph",
+        body: "This is not a DIY project. Panel work involves service equipment, utility coordination, permits, inspection, and serious shock and fire risk. The work also has long-term implications for safety, insurance, and resale. See [Panel Upgrades](/services/panel-upgrades) for an overview of how M Electric handles this work in Tulsa.",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #1 — Your Breakers Keep Tripping",
+        id: "warning-signs",
+      },
+      { kind: "h3", text: "Occasional Trips Can Happen — Repeated Trips Are Different" },
+      {
+        kind: "paragraph",
+        body: "A breaker that trips once and resets cleanly is doing exactly what it's designed to do: respond to a temporary overload or fault. A breaker that **trips repeatedly, won't stay reset, or trips immediately when reset** is telling you something else is going on.",
+      },
+      { kind: "h3", text: "Common Causes of Repeated Breaker Trips" },
+      {
+        kind: "bullets",
+        bullets: [
+          "An overloaded circuit (too many devices on one breaker)",
+          "A faulty appliance pulling current it shouldn't",
+          "Damaged or aged wiring",
+          "A breaker that's worn out and tripping below its rating",
+          "Panel capacity issues — the home is asking for more than the service can deliver",
+          "Moisture or storm damage inside the panel or on outdoor circuits",
+        ],
+      },
+      { kind: "h3", text: "Don't Keep Resetting the Breaker" },
+      {
+        kind: "paragraph",
+        body: "Repeatedly resetting the same breaker, especially one that trips immediately, can be dangerous if the underlying problem is still live. Reset once. If it trips again, leave it off and call a licensed electrician.",
+      },
+      {
+        kind: "paragraph",
+        body: "If a breaker keeps tripping after you reset it once, contact M Electric for [electrical troubleshooting](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #2 — Lights Flicker or Dim When Appliances Turn On",
+        id: "sign-2",
+      },
+      { kind: "h3", text: "Brief Dimming Can Be a Load Issue" },
+      {
+        kind: "paragraph",
+        body: "A momentary dim when a high-draw motor starts isn't always a panel problem — most homes show some sag when an AC compressor or large motor kicks on. But if the dimming is **frequent, severe, or affects multiple rooms**, that's worth looking into.",
+      },
+      { kind: "h3", text: "Pay Attention When These Appliances Start" },
+      {
+        kind: "bullets",
+        bullets: [
+          "Central air conditioner or heat pump",
+          "Furnace blower",
+          "Refrigerator or freezer",
+          "Microwave (especially older units)",
+          "Washer and dryer",
+          "Sump or well pump",
+          "Power tools and shop equipment",
+          "EV charger",
+        ],
+      },
+      { kind: "h3", text: "Flickering in Multiple Rooms Is More Concerning" },
+      {
+        kind: "paragraph",
+        body: "When flickering is isolated to one circuit, the issue is usually local — a loose neutral, a worn switch, or an aging fixture. When it's **happening throughout the house**, the cause may be the panel, the service drop, the main breaker, or even a utility-side issue. That deserves a real diagnosis. See [Wiring Repair](/services/wiring-repair) and [Panel Upgrades](/services/panel-upgrades).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #3 — Your Panel Feels Warm, Buzzes, or Smells Burned",
+        id: "sign-3",
+      },
+      { kind: "h3", text: "Your Panel Should Not Be Hot or Noisy" },
+      {
+        kind: "paragraph",
+        body: "A faint hum from a 200-amp main is normal. **A loud buzz, crackle, pop, or noticeable heat** is not. Neither is a fishy or plastic-burning smell anywhere near the panel.",
+      },
+      {
+        kind: "paragraph",
+        body: "These symptoms typically point to one of: a loose connection arcing inside the panel, a failing breaker, water that's gotten into the enclosure, or surge damage from a recent storm. Any of those can develop into a serious fire risk.",
+      },
+      { kind: "h3", text: "Stop Using Affected Circuits" },
+      {
+        kind: "paragraph",
+        body: "If you can identify which circuit is involved (a single warm switch, a buzzing outlet, or one zone of the house with strange behavior), shut it off at the breaker if you can do so safely. If the **panel itself** is the problem, leave it alone — don't open it, don't try to find which breaker.",
+      },
+      { kind: "h3", text: "Don't Open the Panel Cover" },
+      {
+        kind: "paragraph",
+        body: "Homeowners should not remove the panel cover (the dead front behind the door) or touch anything inside the panel. The bus bars and breaker connections behind that cover are live, and the energy they carry is dangerous.",
+      },
+      {
+        kind: "paragraph",
+        body: "If your panel smells burned, feels hot, or makes crackling sounds, [contact M Electric](/contact) right away.",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #4 — You Have an Older Fuse Box or Outdated Panel",
+        id: "sign-4",
+      },
+      { kind: "h3", text: "Fuse Boxes and Old Panels Were Not Designed for Today's Loads" },
+      {
+        kind: "paragraph",
+        body: "Many Tulsa homes built before the 1970s started with fuse boxes; many built in the 1970s and 1980s have panels that haven't been touched since. Modern households put significantly more electrical demand on a service than those panels were originally engineered to deliver — central AC, heat pumps, induction ranges, multiple refrigerators, home offices, smart devices, EV chargers, and entertainment systems all pull current that wasn't on the table in 1972.",
+      },
+      { kind: "h3", text: "Some Older Panels Can Create Insurance or Resale Concerns" },
+      {
+        kind: "paragraph",
+        body: "Without naming specific brands, certain panels manufactured decades ago have come under widespread scrutiny from home inspectors and insurance carriers due to documented reliability concerns. If your home is older and you've never had your panel formally evaluated, ask a licensed electrician to identify the panel make and model and tell you whether it's one of those.",
+      },
+      {
+        kind: "paragraph",
+        body: "This question routinely comes up during home inspections, insurance reviews, and remodel permitting, and finding the answer before a buyer or carrier finds it for you is almost always cheaper.",
+      },
+      { kind: "h3", text: "Older Tulsa Homes Should Be Inspected Before Major Upgrades" },
+      {
+        kind: "paragraph",
+        body: "If your home is older — especially in mid-century neighborhoods or properties that have been remodeled by multiple owners — ask a licensed electrician to inspect the panel and a representative sample of branch circuits before you start any major project. See [Panel Upgrades](/services/panel-upgrades) and [Wiring Repair](/services/wiring-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #5 — You're Adding a Major New Electrical Load",
+        id: "sign-5",
+      },
+      {
+        kind: "paragraph",
+        body: "This is the most common reason a homeowner with no obvious problems calls us about their panel: they're planning something new, and the project pushes the system past what it was sized for.",
+      },
+      { kind: "h3", text: "EV Chargers Often Require Panel Capacity Planning" },
+      {
+        kind: "paragraph",
+        body: "Level 2 EV chargers typically need a dedicated 240-volt circuit (commonly 40–60 amps) and enough headroom on the service to support them without nuisance trips. A load calculation is the right way to find out whether your existing panel can absorb that addition or whether an upgrade should come first. See [Panel Upgrades](/services/panel-upgrades).",
+      },
+      { kind: "h3", text: "Generators Require Proper Transfer Equipment" },
+      {
+        kind: "paragraph",
+        body: "A standby generator — or even a portable generator with an interlock or transfer switch — needs careful planning at the panel. Backfeeding a generator into a wall outlet is dangerous to PSO line crews and to the home, and \"just running an extension cord\" is not a permanent solution. See [Generator Installation](/services/generator-installation).",
+      },
+      { kind: "h3", text: "Remodels and Additions Can Outgrow the Existing Panel" },
+      {
+        kind: "paragraph",
+        body: "Other common projects that push panel capacity:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Kitchen remodel with new induction range or double oven",
+          "Bathroom remodel with heated floors or a tankless water heater",
+          "Garage conversion to living space",
+          "Home addition or finished basement",
+          "Detached shop or workshop",
+          "Outdoor kitchen",
+          "Hot tub or spa",
+          "Pool equipment",
+          "Dedicated home office buildout",
+          "Additional HVAC zone or mini-split system",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Any of those can reveal a panel that's been quietly maxed out for years. An evaluation up front saves you from a half-finished project waiting on an electrician.",
+      },
+      {
+        kind: "paragraph",
+        body: "Planning an EV charger, generator, remodel, or new appliance? Have your panel evaluated first so the project is safe and properly sized. → [Contact M Electric](/contact).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #6 — You Don't Have Enough Breaker Space",
+        id: "sign-6",
+      },
+      { kind: "h3", text: "A Full Panel Limits Upgrades" },
+      {
+        kind: "paragraph",
+        body: "Open up the panel door and look at the layout (don't open the dead front behind it). If every slot is filled, adding any new circuit becomes more involved than just snapping in another breaker.",
+      },
+      { kind: "h3", text: "Double-Tapped or Crowded Panels Need Professional Review" },
+      {
+        kind: "paragraph",
+        body: "Sometimes a previous installer added wires to existing breakers in ways that weren't intended by the manufacturer (often called \"double-tapping\" in the trade), or the panel has been modified over time in ways that aren't quite right. We'll often spot this during a routine evaluation. The fix isn't always a full upgrade — but it always requires a licensed electrician, not a homeowner with a screwdriver.",
+      },
+      { kind: "h3", text: "Subpanel vs. Full Panel Upgrade" },
+      {
+        kind: "paragraph",
+        body: "The right answer isn't always to replace the main panel. Sometimes a **subpanel** — fed from the main and serving a specific area like a garage, workshop, or addition — solves the problem at a fraction of the cost. Other times, the main service is genuinely too small and a full upgrade is the only path forward. A load calculation tells the story.",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #7 — Your Home Still Has Two-Prong Outlets or Ungrounded Circuits",
+        id: "sign-7",
+      },
+      { kind: "h3", text: "Two-Prong Outlets Often Point to Older Wiring" },
+      {
+        kind: "paragraph",
+        body: "Not every two-prong outlet means a panel upgrade is required. But it's a strong signal that the home's electrical system was installed before modern grounding requirements, and it's worth a real evaluation. The wiring behind those outlets may be original, the grounding system may not be what current code calls for, and certain protective devices (GFCI, AFCI, surge protection) work best on a properly grounded system.",
+      },
+      { kind: "h3", text: "Modern Appliances and Electronics Need Safer, Grounded Circuits" },
+      {
+        kind: "paragraph",
+        body: "Home offices, sensitive electronics, modern appliances, and any kind of surge protection all depend on a properly functioning, grounded electrical system. Surge protection, in particular, has nowhere to send absorbed energy if the grounding electrode system isn't intact.",
+      },
+      { kind: "h3", text: "Panel Upgrades and Rewiring Sometimes Go Together" },
+      {
+        kind: "paragraph",
+        body: "For older homes, the cleanest solution is often a coordinated project: panel work, grounding updates, targeted rewiring of problem circuits, and new circuits where needed. See [Wiring Repair](/services/wiring-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #8 — You're Relying on Extension Cords or Power Strips",
+        id: "sign-8",
+      },
+      { kind: "h3", text: "Extension Cords Are Not a Permanent Wiring Solution" },
+      {
+        kind: "paragraph",
+        body: "If a room doesn't have enough outlets and you've solved that with a permanent extension cord or a daisy-chained power strip, that's a usability and safety issue — not a layout preference. Cords aren't designed for permanent in-wall or under-rug use, and many fires start exactly there.",
+      },
+      { kind: "h3", text: "Overloaded Outlets Can Trip Breakers or Overheat" },
+      {
+        kind: "paragraph",
+        body: "The two most common consequences of an overloaded outlet are nuisance breaker trips and slow-cooking damage to the outlet itself. Loose connections, scorched receptacle backs, and warm faceplates are all warning signs.",
+      },
+      { kind: "h3", text: "New Circuits May Reveal the Need for a Panel Upgrade" },
+      {
+        kind: "paragraph",
+        body: "Adding outlets or dedicated appliance circuits is a normal job — but if your panel is already full or your service is undersized, that \"small\" project may turn into a panel evaluation. Better to find that out at the planning stage than mid-install. See [Electrical Repair](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #9 — You Have Storm-Related Electrical Problems",
+        id: "sign-9",
+      },
+      { kind: "h3", text: "Tulsa Storms Expose Weak Electrical Systems" },
+      {
+        kind: "paragraph",
+        body: "Spring thunderstorms, ice storms, lightning, wind-blown rain, and the inevitable PSO outage cycle all stress your home's electrical system. A panel that was marginal before the storm often isn't marginal afterward — it's broken.",
+      },
+      { kind: "h3", text: "Warning Signs After a Storm" },
+      {
+        kind: "bullets",
+        bullets: [
+          "Breakers that trip after power is restored",
+          "Partial power (some rooms or circuits work; others don't)",
+          "Persistent flickering lights",
+          "GFCIs that won't reset",
+          "A burning smell anywhere near outlets, the panel, or appliances",
+          "Buzzing or crackling at the panel",
+          "Outdoor circuits that have stopped working",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If you see any of those after a storm, schedule a post-storm electrical inspection before you re-energize major equipment. See [Electrical Repair](/services/electrical-repair).",
+      },
+      {
+        kind: "image",
+        src: "/job-gallery/service-entrance-complete.jpg",
+        alt: "Completed exterior service entrance on a Tulsa home — meter, mast, and conduit installed by M Electric as part of a service upgrade",
+        caption:
+          "Real M Electric work: a finished exterior service entrance — meter, mast, and conduit are all part of a complete service upgrade.",
+      },
+      { kind: "h3", text: "Surge Protection May Be Part of the Solution" },
+      {
+        kind: "paragraph",
+        body: "If your panel is in good shape but your home keeps absorbing surge damage, a panel-level surge protective device is the right next step. If the panel itself is the problem, surge protection should come *after* the panel upgrade, not before. See [Whole-Home Surge Protection](/services/surge-protection).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #10 — You're Planning to Sell, Buy, or Remodel a Tulsa Home",
+        id: "sign-10",
+      },
+      { kind: "h3", text: "Electrical Panels Often Come Up During Inspections" },
+      {
+        kind: "paragraph",
+        body: "Home inspectors regularly flag outdated panels, double-tapped breakers, missing or illegible labeling, undersized service, and obvious capacity issues. A flagged panel can shrink the buyer pool, complicate financing, or turn into a last-minute price negotiation.",
+      },
+      { kind: "h3", text: "Buyers Want Confidence in the Electrical System" },
+      {
+        kind: "paragraph",
+        body: "A documented panel upgrade — done by a licensed electrician, with permits and final inspection — removes friction during resale and gives buyers something concrete to feel good about.",
+      },
+      { kind: "h3", text: "Remodels Can Trigger Code and Permit Requirements" },
+      {
+        kind: "paragraph",
+        body: "Major electrical work as part of a remodel often requires permits, inspections, and modern code compliance for the affected scope. A licensed electrician handles those requirements as part of the job — that's part of the value of using one.",
+      },
+      {
+        kind: "paragraph",
+        body: "If you're buying, selling, or remodeling in the Tulsa area, see our [Tulsa Service Area](/service-areas/tulsa) page or [contact us](/contact) for a panel evaluation.",
+      },
+
+      {
+        kind: "h2",
+        text: "100 Amp vs. 200 Amp Service: Do You Need More Capacity?",
+        id: "amp-service",
+      },
+      { kind: "h3", text: "Many Older Homes Have 100-Amp Service" },
+      {
+        kind: "paragraph",
+        body: "A 100-amp service can be enough for a smaller home with modest loads — gas heat, gas cooking, gas water heater, no central AC, no EV. As soon as the home moves toward all-electric heating and cooking, multiple HVAC zones, an EV charger, or any kind of shop or hot tub circuit, 100 amps gets crowded fast.",
+      },
+      { kind: "h3", text: "200-Amp Service Is Common for Modern Homes" },
+      {
+        kind: "paragraph",
+        body: "Most modern Tulsa homes are built with 200-amp service for a reason: it gives real headroom for today's electrical needs without being so large that it's wasteful. That doesn't mean 200 amps is automatically the right answer for every home — but it's the most common upgrade target.",
+      },
+      { kind: "h3", text: "The Right Answer Depends on a Load Calculation" },
+      {
+        kind: "paragraph",
+        body: "A licensed electrician runs a load calculation that considers:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Square footage and conditioned area",
+          "HVAC equipment (central AC, heat pumps, electric strip heat, mini-splits)",
+          "Major appliances (electric range, oven, dryer, water heater)",
+          "EV charging (current and planned)",
+          "Generator plans (and whether a transfer switch is involved)",
+          "Hot tub, pool, shop, or detached structure circuits",
+          "Remodel plans for the next several years",
+          "Existing panel condition and breaker space",
+          "Current service size",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "The output is a real number — not a guess — that tells you whether your service is adequate, marginal, or genuinely undersized.",
+      },
+
+      {
+        kind: "h2",
+        text: "What Happens During a Panel Upgrade?",
+        id: "what-to-expect",
+      },
+      { kind: "h3", text: "Step 1: Inspection and Load Evaluation" },
+      {
+        kind: "paragraph",
+        body: "We start by reviewing the existing panel, the service equipment, the grounding system, and your current and planned loads. Photos and measurements get documented as a baseline.",
+      },
+      { kind: "h3", text: "Step 2: Recommendation" },
+      {
+        kind: "paragraph",
+        body: "Based on what we find, the recommendation may include any of: replacing the panel, upgrading the service, adding a subpanel, reworking specific circuits, adding surge protection, or coordinating wiring repair. A clear written quote follows.",
+      },
+      { kind: "h3", text: "Step 3: Permits and Utility Coordination" },
+      {
+        kind: "paragraph",
+        body: "Panel upgrades typically require permits and inspections, and any work that affects the meter base or service drop requires PSO coordination. We handle those steps so you don't have to track them.",
+      },
+      { kind: "h3", text: "Step 4: Installation and Final Inspection" },
+      {
+        kind: "paragraph",
+        body: "On install day, the electrician will coordinate the brief power shutoff, replace or rebuild the panel, terminate every circuit cleanly, label everything, test the system, and walk you through what's changed. Final inspection by the AHJ closes the project.",
+      },
+      {
+        kind: "paragraph",
+        body: "[Schedule a panel upgrade evaluation](/contact) with M Electric.",
+      },
+
+      {
+        kind: "h2",
+        text: "Should You Upgrade Your Panel Before Surge Protection, an EV Charger, or a Generator?",
+        id: "upgrade-order",
+      },
+      {
+        kind: "paragraph",
+        body: "The honest answer is \"sometimes.\" Here's how to think about it.",
+      },
+      { kind: "h3", text: "Before Surge Protection" },
+      {
+        kind: "paragraph",
+        body: "A surge protective device works best as part of a healthy electrical system with intact grounding and bonding. If your panel is outdated, damaged, or compromised, address that first — then add surge protection. See [Whole-Home Surge Protection](/services/surge-protection).",
+      },
+      { kind: "h3", text: "Before EV Charging" },
+      {
+        kind: "paragraph",
+        body: "Level 2 EV chargers typically require a dedicated 240V circuit and meaningful capacity. If the panel is full or the service is undersized, the charger can't simply be added. A load calculation tells you whether the charger fits or whether the panel needs to come first.",
+      },
+      { kind: "h3", text: "Before Generator Installation" },
+      {
+        kind: "paragraph",
+        body: "Standby generators require a transfer switch, panel coordination, and (often) circuit re-grouping to identify \"essential\" loads. If the panel is already at the edge of what it can handle, generator planning is the right time to upgrade. See [Generator Installation](/services/generator-installation).",
+      },
+
+      {
+        kind: "h2",
+        text: "Bottom Line: Do You Need an Electrical Panel Upgrade?",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "A panel upgrade may be the right move if your home has repeated breaker trips, flickering lights, partial power, outdated equipment, no room for new circuits, or major upgrades planned in the next few years.",
+      },
+      {
+        kind: "paragraph",
+        body: "But the best first step is not guessing. It's having a licensed electrician inspect the panel, run a real load calculation, and walk you through your options — repair vs. replace, subpanel vs. service upgrade, do-now vs. do-later.",
+      },
+      {
+        kind: "image",
+        src: "/marshall-morgan-m-electric-van.jpg",
+        alt: "Marshall Morgan, owner of M Electric, beside the M Electric service van — Tulsa-area panel upgrade and electrical service",
+        caption:
+          "Local, licensed, and same-day for Tulsa-area homeowners.",
+      },
+      {
+        kind: "paragraph",
+        body: "Not sure whether your Tulsa home needs a panel upgrade? [Contact M Electric](/contact) for a panel inspection and an honest recommendation.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I know if I need an electrical panel upgrade?",
+        a: "You may need a panel upgrade if breakers trip often, lights flicker when appliances start, the panel feels warm or smells burned, you still have a fuse box or older panel, or you are adding major equipment like an EV charger, generator, hot tub, or new HVAC system. A licensed electrician can confirm with a panel inspection and load calculation.",
+      },
+      {
+        q: "Is 100-amp service enough for a Tulsa home?",
+        a: "It depends on the home. Smaller homes with gas heat, gas cooking, and modest loads can run fine on 100 amps. Most modern homes need more capacity because of HVAC systems, electric appliances, home offices, EV chargers, and remodels. A licensed electrician can run a load evaluation to give you a real answer.",
+      },
+      {
+        q: "Should I upgrade to 200-amp service?",
+        a: "A 200-amp upgrade often makes sense if your current panel is overloaded, outdated, full, or unable to support planned upgrades. It is the most common modern target, but the right answer depends on your home's load calculation.",
+      },
+      {
+        q: "Why do my breakers keep tripping?",
+        a: "Breakers can trip because of overloaded circuits, faulty appliances, damaged wiring, moisture inside the panel, worn breakers, or panel capacity limits. If the same breaker trips repeatedly, stop resetting it and call a licensed electrician.",
+      },
+      {
+        q: "Can I replace my electrical panel myself?",
+        a: "No. Electrical panel replacement is not a DIY project. It involves service equipment, permits, inspections, utility coordination, and serious shock and fire risk. Use a licensed electrician.",
+      },
+      {
+        q: "Will a panel upgrade stop flickering lights?",
+        a: "It may, if the flickering is caused by panel capacity or service issues. Flickering can also come from wiring problems, loose connections, large appliance loads, or utility-side issues. The first step is diagnosis, not assumption.",
+      },
+      {
+        q: "Do I need a panel upgrade before installing an EV charger?",
+        a: "Possibly. Many Level 2 EV chargers require a dedicated 240V circuit and enough available panel capacity. An electrician can run a load calculation and tell you whether your existing panel can safely support the charger, or whether the panel should come first.",
+      },
+      {
+        q: "How long does a panel upgrade take?",
+        a: "The timeline depends on the home, the scope, permit requirements, and whether utility coordination is needed. A straightforward panel replacement may take a single day, while a full service upgrade or a project paired with rewiring can run longer.",
+      },
+    ],
+    sources: [
+      {
+        label: "PSO — Outage Reporting and Map",
+        url: "https://www.psoklahoma.com/outages/",
+      },
+      {
+        label: "National Weather Service — Tulsa Forecast Office",
+        url: "https://www.weather.gov/tsa/",
+      },
+      {
+        label: "ESFI — Surge Protective Devices",
+        url: "https://www.esfi.org/surge-protective-devices/",
+      },
+      {
+        label: "ESFI — Home Surge Protective Devices",
+        url: "https://www.esfi.org/home-surge-protective-devices/",
+      },
+      {
+        label: "Ready.gov — Thunderstorms & Lightning",
+        url: "https://www.ready.gov/thunderstorms-lightning",
+      },
+    ],
+    related: [
+      "is-whole-home-surge-protection-worth-it-tulsa",
+      "spring-storm-electrical-checklist-tulsa",
+    ],
   },
 ];
 
