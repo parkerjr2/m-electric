@@ -35,7 +35,8 @@ export type PostSection =
         | "PowerOutageDecisionChart"
         | "StormSafetyChecklist"
         | "SurgeProtectionCoverage"
-        | "PanelUpgradeWarningSigns";
+        | "PanelUpgradeWarningSigns"
+        | "AcBreakerCallChart";
       caption?: string;
     }
   | { kind: "image"; src: string; alt: string; caption?: string };
@@ -2397,6 +2398,539 @@ export const posts: PostContent[] = [
     related: [
       "is-whole-home-surge-protection-worth-it-tulsa",
       "spring-storm-electrical-checklist-tulsa",
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "ac-breaker-trips-tulsa-summer-heat",
+    title: "Why Your Breaker Trips When the AC Runs in Tulsa Summer Heat",
+    metaTitle: "Why Your AC Breaker Trips in Tulsa Summer Heat",
+    metaDescription:
+      "AC breaker tripping during Tulsa summer heat? Learn what causes it, what homeowners can safely check, and when to call an electrician.",
+    excerpt:
+      "Tulsa summers expose every weak point in a home's electrical system — overloaded circuits, weak breakers, undersized panels, damaged wiring. Why AC breakers trip in summer heat, what to safely check yourself, and how to tell if you need an electrician, an HVAC company, or both.",
+    pillar: "panel-load",
+    datePublished: "2026-05-12",
+    dateModified: "2026-05-12",
+    author: "marshall-morgan",
+    heroImageId: "photo-1758101755915-462eddc23f57",
+    heroImageAlt:
+      "Electrician diagnosing a residential electrical panel with a multimeter — the kind of inspection that answers most AC-breaker questions in Tulsa summer heat",
+    wordCount: 2800,
+    body: [
+      {
+        kind: "paragraph",
+        body: "Tulsa summers don't ease into things. July and August routinely sit in the low-to-mid 90s, and Tulsa averages around 11 days per year above 100°F. When the AC has to fight that kind of heat for weeks at a time, the home's electrical system feels every minute of it — and that's usually when homeowners start noticing breakers tripping, lights dimming, outlets feeling warm, or the air conditioner shutting off without warning.",
+      },
+      {
+        kind: "paragraph",
+        body: "This guide explains why AC breakers trip during Tulsa summer heat, what you can safely check before calling, what you shouldn't try to fix yourself, and how to tell whether you need an electrician, an HVAC company, or both.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title: "Quick Answer: Why Does My Breaker Trip When the AC Runs?",
+        body: "An AC breaker may trip because:\n\n- The circuit is overloaded (the AC is sharing capacity with other big loads)\n- The air conditioner is drawing more current than it should\n- The breaker itself is weak or failing\n- Wiring or connections are damaged, loose, or undersized\n- The panel is outdated or undersized for modern loads\n- Something is overheating after weeks of heavy summer use\n\nIf the breaker trips once, it may be a temporary overload. **If it trips repeatedly, don't keep resetting it** — the breaker is doing its job by interrupting an unsafe condition. A tripping breaker isn't the problem itself; it's a warning sign that something needs diagnosis.\n\nIf your AC breaker keeps tripping in Tulsa heat, M Electric can inspect the circuit, panel, and wiring before the issue becomes a bigger safety problem. → [Electrical Repair](/services/electrical-repair).",
+        jumpLinks: [
+          { label: "Why summer is hard", toId: "summer-stress" },
+          { label: "Warning signs", toId: "warning-signs" },
+          { label: "Who to call", toId: "who-to-call" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Why Tulsa Summer Heat Is Hard on Electrical Systems",
+        id: "summer-stress",
+      },
+      { kind: "h3", text: "Air Conditioners Run Longer and Pull More Power" },
+      {
+        kind: "paragraph",
+        body: "When outside temperatures climb into the 90s and 100s, your AC doesn't just run more often — it runs for longer continuous stretches. The longer the compressor runs, the more cumulative stress lands on the breaker, the circuit conductors, the wire terminations inside the panel, and the disconnect at the outdoor unit. Heat itself increases resistance in any loose or aging connection, which is why a circuit that \"always worked fine\" can start tripping in mid-July without anything obvious having changed.",
+      },
+      {
+        kind: "h3",
+        text: "High-Demand Hours Put Pressure on the Grid and Your Home",
+      },
+      {
+        kind: "paragraph",
+        body: "Public Service Company of Oklahoma (PSO) runs its [Power Hours](https://powerforwardwithpso.com/programs/power-hours/) demand-response program during summer peak events, and identifies the late-afternoon window — roughly 2 p.m. to 7 p.m. on non-holiday weekdays — as the high-demand period when grid stress is highest. The closer your home is to its own electrical capacity, the more noticeable that window becomes: the AC works hardest, the dishwasher and dryer are often running, and any weak point in your wiring or panel shows up first there.",
+      },
+      {
+        kind: "paragraph",
+        body: "PSO and the [U.S. Department of Energy](https://www.energy.gov/energysaver/thermostats) both recommend strategies homeowners can use to reduce summer load: running ceiling and portable fans to feel cooler at a higher thermostat setting, replacing dirty AC filters, and staggering large-appliance use away from peak hours. None of that fixes an electrical problem — but it helps stop a marginal system from getting pushed over the edge while you're scheduling repair.",
+      },
+      { kind: "h3", text: "Summer Storms Add Surge and Outage Stress" },
+      {
+        kind: "paragraph",
+        body: "The [National Weather Service Tulsa office](https://www.weather.gov/tsa/) tracks regular summer thunderstorm activity that can bring lightning, hail, strong winds, and occasional tornadoes. Every storm cycle includes outages, voltage events, and PSO restoration that can stress already-marginal panel and circuit conditions. If your AC breaker started tripping after a recent storm, that's an important detail to share with your electrician.",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #1 — The AC Breaker Trips More Than Once",
+        id: "warning-signs",
+      },
+      { kind: "h3", text: "One Trip May Be Temporary; Repeated Trips Need Attention" },
+      {
+        kind: "paragraph",
+        body: "A single trip can happen during a brief overload, a momentary startup surge, or even a passing utility event. A breaker that trips **repeatedly** — especially on hot days, in the late afternoon, or whenever a specific combination of loads kicks on — is telling you there's a real problem behind it.",
+      },
+      { kind: "h3", text: "Don't Keep Resetting the Breaker" },
+      {
+        kind: "paragraph",
+        body: "This is one of the most important rules in this article: **don't keep flipping the breaker back on**. Each reset re-energizes whatever fault or overload caused the trip in the first place. If the underlying cause is an overheating connection, a damaged conductor, or a worn breaker that no longer trips at its rated amperage, you're stacking risk every time you reset it.",
+      },
+      { kind: "h3", text: "What to Do Instead" },
+      {
+        kind: "paragraph",
+        body: "Safe homeowner steps when the AC breaker trips:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Turn off the AC at the thermostat first",
+          "Note the time the trip happened and the outdoor temperature",
+          "Check whether other large appliances were running (dryer, oven, EV charger, dishwasher)",
+          "From a safe distance, listen for any buzzing or unusual sounds from the panel",
+          "Reset the breaker **once**",
+          "If it trips again, leave it off and call a licensed electrician",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If the same breaker keeps tripping, [schedule electrical troubleshooting with M Electric](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #2 — Lights Dim When the AC Starts",
+        id: "sign-2",
+      },
+      { kind: "h3", text: "Brief Dimming Can Happen; Frequent or Severe Dimming Is a Warning" },
+      {
+        kind: "paragraph",
+        body: "A momentary dim when an AC compressor or other large motor starts isn't unusual. The home is asking for a brief surge of current, and you can see it in the lights. But if the dimming is **noticeable, prolonged, severe, or happening across multiple rooms**, that's a different conversation.",
+      },
+      { kind: "h3", text: "What Dimming May Point To" },
+      {
+        kind: "bullets",
+        bullets: [
+          "A high startup draw from a struggling or aging AC compressor",
+          "A loose connection somewhere on the circuit or at the panel",
+          "An aging or weak breaker",
+          "An undersized branch circuit",
+          "A panel capacity issue (the home is genuinely asking for more than it can deliver)",
+          "A utility-side voltage issue",
+          "Older or damaged wiring",
+        ],
+      },
+      { kind: "h3", text: "When Dimming Becomes Urgent" },
+      {
+        kind: "paragraph",
+        body: "Call a licensed electrician right away if dimming is paired with any of these:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "A burning smell anywhere in the house",
+          "A buzzing or crackling panel",
+          "Breakers that keep tripping",
+          "Warm outlets, switches, or faceplates",
+          "Flickering that spans multiple rooms",
+          "The AC shutting off unexpectedly during a run cycle",
+          "Partial power (some circuits work, some don't)",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "See [Wiring Repair](/services/wiring-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Sign #3 — The Electrical Panel Feels Warm, Buzzes, or Smells Hot",
+        id: "sign-3",
+      },
+      { kind: "h3", text: "Your Panel Should Not Smell Burned" },
+      {
+        kind: "paragraph",
+        body: "A faint hum from a 200-amp main is normal. **A loud buzz, crackling, popping, noticeable heat, or any kind of burning, fishy, or plastic-melting smell is not.** These are warning signs of arcing, loose connections, water intrusion, surge damage, or a failing breaker — and they should be treated seriously.",
+      },
+      { kind: "h3", text: "Do Not Remove the Panel Cover" },
+      {
+        kind: "paragraph",
+        body: "Open the panel **door** if you need to check breaker labels. Do **not** remove the panel cover (the dead front behind the door) or try to inspect the wiring inside the panel. The bus bars and breaker connections behind that cover are live, and the energy they carry is dangerous.",
+      },
+      { kind: "h3", text: "Stop and Call an Electrician" },
+      {
+        kind: "paragraph",
+        body: "Call a licensed electrician if the panel:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Buzzes loudly or steadily",
+          "Crackles, pops, or hisses",
+          "Smells burned",
+          "Feels warm or hot to the touch",
+          "Shows any discoloration, scorch marks, or rust",
+          "Has breakers that won't stay reset",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "If your panel feels hot or smells burned, [contact M Electric right away](/contact).",
+      },
+      {
+        kind: "image",
+        src: "/eaton-spd-panel-installed.jpg",
+        alt: "Residential electrical panel with a panel-mounted surge protective device — the kind of layered protection that helps a marginal system survive Tulsa summer load",
+        caption:
+          "Panel-level inspection is the first step in any AC breaker diagnosis.",
+      },
+
+      {
+        kind: "h2",
+        text: "Common Reasons an AC Breaker Trips in Summer",
+        id: "common-reasons",
+      },
+      { kind: "h3", text: "The Circuit Is Overloaded" },
+      {
+        kind: "paragraph",
+        body: "The AC may be sharing its branch circuit with other large devices (it shouldn't be), or your home's total electrical demand may be peaking at exactly the hottest part of the day. Stacking large appliances — dryer, oven, dishwasher, EV charger — onto already-stressed circuits or onto an undersized service is one of the most common causes of summer breaker trips.",
+      },
+      { kind: "h3", text: "The Air Conditioner Is Drawing Too Much Current" },
+      {
+        kind: "paragraph",
+        body: "This may be an HVAC problem, not an electrical problem. A failing capacitor, a contactor on its way out, a compressor working too hard against low refrigerant, or a fan motor with worn bearings can all cause the AC to pull more amps than the circuit expects. An electrician can verify whether the **electrical** side is sound; an HVAC technician should evaluate the equipment itself. (More on that distinction below.)",
+      },
+      { kind: "h3", text: "The Breaker Is Worn or Failing" },
+      {
+        kind: "paragraph",
+        body: "Breakers don't last forever. After enough trip events — or enough years of running near rated current — a breaker can become weak and trip at lower-than-rated load. Only a licensed electrician should diagnose and replace a breaker.",
+      },
+      { kind: "h3", text: "The Wiring or Connections Are Damaged" },
+      {
+        kind: "paragraph",
+        body: "Heat, age, moisture, storm exposure, rodents, or original installation errors can all create issues at terminations, junction boxes, or in the conductor itself. Aluminum branch wiring in some 1960s–1970s Tulsa homes is particularly worth professional review.",
+      },
+      { kind: "h3", text: "The Panel Is Outdated or Undersized" },
+      {
+        kind: "paragraph",
+        body: "Older panels — especially those still on 100-amp service — may simply not have the headroom for a modern home's combined HVAC, kitchen, laundry, home office, and (sometimes) EV-charging load. See [Panel Upgrades](/services/panel-upgrades).",
+      },
+      { kind: "h3", text: "There Was Storm or Surge Damage" },
+      {
+        kind: "paragraph",
+        body: "If your AC breaker problems started after a thunderstorm, ice storm, or PSO outage and restoration, surge damage is on the suspect list. A licensed electrician can inspect the panel and circuit, and a panel-level surge protective device can help reduce future damage. See [Whole-Home Surge Protection](/services/surge-protection).",
+      },
+
+      {
+        kind: "h2",
+        text: "What Homeowners Can Safely Check Before Calling",
+        id: "safe-checks",
+      },
+      {
+        kind: "paragraph",
+        body: "You don't need tools or training for any of this. These observations help an electrician (or HVAC tech) diagnose faster.",
+      },
+      { kind: "h3", text: "Check the Thermostat and Timing" },
+      {
+        kind: "paragraph",
+        body: "Ask yourself:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Does the breaker trip *immediately* when the AC starts? (Often points to a compressor or contactor issue, or a failing breaker.)",
+          "Does it trip after the system has been running for 10–20 minutes? (Often points to a heat-related issue — loose connection, weak breaker, or marginal capacity.)",
+          "Does it only trip during the hottest part of the day?",
+          "Does it happen when other big appliances are running?",
+        ],
+      },
+      { kind: "h3", text: "Check Whether Other Large Appliances Were Running" },
+      {
+        kind: "paragraph",
+        body: "Common offenders during summer peak hours:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "Electric dryer",
+          "Oven or range",
+          "Dishwasher",
+          "Washing machine",
+          "Microwave",
+          "EV charger",
+          "Pool equipment",
+          "Workshop tools",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "PSO's general summer-conservation guidance encourages shifting large-appliance use away from peak hours (the late-afternoon window) when possible. That's a load-management tip, not a fix — but during a heat wave, it can keep a marginal system from tripping while you wait for service.",
+      },
+      { kind: "h3", text: "Check the Air Filter and Outdoor Unit Airflow" },
+      {
+        kind: "paragraph",
+        body: "This is HVAC-adjacent but useful:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "A dirty AC filter makes the system work harder and pull more current.",
+          "An outdoor condenser packed with grass clippings, cottonwood fuzz, or shrubbery makes the system work harder and pull more current.",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Replacing a filter and clearing 2–3 feet of breathing room around the outdoor unit is safe, easy, and sometimes solves the problem. It does **not** replace electrical diagnosis when the breaker is still tripping after those changes.",
+      },
+      { kind: "h3", text: "Check for Obvious Danger Signs" },
+      {
+        kind: "paragraph",
+        body: "Stop and call a licensed professional if you notice:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "A burning smell anywhere",
+          "A buzzing or crackling panel",
+          "A warm or hot breaker",
+          "Scorch marks on outlets, switches, or panel breakers",
+          "A breaker that won't reset at all",
+          "Water near the panel or any outdoor electrical equipment",
+          "Damage to the AC disconnect box or whip outside",
+          "Flickering lights across multiple rooms",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "What Homeowners Should Not Do",
+        id: "do-not",
+      },
+      { kind: "h3", text: "Don't Keep Flipping the Breaker Back On" },
+      {
+        kind: "paragraph",
+        body: "This one is worth repeating. Repeated resets can hide a real, dangerous problem.",
+      },
+      { kind: "h3", text: "Don't Replace the Breaker Yourself" },
+      {
+        kind: "paragraph",
+        body: "Breaker replacement is panel work. It involves live bus bars and requires the right breaker make and model, properly torqued connections, and verification. It is not a DIY job.",
+      },
+      { kind: "h3", text: "Don't Use Extension Cords or Power Strips for AC Equipment" },
+      {
+        kind: "paragraph",
+        body: "This is especially important for window units, portable AC units, and shop-area cooling. Cooling equipment pulls high current, and extension cords and power strips are not engineered for that kind of continuous load. They overheat, melt, and start fires. Cooling equipment should be plugged directly into a properly sized outlet.",
+      },
+      { kind: "h3", text: "Don't Ignore Burning Smells or Buzzing Sounds" },
+      {
+        kind: "paragraph",
+        body: "These are not \"nuisance\" summer problems. They are warning signs that need professional eyes.",
+      },
+
+      {
+        kind: "h2",
+        text: "When to Call an Electrician vs. an HVAC Company",
+        id: "who-to-call",
+      },
+      {
+        kind: "paragraph",
+        body: "This is the question every homeowner asks — and it's almost always why the issue takes longer than it should to fix.",
+      },
+      {
+        kind: "embed",
+        component: "AcBreakerCallChart",
+        caption:
+          "The fastest path to a fix usually starts with the right phone call.",
+      },
+      { kind: "h3", text: "Sometimes You Need Both" },
+      {
+        kind: "paragraph",
+        body: "AC breaker problems sit right at the intersection of electrical and HVAC. The cleanest path is often: have an electrician confirm the **electrical** side is healthy (circuit, breaker, wiring, panel capacity, disconnect, grounding) — then if everything checks out there, the AC equipment itself is the next thing to look at. That order saves money. Replacing a $400 capacitor doesn't help if the real problem is a loose lug inside the panel.",
+      },
+
+      {
+        kind: "h2",
+        text: "Could Your Tulsa Home Need a Dedicated Circuit?",
+        id: "dedicated-circuit",
+      },
+      { kind: "h3", text: "Central AC Should Be on the Correct Dedicated Circuit" },
+      {
+        kind: "paragraph",
+        body: "A central air conditioning condenser is a hard-wired major appliance, and it should be on its own properly sized 240V circuit with the correct breaker, conductor size, and outdoor disconnect. If your system was added to an older home or installed during a remodel, it's worth verifying that the circuit was sized correctly for the equipment installed.",
+      },
+      { kind: "h3", text: "Window Units and Portable AC Units Can Overload Rooms" },
+      {
+        kind: "paragraph",
+        body: "Bedrooms, garages, additions, shops, and rentals often run window or portable units on circuits that weren't designed for that load — sometimes shared with lighting, computers, or other electronics. The fix is usually a properly sized dedicated circuit, run by a licensed electrician.",
+      },
+      { kind: "h3", text: "Older Tulsa Homes May Not Have Enough Capacity" },
+      {
+        kind: "paragraph",
+        body: "A lot of older Tulsa homes still have circuits that pre-date central AC, modern home offices, large appliances, and EV charging. The wiring may be in fine condition, but the **load** plan no longer reflects how the home is actually used. See [Wiring Repair](/services/wiring-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Could Your Electrical Panel Be the Real Problem?",
+        id: "panel-issue",
+      },
+      { kind: "h3", text: "Warning Signs of a Panel Capacity Issue" },
+      {
+        kind: "bullets",
+        bullets: [
+          "Breakers trip often, especially when the AC kicks on",
+          "Lights dim noticeably when the AC starts",
+          "The panel is full (no open slots)",
+          "The panel feels warm to the touch",
+          "The home still has an older fuse box",
+          "There's no room for new dedicated circuits",
+          "You're planning EV charging, a generator, or new HVAC equipment",
+        ],
+      },
+      { kind: "h3", text: "100-Amp vs. 200-Amp Service" },
+      {
+        kind: "paragraph",
+        body: "Not every home automatically needs 200 amps — a smaller home with gas heat, gas cooking, and modest loads can run fine on 100 amps. But many older Tulsa homes have grown into modern usage patterns the original service wasn't sized for. A licensed electrician can run a real load calculation that accounts for HVAC, appliances, EV charging, planned upgrades, and existing condition.",
+      },
+      { kind: "h3", text: "Panel Upgrade Evaluation" },
+      {
+        kind: "paragraph",
+        body: "A panel evaluation looks at the panel itself, the service entrance equipment, grounding and bonding, available capacity, current and planned loads, and any safety concerns. The recommendation may be repair, partial rework, a subpanel, or a full upgrade. See [Panel Upgrades](/services/panel-upgrades).",
+      },
+
+      {
+        kind: "h2",
+        text: "How to Reduce Summer Electrical Stress",
+        id: "reduce-stress",
+      },
+      { kind: "h3", text: "Use Fans to Reduce AC Runtime" },
+      {
+        kind: "paragraph",
+        body: "Ceiling and portable fans don't cool a room — they make people feel cooler, which means you can hold the thermostat a degree or two higher without losing comfort. PSO's [summer savings tips](https://powerforwardwithpso.com/tips/) point to this as one of the easiest cost-saving habits.",
+      },
+      { kind: "h3", text: "Avoid Running Several Major Appliances During Peak Heat" },
+      {
+        kind: "paragraph",
+        body: "Try to keep dryer, oven, dishwasher, EV charging, and shop equipment out of the late-afternoon window when the AC is already running hardest. This is grid-friendly *and* easier on a marginal panel or circuit.",
+      },
+      { kind: "h3", text: "Raise Thermostat Settings When Health Allows" },
+      {
+        kind: "paragraph",
+        body: "Energy.gov recommends 78°F as a starting point for summer cooling when the home is occupied. PSO's Power Hours program adjusts enrolled thermostats up by no more than 4°F during a peak event for the same reason — a small change makes a meaningful difference.",
+      },
+      {
+        kind: "paragraph",
+        body: "(If you have small children, older adults, or anyone with health conditions in the home, prioritize their needs over any thermostat target.)",
+      },
+      { kind: "h3", text: "Schedule Electrical Issues Before Peak Summer Demand" },
+      {
+        kind: "paragraph",
+        body: "The hottest week of the year is the worst week to discover your panel can't keep up. If you already see signs of stress — flickering, occasional trips, warm switches — get them addressed in May or early June.",
+      },
+      {
+        kind: "paragraph",
+        body: "If your electrical system is already showing stress, don't wait for the hottest week of the year. [Schedule an inspection with M Electric](/contact).",
+      },
+
+      {
+        kind: "h2",
+        text: "Bottom Line: A Tripping AC Breaker Is a Warning Sign",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "If your AC breaker trips once on a 102°F afternoon, take note. If it trips again the next day, **don't keep resetting it**. Tulsa summer heat doesn't create electrical problems out of nothing — it exposes the ones that were already there: overloaded circuits, weak breakers, old panels, damaged wiring, and capacity limits the home has been quietly carrying.",
+      },
+      {
+        kind: "paragraph",
+        body: "The safest move is to have a licensed Tulsa electrician diagnose the electrical side before the issue turns into something larger or more expensive.",
+      },
+      {
+        kind: "image",
+        src: "/marshall-morgan-m-electric-van.jpg",
+        alt: "Marshall Morgan, owner of M Electric, beside the M Electric service van in Tulsa, Oklahoma — local, licensed electrical repair and panel diagnosis",
+        caption:
+          "Local, licensed, and same-day for Tulsa-area homeowners.",
+      },
+      {
+        kind: "paragraph",
+        body: "M Electric can inspect your AC circuit, electrical panel, wiring, and breaker setup, and help you understand what's actually causing the issue — and what your safest next step is. → [Contact M Electric](/contact).",
+      },
+    ],
+    faqs: [
+      {
+        q: "Why does my breaker trip when my AC turns on?",
+        a: "Your breaker may trip because the AC is drawing too much current, the circuit is overloaded, the breaker is weak, the wiring is damaged, or the panel is outdated. A one-time trip can be a temporary overload; repeated trips mean something needs to be diagnosed by a licensed electrician.",
+      },
+      {
+        q: "Is it safe to keep resetting my AC breaker?",
+        a: "No. If the breaker keeps tripping, don't keep resetting it. The breaker is interrupting power to protect the circuit, and repeatedly re-energizing the same fault can be dangerous. Call a licensed electrician.",
+      },
+      {
+        q: "Should I call an electrician or HVAC company for an AC breaker problem?",
+        a: "Call an electrician if the breaker trips repeatedly, the panel buzzes, lights dim, outlets feel warm, or there are other electrical symptoms. Call an HVAC company if the issue appears to be with the AC compressor, fan, refrigerant, or cooling performance. Sometimes both are needed — start with the electrical side to confirm the circuit and panel are safe.",
+      },
+      {
+        q: "Can Tulsa summer heat make electrical problems worse?",
+        a: "Yes. During hot weather, air conditioners run longer, large appliances add demand, and older panels or marginal circuits may show problems that were less noticeable during cooler months. Heat also increases resistance in loose or aging connections, which is one of the reasons summer breaker trips are so common.",
+      },
+      {
+        q: "Why do my lights dim when the AC starts?",
+        a: "Lights may dim because the AC has a high startup draw, but frequent or severe dimming can also point to loose connections, undersized wiring, overloaded circuits, utility voltage issues, or panel capacity problems. A brief dim when the compressor kicks on is normal; dimming you can see across the house every cycle is not.",
+      },
+      {
+        q: "Do I need a panel upgrade if my AC breaker trips?",
+        a: "Not always. A panel upgrade may be needed if the panel is outdated, overloaded, full, damaged, or unable to support modern electrical loads. An electrician should inspect the system and run a load calculation before recommending an upgrade.",
+      },
+      {
+        q: "Can a whole-home surge protector help with summer electrical problems?",
+        a: "A surge protective device can help reduce damage from surges — especially during summer thunderstorms and outage cycles — but it will not fix overloaded circuits, bad wiring, failing breakers, or an undersized panel. It's part of a healthy electrical system, not a substitute for one.",
+      },
+      {
+        q: "What should I do if my panel smells hot or buzzes?",
+        a: "Stop using affected circuits if you can do so safely and call a licensed electrician. Do not remove the panel cover or try to inspect wiring yourself.",
+      },
+    ],
+    sources: [
+      {
+        label: "Public Service Company of Oklahoma — Power Hours Program",
+        url: "https://powerforwardwithpso.com/programs/power-hours/",
+      },
+      {
+        label: "PSO — Stay Cool with 4 Tips to Get the Most Out of Your A/C",
+        url: "https://powerforwardwithpso.com/tips/stay-cool-with-4-tips-to-get-the-most-out-of-your-a-c/",
+      },
+      {
+        label: "PSO — Summertime Savings",
+        url: "https://powerforwardwithpso.com/tips/summertime-savings/",
+      },
+      {
+        label: "U.S. Department of Energy — Thermostats",
+        url: "https://www.energy.gov/energysaver/thermostats",
+      },
+      {
+        label: "National Weather Service Tulsa — Climatology",
+        url: "https://www.weather.gov/tsa/climo_tulsacli",
+      },
+      {
+        label: "National Weather Service Tulsa — Summer Seasonal Temperatures",
+        url: "https://www.weather.gov/tsa/climo_tulsumstemp",
+      },
+      {
+        label: "ESFI — Home Surge Protective Devices",
+        url: "https://www.esfi.org/home-surge-protective-devices/",
+      },
+    ],
+    related: [
+      "signs-you-need-electrical-panel-upgrade-tulsa",
+      "is-whole-home-surge-protection-worth-it-tulsa",
     ],
   },
 ];

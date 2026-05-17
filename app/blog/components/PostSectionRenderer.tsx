@@ -6,6 +6,7 @@ import { PowerOutageDecisionChart } from "./PowerOutageDecisionChart";
 import { StormSafetyChecklist } from "./StormSafetyChecklist";
 import { SurgeProtectionCoverage } from "./SurgeProtectionCoverage";
 import { PanelUpgradeWarningSigns } from "./PanelUpgradeWarningSigns";
+import { AcBreakerCallChart } from "./AcBreakerCallChart";
 
 /**
  * Maps `embed.component` string keys to actual React components. Keeping the
@@ -17,6 +18,7 @@ const EMBEDS = {
   StormSafetyChecklist,
   SurgeProtectionCoverage,
   PanelUpgradeWarningSigns,
+  AcBreakerCallChart,
 } as const;
 
 const UNSPLASH = (id: string, w = 1600, q = 80) =>
