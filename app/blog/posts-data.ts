@@ -36,7 +36,8 @@ export type PostSection =
         | "StormSafetyChecklist"
         | "SurgeProtectionCoverage"
         | "PanelUpgradeWarningSigns"
-        | "AcBreakerCallChart";
+        | "AcBreakerCallChart"
+        | "EvChargerPlanChecklist";
       caption?: string;
     }
   | { kind: "image"; src: string; alt: string; caption?: string };
@@ -2930,6 +2931,590 @@ export const posts: PostContent[] = [
     ],
     related: [
       "signs-you-need-electrical-panel-upgrade-tulsa",
+      "is-whole-home-surge-protection-worth-it-tulsa",
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "plan-ev-charger-installation-tulsa",
+    title:
+      "How to Plan an EV Charger Installation in Tulsa Before You Buy the Charger",
+    metaTitle: "How to Plan EV Charger Installation in Tulsa",
+    metaDescription:
+      "Planning a home EV charger in Tulsa? Learn how to choose the right charger, check panel capacity, plan location, and avoid costly mistakes.",
+    excerpt:
+      "Picking the charger is the easy part. The real planning happens before the installer arrives — where the car parks, panel capacity, dedicated 240V circuits, and how your charging habits line up with PSO's residential EV rate.",
+    pillar: "ev-generator",
+    datePublished: "2026-05-19",
+    dateModified: "2026-05-19",
+    author: "marshall-morgan",
+    heroImageId: "/job-gallery/bmw-ev-charger.jpg",
+    heroImageAlt:
+      "Wall-mounted Level 2 EV charger installed by M Electric at a Tulsa-area home — a real install, real wiring, professionally mounted",
+    wordCount: 2800,
+    body: [
+      {
+        kind: "paragraph",
+        body: "Picking the charger is usually the easy part of going electric at home. The real planning happens *before* the installer arrives: where the car actually parks, how far that spot is from your electrical panel, whether the panel has the capacity for a dedicated 240V circuit, and how your charging habits line up with PSO's residential EV rate.",
+      },
+      {
+        kind: "paragraph",
+        body: "A little planning up front saves Tulsa homeowners from the most common (and most expensive) EV mistakes — buying a charger the panel can't safely support, mounting it where the cord won't reach the car, or installing a temporary setup that has to be redone within a year.",
+      },
+      {
+        kind: "paragraph",
+        body: "This guide walks through the seven questions to answer before you buy the charger, what's worth knowing about PSO's EV pricing, the cost ranges M Electric publishes for Tulsa installs, and what to expect on installation day.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title: "Quick Answer: What Should You Plan Before Installing a Home EV Charger?",
+        body: "Five things to settle before buying the charger:\n\n1. **Where the vehicle actually parks** — garage, driveway, carport, or side parking.\n2. **What charger level you need** — Level 1 may be fine for a plug-in hybrid or low-mileage driver; Level 2 is the usual choice for daily EV use.\n3. **Whether the panel can handle it** — most Level 2 chargers want their own dedicated 240V circuit.\n4. **How far the charger is from the panel** — distance and routing drive most of the install cost.\n5. **When you plan to charge** — PSO's residential EV rate gives the lowest super off-peak pricing **11 p.m. to 6 a.m.** all days of the week, and the highest summer on-peak window is **2 p.m. to 7 p.m., June through October**.\n\nBefore you order a charger online, ask M Electric to evaluate your panel, parking setup, and best installation location. → [EV Charger Installation in Tulsa](/services/ev-charger-installation).",
+        jumpLinks: [
+          { label: "Level 1 vs Level 2", toId: "level-1-vs-2" },
+          { label: "Panel check", toId: "panel-check" },
+          { label: "Location", toId: "location" },
+          { label: "PSO EV rate", toId: "pso-rate" },
+          { label: "Cost", toId: "cost" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+
+      {
+        kind: "embed",
+        component: "EvChargerPlanChecklist",
+        caption:
+          "Five questions to answer before you order any hardware.",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 1 — Decide Whether Level 1 or Level 2 Charging Fits Your Life",
+        id: "level-1-vs-2",
+      },
+      { kind: "h3", text: "Level 1 Charging Uses a Standard 120V Outlet" },
+      {
+        kind: "paragraph",
+        body: "Level 1 is the slow-and-simple option. Per the [U.S. Department of Energy](https://afdc.energy.gov/fuels/electricity-stations), Level 1 equipment charges through a standard 120V residential outlet and adds roughly **5 miles of range per hour of charging**. Over an 8-hour overnight stretch, that's about 40 miles of range — fine for some drivers, frustrating for many.",
+      },
+      {
+        kind: "bullets",
+        lead: "Level 1 makes sense for:",
+        bullets: [
+          "Plug-in hybrid owners",
+          "Low-mileage drivers (a short commute, mostly local trips)",
+          "Backup charging or temporary setups",
+          "Renters or homeowners not ready to invest in a dedicated charger",
+        ],
+      },
+      { kind: "h3", text: "Level 2 Charging Is the Usual Home Upgrade" },
+      {
+        kind: "paragraph",
+        body: "Level 2 uses a 240V circuit (the same voltage your dryer and AC condenser use) and, per DOE, typically adds **about 25 miles of range per hour** — often 20–35 miles per hour depending on the vehicle and circuit amperage. That's the difference between \"fully charged by morning\" and \"I should have plugged in two days ago.\"",
+      },
+      {
+        kind: "bullets",
+        lead: "Level 2 makes sense for:",
+        bullets: [
+          "Daily commuters",
+          "Multi-EV households",
+          "Larger-battery EVs",
+          "Drivers who want reliable overnight charging",
+          "Anyone who'd rather not depend on public charging",
+        ],
+      },
+      { kind: "h3", text: "Why This Matters Before You Buy the Charger" },
+      {
+        kind: "paragraph",
+        body: "Different chargers want different circuits. A 32-amp Level 2 charger lives on a 40-amp dedicated breaker; a 48-amp charger wants a 60-amp dedicated breaker and significantly heavier wire. Buying a high-amperage charger before checking your panel and routing path is the #1 reason home EV projects stall out.",
+      },
+      {
+        kind: "paragraph",
+        body: "Not sure whether Level 1 or Level 2 makes more sense? M Electric can evaluate your driving needs alongside your electrical setup. → [EV Charger Installation](/services/ev-charger-installation).",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 2 — Check Your Electrical Panel Before Choosing a Charger",
+        id: "panel-check",
+      },
+      { kind: "h3", text: "Level 2 Chargers Need Dedicated Capacity" },
+      {
+        kind: "paragraph",
+        body: "Most residential Level 2 chargers run up to 32 or 40 amps continuous and need their own dedicated 240V circuit — typically a 40-amp or 50-amp breaker, with appropriately sized wire and an outdoor disconnect if required by code. NEC Article 625 (the section of the National Electrical Code dedicated to EV charging) governs how those circuits are sized and installed.",
+      },
+      {
+        kind: "bullets",
+        lead: "You don't need to memorize any of that. You do need an electrician to confirm that:",
+        bullets: [
+          "Your panel has open breaker space (or can be reworked to make some)",
+          "Your service can carry the new load on top of everything else the house is doing",
+          "The conductor route from the panel to the charger is workable",
+        ],
+      },
+      {
+        kind: "image",
+        src: "/job-gallery/service-entrance-complete.jpg",
+        alt: "Recently completed M Electric service entrance and panel work at a Tulsa-area home — the kind of capacity check that should happen before a homeowner picks an EV charger",
+        caption:
+          "Real load calculation, real panel — not a guess from an online configurator.",
+      },
+      { kind: "h3", text: "Signs Your Panel May Need Attention First" },
+      {
+        kind: "bullets",
+        lead: "Pause before buying any charger if your home shows any of these:",
+        bullets: [
+          "The panel is full (no open slots)",
+          "Breakers trip often, especially during summer",
+          "Lights dim when the AC or other large appliances start",
+          "The panel feels warm to the touch",
+          "Burning smell or buzzing near the panel",
+          "Older 100-amp service",
+          "Existing big loads (hot tub, second HVAC zone, workshop, generator, or another EV charger)",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Any of those is a good reason for a [panel upgrade](/services/panel-upgrades) evaluation before charger shopping.",
+      },
+      { kind: "h3", text: "Load Calculation Beats Guessing" },
+      {
+        kind: "paragraph",
+        body: "A real load calculation considers the home's actual usage pattern — HVAC, water heating, range, dryer, existing dedicated circuits, planned upgrades, and the proposed charger. Some Tulsa homes can absorb a 40-amp Level 2 install as-is. Others need a smaller charger, load-management hardware, new circuits, or a service upgrade. The only way to know is to look.",
+      },
+      {
+        kind: "paragraph",
+        body: "Before buying a 40A or 48A charger, [schedule a panel capacity check with M Electric](/contact).",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 3 — Choose the Best Charger Location",
+        id: "location",
+      },
+      { kind: "h3", text: "Garage Installation" },
+      {
+        kind: "bullets",
+        lead: "The most common (and usually the easiest) home install. Pros:",
+        bullets: [
+          "Protected from rain, sun, hail, and ice",
+          "Easier cord management and storage",
+          "Cleaner mounting options",
+          "Often closer to the electrical panel",
+          "Best fit for overnight charging",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "Plan around these questions:",
+        bullets: [
+          "Which side of the vehicle is the charge port on?",
+          "Do you back in or pull in?",
+          "Is the charger cord long enough to reach without stretching across the bay?",
+          "Is the panel already in the garage, or on the other side of the house?",
+          "Is there wall space near the parking position?",
+        ],
+      },
+      {
+        kind: "image",
+        src: "/job-gallery/grizzl-e-ev-charger.jpg",
+        alt: "Grizzl-E Level 2 EV charger installed in a Tulsa-area garage by M Electric — clean mounting, proper dedicated circuit, cord routed for the actual parking position",
+        caption:
+          "Charger placement is decided by how you actually park — not by where it's easiest to run wire.",
+      },
+      { kind: "h3", text: "Driveway Installation" },
+      {
+        kind: "bullets",
+        lead: "Good fit if the vehicle lives outside, or if the garage is unfinished and used for storage. Plan around:",
+        bullets: [
+          "Weather-rated equipment and exterior-rated cord",
+          "Cord routing without trip hazards",
+          "Mounting surface (pedestal, exterior wall, post)",
+          "Distance from the panel (longer runs cost more)",
+          "Protection from vehicle impact (bollards, mounting height)",
+          "Whether trenching or exterior conduit is needed",
+        ],
+      },
+      { kind: "h3", text: "Carport or Detached Garage Installation" },
+      {
+        kind: "paragraph",
+        body: "Detached structures add complexity because the circuit may need to be run a significant distance — sometimes underground — and any existing subpanel needs to be checked for capacity. This is usually the most involved scenario, but very doable with the right plan. See [home rewiring](/services/home-rewiring).",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 4 — Decide Between Plug-In and Hardwired Installation",
+        id: "plug-vs-hardwired",
+      },
+      { kind: "h3", text: "Plug-In Charger Installation" },
+      {
+        kind: "paragraph",
+        body: "A plug-in Level 2 charger plugs into a 240V receptacle — typically NEMA 14-50 or NEMA 6-50, depending on the charger.",
+      },
+      {
+        kind: "bullets",
+        lead: "**Pros**",
+        bullets: [
+          "Easier to remove or replace the charger",
+          "Useful for some portable Level 2 units",
+          "More flexible if you might move and take the charger with you",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "**Cons**",
+        bullets: [
+          "The receptacle and plug must be properly rated for continuous EV charging duty (and not every \"RV outlet\" in the wall is)",
+          "Outdoor receptacles need correct weather-rated enclosures",
+          "Not always the best choice at the highest amperages",
+        ],
+      },
+      { kind: "h3", text: "Hardwired Charger Installation" },
+      {
+        kind: "paragraph",
+        body: "Hardwired chargers connect directly to the branch circuit — no plug, no receptacle.",
+      },
+      {
+        kind: "bullets",
+        lead: "**Pros**",
+        bullets: [
+          "Cleaner, more permanent install",
+          "Often the better choice for exterior locations",
+          "Can support higher amperages (40A or 48A) more cleanly",
+          "Fewer plug-wear failure points over years of use",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "**Cons**",
+        bullets: [
+          "Less portable",
+          "Charger replacement is electrician work, not a homeowner swap",
+        ],
+      },
+      { kind: "h3", text: "The Right Answer Depends on Your Home and Charger" },
+      {
+        kind: "paragraph",
+        body: "There's no single right answer here. The model of charger you choose, the location, the amperage, and your long-term plans all factor in. A licensed electrician should give you a clear recommendation after looking at the house.",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 5 — Think About Charging Time and PSO's EV Rate",
+        id: "pso-rate",
+      },
+      { kind: "h3", text: "Overnight Charging Is Usually the Goal" },
+      {
+        kind: "paragraph",
+        body: "For most Tulsa drivers, the goal is simple: plug in when you get home, drive away fully charged. DOE notes that Level 2 charging can typically refill a normal EV battery overnight, which is why most home installs end up Level 2.",
+      },
+      { kind: "h3", text: "PSO's EV Rate Rewards Late-Night Charging" },
+      {
+        kind: "paragraph",
+        body: "PSO offers a [residential EV rate](https://www.psoklahoma.com/account/bills/programs/ev-rate) designed specifically for households with plug-in vehicles. The headline points to know:",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "**Super off-peak hours: 11 p.m. to 6 a.m., all days of the week** — this is the lowest-cost charging window all year",
+          "**Summer on-peak: 2 p.m. to 7 p.m., Monday through Friday, June through October** — this is the priciest window",
+          "Off-peak hours fill the rest of the day",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "For a daily-driver EV that parks overnight, the math is straightforward: schedule charging to start after 11 p.m. and most of your kilowatt-hours land in the cheapest window.",
+      },
+      { kind: "h3", text: "Smart Chargers Make Scheduling Effortless" },
+      {
+        kind: "paragraph",
+        body: "Most modern Level 2 chargers have built-in scheduling, app control, and energy reporting, so you can set \"charge from 11 p.m. to 6 a.m.\" once and forget about it. Some also support load-management features that throttle charging if the home is pulling near service capacity — useful in panels that are tight but not quite ready for an upgrade.",
+      },
+      {
+        kind: "paragraph",
+        body: "PSO has also offered a **Level 2 ENERGY STAR EV charger rebate** for residential customers (up to $250 at the time of publication) and runs a separate Charge Choice program. Check current eligibility on PSO's site before you buy.",
+      },
+      {
+        kind: "paragraph",
+        body: "M Electric can help install a charger setup that supports your daily routine and off-peak charging goals. → [Contact M Electric](/contact).",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 6 — Plan for Weather, Surge Protection, and Outdoor Safety",
+        id: "weather-surge",
+      },
+      { kind: "h3", text: "Tulsa Storms Make Outdoor Planning Important" },
+      {
+        kind: "paragraph",
+        body: "Driveway and carport installs need weather-rated equipment, properly protected wiring, and impact-resistant mounting. Tulsa's spring storms — thunderstorms, hail, high winds, and occasional tornado activity tracked by the [National Weather Service Tulsa office](https://www.weather.gov/tsa/) — are part of the design brief, not an edge case.",
+      },
+      { kind: "h3", text: "Whole-Home Surge Protection Is Worth Discussing" },
+      {
+        kind: "paragraph",
+        body: "An EV charger is one of the most expensive single pieces of equipment connected to your home's electrical system. A panel-level surge protective device (SPD) is the cleanest way to reduce the risk of surge damage from nearby lightning, utility switching, and large-motor cycling. It also protects the rest of the home — HVAC, appliances, smart devices, the charger itself. See [whole-home surge protection](/services/surge-protection).",
+      },
+      { kind: "h3", text: "Avoid Temporary Charging Setups" },
+      {
+        kind: "paragraph",
+        body: "EV charging is a **continuous load** — the circuit is at or near full draw for hours at a time. That makes it especially unforgiving of shortcuts. Don't use extension cords. Don't use a generic outdoor receptacle that wasn't installed specifically for EV charging duty. Don't tap an existing dryer circuit and assume it'll work. Daily EV charging deserves a dedicated, properly installed circuit. See [electrical repair](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Step 7 — Understand Permits and Code Requirements",
+        id: "permits",
+      },
+      { kind: "h3", text: "EV Charger Installation Is Electrical Work" },
+      {
+        kind: "paragraph",
+        body: "The [City of Tulsa](https://www.cityoftulsa.org/government/departments/development-services/permits-and-inspections/) lists an Electrical Permit Request Form under its Trade Permit Applications, and many EV charger installs involve permits and inspection depending on scope and location. A licensed electrician handles permit and inspection coordination as part of the job.",
+      },
+      { kind: "h3", text: "Licensed Installation Protects the Homeowner" },
+      {
+        kind: "bullets",
+        lead: "Permitting and code compliance isn't bureaucracy for its own sake. It protects:",
+        bullets: [
+          "**Safety** — installations get a second set of professional eyes",
+          "**Resale** — buyers' inspectors and lenders ask about permitted work",
+          "**Insurance** — claims involving unpermitted electrical work get complicated fast",
+          "**Warranty** — many EV charger manufacturers require professional installation",
+        ],
+      },
+      { kind: "h3", text: "Avoid Unpermitted Shortcut Installs" },
+      {
+        kind: "paragraph",
+        body: "A cheaper install isn't a cheaper install if it triggers an inspection issue at resale, an insurance question after a storm, or a warranty denial when the charger fails. Use a licensed Tulsa electrician — see our [Tulsa service area](/service-areas/tulsa) page for what we cover locally.",
+      },
+
+      {
+        kind: "h2",
+        text: "Common Mistakes to Avoid Before Installing an EV Charger",
+        id: "mistakes",
+      },
+      { kind: "h3", text: "Buying the Charger Before Checking Panel Capacity" },
+      {
+        kind: "paragraph",
+        body: "The charger that looked perfect online may want more amps than your panel can safely deliver. Order after the panel evaluation, not before.",
+      },
+      { kind: "h3", text: "Choosing a Location Based on the Closest Existing Outlet" },
+      {
+        kind: "paragraph",
+        body: "An outlet in the wall doesn't mean a charger should plug into it. Existing receptacles are rarely sized or rated for continuous Level 2 charging duty.",
+      },
+      { kind: "h3", text: "Forgetting About Cord Reach and Parking Habits" },
+      {
+        kind: "paragraph",
+        body: "Charger cords are typically 18–25 feet. Pick the mounting location around how you *actually* park — not around where it would be most convenient to run the wire.",
+      },
+      { kind: "h3", text: "Ignoring Future Vehicles" },
+      {
+        kind: "paragraph",
+        body: "If you may add a second EV, switch to a larger-battery vehicle, or charge a friend's car occasionally, design once for both.",
+      },
+      { kind: "h3", text: "Assuming Every Level 2 Charger Installs the Same Way" },
+      {
+        kind: "paragraph",
+        body: "Charger amperage, plug type, indoor vs. outdoor rating, smart features, and mounting options vary widely. The \"best\" charger for your neighbor's house may not be the best for yours.",
+      },
+      { kind: "h3", text: "Not Considering Tulsa Summer Peak Usage" },
+      {
+        kind: "paragraph",
+        body: "PSO's summer on-peak window (2 p.m. – 7 p.m., June–October, Monday–Friday) is the most expensive time to pull power. Plan your charging schedule around it — your wallet will notice.",
+      },
+
+      {
+        kind: "h2",
+        text: "How Much Does EV Charger Installation Cost in Tulsa?",
+        id: "cost",
+      },
+      { kind: "h3", text: "Cost Depends on the Home, Not Just the Charger" },
+      {
+        kind: "paragraph",
+        body: "Per M Electric's own [EV charger installation page](/services/ev-charger-installation), Level 2 EV charger installation in Tulsa typically ranges from about **$500 to $2,500**, depending on your existing electrical setup, the charger model, and installation complexity. A standalone **240V outlet installation** for plug-in chargers typically runs **$300 to $800**, depending on panel capacity and location.",
+      },
+      {
+        kind: "bullets",
+        lead: "Cost factors that move the number:",
+        bullets: [
+          "Distance from the panel to the charger",
+          "Garage vs. driveway vs. detached structure",
+          "Conduit routing difficulty (interior walls vs. exterior runs vs. trenching)",
+          "Available panel capacity (and whether a panel upgrade is needed)",
+          "Plug-in vs. hardwired install",
+          "Charger amperage (32A vs. 40A vs. 48A all run different wire)",
+          "Permitting and inspection",
+          "Wall and mounting surface (drywall, masonry, exterior siding)",
+          "Weatherproofing requirements",
+        ],
+      },
+      { kind: "h3", text: "Why a Site Assessment Matters" },
+      {
+        kind: "paragraph",
+        body: "A real number requires looking at your actual panel, the proposed charger location, the routing path, and the existing electrical setup. Generic online price ranges are a starting point — not a quote.",
+      },
+      {
+        kind: "paragraph",
+        body: "For a real number, [schedule a site assessment with M Electric](/contact) instead of relying on generic online price ranges.",
+      },
+
+      {
+        kind: "h2",
+        text: "Should You Upgrade Your Panel Before Installing an EV Charger?",
+        id: "panel-upgrade",
+      },
+      { kind: "h3", text: "Sometimes Yes, Sometimes No" },
+      {
+        kind: "paragraph",
+        body: "Not every EV charger requires a panel upgrade. Some Tulsa homes already have plenty of capacity and need nothing more than a new circuit. Others need a smaller charger, a load-management device, new dedicated circuits, or a service upgrade.",
+      },
+      {
+        kind: "bullets",
+        lead: "Signs a panel upgrade may be needed:",
+        bullets: [
+          "Older panel or fuse box",
+          "100-amp service",
+          "Full breaker panel with no open slots",
+          "Breakers that trip during normal summer use",
+          "Lights that dim when major loads kick on",
+          "Plans to add other significant loads (generator, hot tub, addition)",
+          "A higher-amperage charger (40A or 48A) on a home that's already near capacity",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "See [panel upgrades](/services/panel-upgrades) for what an upgrade actually involves.",
+      },
+      { kind: "h3", text: "Plan Once, Not Twice" },
+      {
+        kind: "paragraph",
+        body: "If you're planning an EV charger plus a [generator installation](/services/generator-installation), a remodel, or other major upgrades over the next few years, evaluate the whole system together. Sequencing the work right (panel first, then surge protection, then EV charger, then generator) almost always costs less than doing each project as a one-off — and saves several \"we'll have to come back\" visits.",
+      },
+
+      {
+        kind: "h2",
+        text: "What to Expect During an EV Charger Installation",
+        id: "what-to-expect",
+      },
+      { kind: "h3", text: "Step 1: Home and Panel Assessment" },
+      {
+        kind: "paragraph",
+        body: "We start by looking at the panel, the service, the grounding system, the proposed charger location, and how you actually use the parking spot.",
+      },
+      { kind: "h3", text: "Step 2: Charger Recommendation" },
+      {
+        kind: "paragraph",
+        body: "We recommend charger amperage, plug-in vs. hardwired, indoor vs. outdoor mounting, smart features, and placement. You'll get a clear written quote afterward.",
+      },
+      { kind: "h3", text: "Step 3: Circuit Installation" },
+      {
+        kind: "paragraph",
+        body: "We install the correctly sized circuit — dedicated breaker, properly sized conductor, conduit where required, and an outdoor disconnect if code calls for one. M Electric's EV installations follow the National Electrical Code and local Tulsa requirements.",
+      },
+      { kind: "h3", text: "Step 4: Charger Mounting and Setup" },
+      {
+        kind: "paragraph",
+        body: "Charger goes on the wall (or pedestal), positioned for the cord to reach the parking spot comfortably. Mounting is finished cleanly and securely.",
+      },
+      { kind: "h3", text: "Step 5: Testing and Homeowner Walkthrough" },
+      {
+        kind: "paragraph",
+        body: "We verify the install, test the charger under load, walk you through the app and scheduling, explain what the indicator lights mean, and answer questions. If you have a smart charger and want it on the PSO EV rate schedule, we'll help set the scheduling up so charging starts after 11 p.m. by default.",
+      },
+      {
+        kind: "paragraph",
+        body: "[Contact M Electric](/contact) to schedule an EV charger site assessment.",
+      },
+
+      {
+        kind: "h2",
+        text: "Bottom Line: Plan the Electrical Setup Before You Buy the Charger",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "The best EV charger installs start before the charger ships. Tulsa homeowners who think through parking location, panel capacity, charging speed, PSO rate timing, weather exposure, future EV plans, and dedicated circuit requirements end up with a charger they're still happy with five years later. Homeowners who skip those questions usually end up paying twice — once for the rushed install, and again to fix it.",
+      },
+      {
+        kind: "image",
+        src: "/marshall-morgan-m-electric-van.jpg",
+        alt: "Marshall Morgan, owner of M Electric, beside the M Electric service van in Tulsa — local, licensed EV charger installation",
+        caption:
+          "Local, licensed, and code-compliant — M Electric installs EV chargers across the Tulsa metro.",
+      },
+      {
+        kind: "paragraph",
+        body: "Ready to plan a home EV charger in Tulsa? M Electric can evaluate your panel, recommend the right charger setup, and install a safe, code-compliant charging solution. → [Contact M Electric](/contact).",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a Level 2 charger at home?",
+        a: "Not always, but most daily EV drivers prefer Level 2 because it's significantly faster than Level 1. The U.S. Department of Energy notes that Level 1 charging adds about 5 miles of range per hour, while Level 2 adds about 25 miles of range per hour — the difference between \"ready by morning\" and \"still not full after two days.\" Plug-in hybrids and very low-mileage drivers may be fine with Level 1.",
+      },
+      {
+        q: "Can my current electrical panel handle an EV charger?",
+        a: "It depends on your panel capacity, existing loads, charger amperage, and future plans. A licensed electrician should evaluate the panel and run a load calculation before you buy or install a charger.",
+      },
+      {
+        q: "Is it better to install an EV charger in the garage or driveway?",
+        a: "Garage installation is usually cleaner, more protected from weather, and easier to manage day-to-day. Driveway installation is the right choice if that's where the vehicle actually lives. The best location depends on parking habits, cord reach, panel location, and weather exposure.",
+      },
+      {
+        q: "Should I get a plug-in or hardwired EV charger?",
+        a: "Plug-in chargers offer flexibility — they can be removed or swapped more easily. Hardwired chargers are typically cleaner, more permanent, and better-suited to outdoor installs and higher amperages. The right choice depends on your charger model, location, and long-term plans.",
+      },
+      {
+        q: "Does PSO have an EV charging rate?",
+        a: "Yes. PSO's residential EV rate gives super off-peak pricing from 11 p.m. to 6 a.m. all days of the week, with a summer on-peak window from 2 p.m. to 7 p.m., Monday through Friday, June through October. Most home EV owners save by scheduling charging to start after 11 p.m.",
+      },
+      {
+        q: "Does PSO offer EV charger rebates?",
+        a: "PSO has offered a rebate for ENERGY STAR-certified Level 2 EV charging stations (up to $250 at the time of publication), plus a Charge Choice rewards program for participating customers. Eligibility and rebate amounts can change, so confirm current details on PSO's site before you buy equipment.",
+      },
+      {
+        q: "How much does EV charger installation cost in Tulsa?",
+        a: "Per M Electric's EV charger service page, Level 2 installation in Tulsa typically ranges from about $500 to $2,500 depending on the existing electrical setup, charger model, and complexity. A standalone 240V outlet for a plug-in charger typically runs $300 to $800, depending on panel capacity and location. A site assessment gives you a real number.",
+      },
+      {
+        q: "Do I need a permit for EV charger installation in Tulsa?",
+        a: "EV charger installation is electrical work, and the City of Tulsa lists an Electrical Permit Request Form under its trade permit applications. A licensed electrician will determine what permits and inspections apply to your specific install and handle that coordination for you.",
+      },
+    ],
+    sources: [
+      {
+        label: "U.S. Department of Energy — Alternative Fuels Data Center: EV Charging Stations",
+        url: "https://afdc.energy.gov/fuels/electricity-stations",
+      },
+      {
+        label: "U.S. EPA — Plug-In Electric Vehicle Charging Basics",
+        url: "https://www.epa.gov/greenvehicles/plug-electric-vehicle-charging-basics",
+      },
+      {
+        label: "PSO — Residential EV Rate",
+        url: "https://www.psoklahoma.com/account/bills/programs/ev-rate",
+      },
+      {
+        label: "PSO — Time-of-Day Rate Program",
+        url: "https://www.psoklahoma.com/account/bills/programs/time-of-day",
+      },
+      {
+        label: "Alternative Fuels Data Center — PSO EV Charging Station Rebate",
+        url: "https://afdc.energy.gov/laws/12347",
+      },
+      {
+        label: "National Weather Service — Tulsa Forecast Office",
+        url: "https://www.weather.gov/tsa/",
+      },
+      {
+        label: "City of Tulsa — Permits and Inspections",
+        url: "https://www.cityoftulsa.org/government/departments/development-services/permits-and-inspections/",
+      },
+    ],
+    related: [
+      "signs-you-need-electrical-panel-upgrade-tulsa",
+      "ac-breaker-trips-tulsa-summer-heat",
       "is-whole-home-surge-protection-worth-it-tulsa",
     ],
   },
