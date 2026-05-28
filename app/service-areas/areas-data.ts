@@ -753,7 +753,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County (with portions in Creek County)",
     population: "14,000",
     geo: { lat: 35.9551, lng: -96.0083 },
-    nearby: ["tulsa", "jenks", "bixby", "sapulpa", "kiefer"],
+    nearby: ["tulsa", "jenks", "bixby", "sapulpa", "liberty"],
     metaTitle: "Glenpool Electrician | M Electric — Residential & Commercial",
     metaDescription:
       "Licensed Glenpool electrician — residential, commercial, panel upgrades, EV chargers. Same-day service. Call (918) 992-6282.",
