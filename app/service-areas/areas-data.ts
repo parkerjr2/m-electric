@@ -55,6 +55,14 @@ export type ServiceArea = {
 
   /** Geo for schema */
   geo: { lat: number; lng: number };
+
+  /**
+   * Slugs of nearby service-area cities to surface in a "Nearby service areas"
+   * block above the FAQ. Curated for internal-link equity, not auto-derived
+   * from coordinates — tiny unincorporated towns link up to the hub, the hub
+   * only links down to its biggest suburbs.
+   */
+  nearby: string[];
 };
 
 /** Static fields shared by all city pages — used in schema, not in body copy. */
@@ -69,6 +77,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "411,000",
     geo: { lat: 36.1539816, lng: -95.992775 },
+    nearby: ["broken-arrow", "owasso", "bixby", "jenks", "sand-springs"],
     metaTitle:
       "Licensed Electrician in Tulsa, OK | M Electric — 24/7 Emergency",
     metaDescription:
@@ -149,6 +158,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County (with portions in Wagoner County)",
     population: "117,000",
     geo: { lat: 36.0526, lng: -95.7908 },
+    nearby: ["tulsa", "bixby", "jenks", "leonard"],
     metaTitle:
       "Broken Arrow Electrician | M Electric — Licensed, 24/7 Emergency",
     metaDescription:
@@ -222,6 +232,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County (with portions in Rogers County)",
     population: "39,000",
     geo: { lat: 36.2695, lng: -95.8547 },
+    nearby: ["tulsa", "turley", "broken-arrow"],
     metaTitle:
       "Owasso Electrician | M Electric — Residential & Commercial",
     metaDescription:
@@ -294,6 +305,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County (with portions in Wagoner County)",
     population: "30,000",
     geo: { lat: 35.9420, lng: -95.8833 },
+    nearby: ["tulsa", "leonard", "jenks", "broken-arrow"],
     metaTitle: "Bixby Electrician | M Electric — Licensed, 24/7 Emergency",
     metaDescription:
       "Licensed Bixby electrician — riverside subdivisions, rural acreage, detached shops, EV chargers, generator installs. Call (918) 992-6282.",
@@ -363,6 +375,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "27,000",
     geo: { lat: 36.0228, lng: -95.9683 },
+    nearby: ["tulsa", "bixby", "glenpool", "sapulpa"],
     metaTitle:
       "Jenks Electrician | M Electric — Riverwalk, Antique District",
     metaDescription:
@@ -433,6 +446,7 @@ export const areas: ServiceArea[] = [
     county: "Creek County",
     population: "21,000",
     geo: { lat: 35.9989, lng: -96.1142 },
+    nearby: ["tulsa", "sand-springs", "glenpool", "kellyville", "kiefer"],
     metaTitle:
       "Sapulpa Electrician | M Electric — Route 66 Heritage, Older Homes",
     metaDescription:
@@ -503,6 +517,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "19,000",
     geo: { lat: 36.1397, lng: -96.1086 },
+    nearby: ["tulsa", "sapulpa", "berryhill", "oakhurst"],
     metaTitle:
       "Sand Springs Electrician | M Electric — Residential & Commercial",
     metaDescription:
@@ -573,6 +588,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "4,000",
     geo: { lat: 36.115, lng: -96.05 },
+    nearby: ["tulsa", "sand-springs", "oakhurst"],
     metaTitle:
       "Berryhill Electrician | M Electric — Licensed, Local, 24/7",
     metaDescription:
@@ -629,6 +645,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "3,000",
     geo: { lat: 36.234, lng: -95.993 },
+    nearby: ["tulsa", "owasso"],
     metaTitle: "Turley Electrician | M Electric — Licensed, Same-Day Service",
     metaDescription:
       "Licensed Turley electrician — residential repairs, panel upgrades, rewiring. Same-day service from Tulsa. Call (918) 992-6282.",
@@ -684,6 +701,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "2,000",
     geo: { lat: 36.066, lng: -96.077 },
+    nearby: ["tulsa", "sand-springs", "berryhill"],
     metaTitle: "Oakhurst Electrician | M Electric — Licensed Residential",
     metaDescription:
       "Licensed Oakhurst electrician — residential repairs, panel upgrades, rewiring. Same-day service from Tulsa. Call (918) 992-6282.",
@@ -735,6 +753,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County (with portions in Creek County)",
     population: "14,000",
     geo: { lat: 35.9551, lng: -96.0083 },
+    nearby: ["tulsa", "jenks", "bixby", "sapulpa", "kiefer"],
     metaTitle: "Glenpool Electrician | M Electric — Residential & Commercial",
     metaDescription:
       "Licensed Glenpool electrician — residential, commercial, panel upgrades, EV chargers. Same-day service. Call (918) 992-6282.",
@@ -804,6 +823,7 @@ export const areas: ServiceArea[] = [
     county: "Creek County",
     population: "1,200",
     geo: { lat: 35.876, lng: -96.063 },
+    nearby: ["glenpool", "kiefer", "sapulpa", "tulsa"],
     metaTitle:
       "Mounds Electrician | M Electric — Licensed in Creek County, OK",
     metaDescription:
@@ -868,6 +888,7 @@ export const areas: ServiceArea[] = [
     county: "Creek County",
     population: "2,150",
     geo: { lat: 35.9437, lng: -96.0628 },
+    nearby: ["sapulpa", "glenpool", "mounds", "kellyville"],
     metaTitle:
       "Kiefer Electrician | M Electric — Licensed in Creek County, OK",
     metaDescription:
@@ -932,6 +953,7 @@ export const areas: ServiceArea[] = [
     county: "Creek County",
     population: "1,150",
     geo: { lat: 35.9445, lng: -96.2114 },
+    nearby: ["sapulpa", "kiefer", "sand-springs"],
     metaTitle:
       "Kellyville Electrician | M Electric — Licensed in Creek County, OK",
     metaDescription:
@@ -988,6 +1010,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "200",
     geo: { lat: 35.9286, lng: -95.8311 },
+    nearby: ["bixby", "broken-arrow", "tulsa"],
     metaTitle:
       "Leonard Electrician | M Electric — Licensed in SE Tulsa County",
     metaDescription:
@@ -1044,6 +1067,7 @@ export const areas: ServiceArea[] = [
     county: "Tulsa County",
     population: "Small unincorporated area",
     geo: { lat: 35.9778, lng: -96.0317 },
+    nearby: ["jenks", "glenpool", "sapulpa", "tulsa"],
     metaTitle:
       "Liberty Electrician | M Electric — Licensed Tulsa-Area Electrician",
     metaDescription:

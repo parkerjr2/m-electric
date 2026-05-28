@@ -12,7 +12,9 @@ import {
 } from "../../components/icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { linkify } from "@/lib/inline-links";
-import type { ServiceArea } from "../areas-data";
+import { areas, type ServiceArea } from "../areas-data";
+
+const CITY_BY_SLUG = new Map(areas.map((a) => [a.slug, a.city]));
 import type { Review } from "@/lib/reviews";
 
 const RESIDENTIAL_SERVICES = [
@@ -301,6 +303,44 @@ export function AreaContentView({
               ))}
             </div>
           </div>
+        </section>
+      )}
+
+      {/* Nearby service areas — internal-link block (above FAQ) */}
+      {area.nearby.length > 0 && (
+        <section className="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-red-500 font-semibold">
+              <span className="h-px w-8 bg-red-600" />
+              Nearby Service Areas
+              <span className="h-px w-8 bg-red-600" />
+            </div>
+            <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-[0.95]">
+              We also serve nearby.
+            </h2>
+            <p className="mt-5 text-neutral-300 leading-relaxed max-w-2xl mx-auto">
+              M Electric serves homes and businesses across the Tulsa metro,
+              including the communities nearest to {area.city}.
+            </p>
+          </div>
+          <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {area.nearby.map((slug) => {
+              const cityName = CITY_BY_SLUG.get(slug) ?? slug;
+              return (
+                <li key={slug}>
+                  <Link
+                    href={`/service-areas/${slug}`}
+                    className="group flex items-center justify-between gap-3 rounded-lg border border-neutral-800 bg-neutral-950 hover:border-red-700 hover:bg-neutral-900 transition-colors p-5"
+                  >
+                    <span className="text-white font-semibold">
+                      Electrician in {cityName}
+                    </span>
+                    <ArrowRightIcon className="size-4 text-red-500 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       )}
 
