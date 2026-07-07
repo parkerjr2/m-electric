@@ -2,13 +2,23 @@ import type { Metadata } from "next";
 import { Geist, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { reviews, reviewStats } from "@/lib/reviews";
+import {
+  STREET_ADDRESS,
+  ADDRESS_LOCALITY,
+  ADDRESS_REGION,
+  POSTAL_CODE,
+  GBP_MAP_URL,
+} from "@/lib/site";
 
 /**
- * Geographic centroid used for `geo` and `serviceArea` GeoCircle schema.
+ * Geographic centroid used for the `serviceArea` GeoCircle schema.
  * Tulsa, OK city center; ~30 mile radius covers all 16 service-area cities.
  */
 const TULSA_GEO = { latitude: 36.1539816, longitude: -95.992775 };
 const SERVICE_RADIUS_METERS = 48280; // ~30 miles
+
+/** Actual premises coordinates (8990 S Sheridan Rd, Suite B) — the business `geo`. */
+const BUSINESS_GEO = { latitude: 36.032358, longitude: -95.904307 };
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -124,10 +134,13 @@ const electricianSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Tulsa",
-    addressRegion: "OK",
+    streetAddress: STREET_ADDRESS,
+    addressLocality: ADDRESS_LOCALITY,
+    addressRegion: ADDRESS_REGION,
+    postalCode: POSTAL_CODE,
     addressCountry: "US",
   },
+  hasMap: GBP_MAP_URL,
   areaServed: [
     "Tulsa",
     "Broken Arrow",
@@ -148,8 +161,8 @@ const electricianSchema = {
   ].map((name) => ({ "@type": "City", name })),
   geo: {
     "@type": "GeoCoordinates",
-    latitude: TULSA_GEO.latitude,
-    longitude: TULSA_GEO.longitude,
+    latitude: BUSINESS_GEO.latitude,
+    longitude: BUSINESS_GEO.longitude,
   },
   serviceArea: {
     "@type": "GeoCircle",

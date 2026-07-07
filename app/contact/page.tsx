@@ -4,7 +4,18 @@ import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { GbpMapEmbed } from "../components/GbpMapEmbed";
 import { ArrowRightIcon, PhoneIcon } from "../components/icons";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL, SITE_URL } from "@/lib/site";
+import {
+  EMAIL,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  SITE_URL,
+  STREET_ADDRESS,
+  ADDRESS_LOCALITY,
+  ADDRESS_REGION,
+  POSTAL_CODE,
+  FULL_ADDRESS,
+  GBP_MAP_URL,
+} from "@/lib/site";
 import { ContactForm } from "./ContactForm";
 
 const TITLE = "Contact M Electric — Tulsa Electrician | (918) 992-6282";
@@ -68,6 +79,14 @@ const contactPageSchema = {
     url: SITE_URL,
     telephone: "+1-918-992-6282",
     email: EMAIL,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: STREET_ADDRESS,
+      addressLocality: ADDRESS_LOCALITY,
+      addressRegion: ADDRESS_REGION,
+      postalCode: POSTAL_CODE,
+      addressCountry: "US",
+    },
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -274,6 +293,16 @@ export default function ContactPage() {
             <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl sm:text-4xl tracking-tight text-white leading-tight">
               4.9 stars across 90+ Google reviews.
             </h2>
+            <address className="mt-4 not-italic text-sm text-neutral-400">
+              <a
+                href={GBP_MAP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                {FULL_ADDRESS}
+              </a>
+            </address>
           </div>
           <GbpMapEmbed />
         </div>

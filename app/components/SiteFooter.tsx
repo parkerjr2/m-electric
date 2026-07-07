@@ -6,6 +6,11 @@ import {
   SERVICE_AREAS,
   SITE_HOST,
   SITE_URL,
+  STREET_ADDRESS,
+  ADDRESS_LOCALITY,
+  ADDRESS_REGION,
+  POSTAL_CODE,
+  GBP_MAP_URL,
 } from "@/lib/site";
 
 const PROFILES = [
@@ -101,6 +106,17 @@ export function SiteFooter() {
             Contact
           </div>
           <ul className="mt-4 space-y-2 text-sm text-neutral-300">
+            <li>
+              <a
+                className="group inline-flex flex-col hover:text-white transition-colors duration-200 cursor-pointer not-italic"
+                href={GBP_MAP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>{STREET_ADDRESS}</span>
+                <span>{`${ADDRESS_LOCALITY}, ${ADDRESS_REGION} ${POSTAL_CODE}`}</span>
+              </a>
+            </li>
             <li>
               <a
                 className="hover:text-white transition-colors duration-200 cursor-pointer"
