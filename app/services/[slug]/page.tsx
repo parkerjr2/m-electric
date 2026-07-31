@@ -6,10 +6,6 @@ import {
   type ServiceContent,
 } from "../services-data";
 import { SITE_URL } from "@/lib/site";
-import {
-  reviewsForService,
-  type ReviewServiceTag,
-} from "@/lib/reviews";
 import { ServiceContentView } from "./ServiceContent";
 
 type RouteParams = { slug: string };
@@ -73,9 +69,6 @@ function buildSchema(service: ServiceContent) {
   const url = `${SITE_URL}/services/${service.slug}`;
   const businessId = `${SITE_URL}#business`;
 
-  const serviceTag = service.slug as ReviewServiceTag;
-  const serviceReviews = reviewsForService(serviceTag, 5);
-
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -95,24 +88,10 @@ function buildSchema(service: ServiceContent) {
       },
       geoRadius: SERVICE_RADIUS_METERS,
     },
-    // AggregateRating is intentionally NOT nested here — Google's rich-
-    // results spec disallows it on Service. The sitewide Electrician
-    // schema (app/layout.tsx) carries the rating on a valid parent.
-    ...(serviceReviews.length > 0
-      ? {
-          review: serviceReviews.map((r) => ({
-            "@type": "Review",
-            author: { "@type": "Person", name: r.author },
-            datePublished: r.datePublished,
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: r.rating,
-              bestRating: 5,
-            },
-            reviewBody: r.body,
-          })),
-        }
-      : {}),
+    // Neither aggregateRating NOR review is nested here — Google's rich-
+    // results spec disallows both on `Service` (parent-type is invalid for
+    // review snippets). The sitewide Electrician schema (app/layout.tsx)
+    // carries the rating and reviews on a valid LocalBusiness parent.
   };
 
 
