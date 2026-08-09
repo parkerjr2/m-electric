@@ -64,6 +64,13 @@ export default function AboutLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {children}
+      {/* RidgeQuote / PeakQuote side-tab lead widget (About page only). */}
+      <script
+        src="https://api.ridgequote.io/static/widget/peakquote-widget.js"
+        data-api-key="qm_hgPrIxHhr096YqjRG-AuB8K-2PblcQ20F_zW8cUHW2o"
+        data-style="side_tab"
+        defer
+      />
     </>
   );
 }
