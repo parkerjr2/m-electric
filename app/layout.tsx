@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Bebas_Neue } from "next/font/google";
 import "./globals.css";
-import { reviews, reviewStats } from "@/lib/reviews";
 import {
   STREET_ADDRESS,
   ADDRESS_LOCALITY,
@@ -9,13 +8,6 @@ import {
   POSTAL_CODE,
   GBP_MAP_URL,
 } from "@/lib/site";
-
-/**
- * Geographic centroid used for the `serviceArea` GeoCircle schema.
- * Tulsa, OK city center; ~30 mile radius covers all 16 service-area cities.
- */
-const TULSA_GEO = { latitude: 36.1539816, longitude: -95.992775 };
-const SERVICE_RADIUS_METERS = 48280; // ~30 miles
 
 /** Actual premises coordinates (8990 S Sheridan Rd, Suite B) — the business `geo`. */
 const BUSINESS_GEO = { latitude: 36.032358, longitude: -95.904307 };
@@ -88,7 +80,6 @@ const electricianSchema = {
   foundingDate: "1999",
   slogan: "Get Wired Up!",
   sameAs: SAME_AS,
-  dateModified: new Date().toISOString().slice(0, 10),
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "license",
@@ -164,34 +155,12 @@ const electricianSchema = {
     latitude: BUSINESS_GEO.latitude,
     longitude: BUSINESS_GEO.longitude,
   },
-  serviceArea: {
-    "@type": "GeoCircle",
-    geoMidpoint: {
-      "@type": "GeoCoordinates",
-      latitude: TULSA_GEO.latitude,
-      longitude: TULSA_GEO.longitude,
-    },
-    geoRadius: SERVICE_RADIUS_METERS,
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: reviewStats.ratingValue,
-    bestRating: reviewStats.bestRating,
-    worstRating: reviewStats.worstRating,
-    reviewCount: reviewStats.reviewCount,
-  },
-  review: reviews.slice(0, 12).map((r) => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: r.author },
-    datePublished: r.datePublished,
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: r.rating,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    reviewBody: r.body,
-  })),
+  // Coverage is expressed via the explicit areaServed city list above.
+  // aggregateRating/review are intentionally NOT included: Google does not
+  // grant review rich results for self-serving reviews on a business's own
+  // LocalBusiness/Organization markup. Testimonials remain visible on-page.
+  // Open 24 hours Monday–Saturday; closed Sunday (matches Google Business
+  // Profile). Sunday is intentionally omitted to signal "not open".
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -202,7 +171,6 @@ const electricianSchema = {
         "Thursday",
         "Friday",
         "Saturday",
-        "Sunday",
       ],
       opens: "00:00",
       closes: "23:59",

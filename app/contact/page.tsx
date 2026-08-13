@@ -94,6 +94,7 @@ const contactPageSchema = {
         contactType: "customer service",
         availableLanguage: ["English"],
         areaServed: "US-OK",
+        // Open 24 hours Mon–Sat; closed Sunday (matches Google Business Profile).
         hoursAvailable: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: [
@@ -103,7 +104,6 @@ const contactPageSchema = {
             "Thursday",
             "Friday",
             "Saturday",
-            "Sunday",
           ],
           opens: "00:00",
           closes: "23:59",
