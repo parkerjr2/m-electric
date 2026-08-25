@@ -75,19 +75,11 @@ export function HeroGeometric({
   primaryCta,
   secondaryCta,
 }: HeroGeometricProps) {
-  const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1] as const,
-      },
-    }),
-  };
-
+  // NOTE: Above-the-fold text renders statically (no opacity:0 entrance).
+  // framer-motion serializes `initial` into the SSR HTML, which was shipping
+  // the hero invisible and gating FCP/LCP on client hydration (LCP was 6.8s).
+  // The decorative ElegantShapes still animate — the hero stays lively without
+  // hiding the LCP content.
   return (
     <div className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden bg-[#030303]">
       {/* base wash */}
@@ -146,53 +138,27 @@ export function HeroGeometric({
       {/* foreground content */}
       <div className="relative z-10 container mx-auto px-4 md:px-6 py-24">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            custom={0}
-            variants={fadeUpVariants}
-            initial="hidden"
-            animate="visible"
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
-          >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12">
             <Circle className="h-2 w-2 fill-red-500/80 text-red-500/80" />
             <span className="text-sm text-white/60 tracking-wide">{badge}</span>
-          </motion.div>
+          </div>
 
-          <motion.div
-            custom={1}
-            variants={fadeUpVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <h1 className="font-[family-name:var(--font-display)] text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-6 md:mb-8 tracking-tight leading-[0.95]">
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                {title1}
-              </span>
-              <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-red-500 to-red-300">
-                {title2}
-              </span>
-            </h1>
-          </motion.div>
+          <h1 className="font-[family-name:var(--font-display)] text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-6 md:mb-8 tracking-tight leading-[0.95]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
+              {title1}
+            </span>
+            <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-red-500 to-red-300">
+              {title2}
+            </span>
+          </h1>
 
-          <motion.div
-            custom={2}
-            variants={fadeUpVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <p className="text-base sm:text-lg md:text-xl text-white/65 mb-10 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
-              {linkify(subtitle, { currentPath: "/" })}
-            </p>
-          </motion.div>
+          <p className="text-base sm:text-lg md:text-xl text-white/65 mb-10 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
+            {linkify(subtitle, { currentPath: "/" })}
+          </p>
 
           {(primaryCta || secondaryCta) && (
-            <motion.div
-              custom={3}
-              variants={fadeUpVariants}
-              initial="hidden"
-              animate="visible"
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            >
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               {primaryCta && (
                 <a
                   href={primaryCta.href}
@@ -209,7 +175,7 @@ export function HeroGeometric({
                   {secondaryCta.label}
                 </a>
               )}
-            </motion.div>
+            </div>
           )}
         </div>
       </div>

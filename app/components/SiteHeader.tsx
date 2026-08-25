@@ -119,6 +119,7 @@ export function SiteHeader({ active }: { active?: string }) {
             </button>
             <a
               href={`tel:${PHONE_TEL}`}
+              aria-label={`Call M Electric at ${PHONE_DISPLAY}`}
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-semibold px-4 py-2.5 rounded-md transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400"
             >
               <PhoneIcon className="size-4" />

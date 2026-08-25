@@ -283,6 +283,7 @@ export function AreaContentView({
                 >
                   <div
                     className="flex gap-1 text-red-500"
+                    role="img"
                     aria-label={`${r.rating} out of 5 stars`}
                   >
                     {[...Array(r.rating)].map((_, idx) => (

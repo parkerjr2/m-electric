@@ -500,7 +500,7 @@ export default function Home() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="bg-neutral-950 border border-neutral-800 rounded-lg p-7"
             >
-              <div className="flex gap-1 text-red-500" aria-label="5 out of 5 stars">
+              <div className="flex gap-1 text-red-500" role="img" aria-label="5 out of 5 stars">
                 {[...Array(5)].map((_, idx) => (
                   <StarIcon key={idx} className="size-4" />
                 ))}
@@ -511,9 +511,9 @@ export default function Home() {
               <figcaption className="mt-6 text-sm">
                 <div>
                   <span className="text-white font-semibold">{t.name}</span>
-                  <span className="text-neutral-500"> · {t.location}</span>
+                  <span className="text-neutral-400"> · {t.location}</span>
                 </div>
-                <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-neutral-500">
+                <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-neutral-400">
                   <GoogleGIcon className="size-3.5" />
                   <span>{t.sourceLabel}</span>
                 </div>

@@ -19,6 +19,7 @@ export function GbpMapEmbed({ className }: { className?: string }) {
           src={mapSrc}
           title="M Electric, LLC on Google Maps — Tulsa, Oklahoma electrician"
           referrerPolicy="no-referrer-when-downgrade"
+          loading="lazy"
           allowFullScreen
           className="absolute inset-0 size-full"
         />

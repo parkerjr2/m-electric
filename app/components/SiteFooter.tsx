@@ -64,37 +64,37 @@ export function SiteFooter() {
           <p className="mt-3 text-xs uppercase tracking-widest text-red-400 font-semibold">
             Licensed · Bonded · Insured · OK Lic #87288
           </p>
-          <p className="mt-3 text-xs text-neutral-500 italic">
+          <p className="mt-3 text-xs text-neutral-400 italic">
             &ldquo;Get Wired Up!&rdquo;
           </p>
-          <div className="mt-5 flex flex-col gap-1 text-xs">
+          <div className="mt-5 flex flex-col gap-2 text-xs">
             <Link
               href="/about"
-              className="text-neutral-400 hover:text-white transition-colors"
+              className="inline-block py-1 text-neutral-400 hover:text-white transition-colors"
             >
               About M Electric
             </Link>
             <Link
               href="/job-gallery"
-              className="text-neutral-400 hover:text-white transition-colors"
+              className="inline-block py-1 text-neutral-400 hover:text-white transition-colors"
             >
               Job Gallery
             </Link>
             <Link
               href="/blog"
-              className="text-neutral-400 hover:text-white transition-colors"
+              className="inline-block py-1 text-neutral-400 hover:text-white transition-colors"
             >
               Blog
             </Link>
             <Link
               href="/contact"
-              className="text-neutral-400 hover:text-white transition-colors"
+              className="inline-block py-1 text-neutral-400 hover:text-white transition-colors"
             >
               Contact
             </Link>
             <a
               href={`tel:${PHONE_TEL}`}
-              className="text-red-500 hover:text-red-400 font-semibold transition-colors"
+              className="inline-block py-1 text-red-500 hover:text-red-400 font-semibold transition-colors"
             >
               24/7 Emergency Dispatch
             </a>
@@ -102,7 +102,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <div className="text-xs uppercase tracking-widest text-neutral-500">
+          <div className="text-xs uppercase tracking-widest text-neutral-400">
             Contact
           </div>
           <ul className="mt-4 space-y-2 text-sm text-neutral-300">
@@ -149,7 +149,7 @@ export function SiteFooter() {
         <div>
           <Link
             href="/service-areas"
-            className="text-xs uppercase tracking-widest text-neutral-500 hover:text-white transition-colors"
+            className="text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors"
           >
             Service Area →
           </Link>
@@ -170,7 +170,7 @@ export function SiteFooter() {
         <div>
           <Link
             href="/services"
-            className="text-xs uppercase tracking-widest text-neutral-500 hover:text-white transition-colors"
+            className="text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors"
           >
             Services →
           </Link>
@@ -190,8 +190,8 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-neutral-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-neutral-500">
-          <span className="uppercase tracking-widest text-neutral-600">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-neutral-400">
+          <span className="uppercase tracking-widest text-neutral-400">
             Verified on
           </span>
           {PROFILES.map((p) => (
@@ -216,7 +216,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-neutral-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-500">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-400">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <span>
               © {new Date().getFullYear()} M Electric, LLC. All rights
