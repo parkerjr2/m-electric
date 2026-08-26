@@ -3518,6 +3518,570 @@ export const posts: PostContent[] = [
       "is-whole-home-surge-protection-worth-it-tulsa",
     ],
   },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "electrical-red-flags-buying-older-home-tulsa",
+    title: "Electrical Red Flags to Check Before Buying an Older Home in Tulsa",
+    metaTitle: "Electrical Red Flags Before Buying an Older Tulsa Home",
+    metaDescription:
+      "Buying an older home in Tulsa? Learn the electrical warning signs to check before closing, from outdated panels to old wiring.",
+    excerpt:
+      "Buying an older home in Tulsa? From outdated panels and two-prong outlets to old wiring and missing GFCI protection, here are the electrical red flags to check before you close — and what a general home inspection can miss.",
+    pillar: "older-home",
+    datePublished: "2026-08-26",
+    dateModified: "2026-08-26",
+    author: "marshall-morgan",
+    heroImageId: "photo-1570129477492-45c003edd2be",
+    heroImageAlt:
+      "Older home with a wraparound porch and mature trees — the kind of characterful Tulsa property that deserves an electrical inspection before buying",
+    wordCount: 2900,
+    body: [
+      {
+        kind: "paragraph",
+        body: "Older Tulsa homes have character that newer homes often can't match: mature neighborhoods, established trees, original woodwork, historic layouts, and locations close to Brookside, Cherry Street, Maple Ridge, Swan Lake, Midtown, and downtown.",
+      },
+      {
+        kind: "paragraph",
+        body: "But older homes can also come with older electrical systems.",
+      },
+      {
+        kind: "paragraph",
+        body: "That doesn't mean you should avoid buying one. It means you should know what to look for **before you close**, before you remodel, and before you plug modern appliances, home offices, EV chargers, smart devices, and HVAC equipment into a system that may not have been designed for today's electrical demand.",
+      },
+      {
+        kind: "paragraph",
+        body: "We regularly work on older Tulsa homes — rewiring, panel upgrades, outlet repair, lighting modernization, and electrical troubleshooting in neighborhoods like Maple Ridge, Yorktown, Swan Lake, Brookside, and Cherry Street. If you're buying an older home in Tulsa, here are the electrical red flags to check before you make a final decision.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title:
+          "Quick Answer: What Electrical Issues Should You Check Before Buying an Older Tulsa Home?",
+        body: "Before buying an older home in Tulsa, pay close attention to the **electrical panel**, outlet condition, grounding, visible wiring, breaker behavior, signs of DIY work, and whether the home has enough capacity for your modern needs.\n\nThe [Electrical Safety Foundation International](https://www.esfi.org) recommends electrical inspections for homes older than 40 years, and warns that older homes can be overburdened by modern appliances and devices.\n\nBuying an older Tulsa home? [Schedule an electrical inspection with M Electric](/contact) before closing, before remodeling, or before assuming the electrical system is ready for your plans.",
+        jumpLinks: [
+          { label: "Why a closer look", toId: "why-closer-look" },
+          { label: "Outdated panel", toId: "red-flag-panel" },
+          { label: "Old wiring", toId: "red-flag-wiring" },
+          { label: "Buyer checklist", toId: "buyer-checklist" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "The biggest red flags include:",
+        bullets: [
+          "Old fuse boxes or outdated electrical panels",
+          "Breakers that trip often",
+          "Two-prong outlets, or ungrounded three-prong outlets",
+          "Warm, loose, dead, or discolored outlets",
+          "Flickering lights",
+          "Extension cords used as permanent wiring",
+          "Exposed wiring or messy junction boxes",
+          "Old knob-and-tube or aluminum wiring",
+          "Water near electrical equipment",
+          "No GFCI protection in kitchens, bathrooms, garages, laundry rooms, or outdoor areas",
+          "Panel capacity that may not support HVAC, EV chargers, generators, or remodel plans",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Why Older Tulsa Homes Deserve a Closer Electrical Look",
+        id: "why-closer-look",
+      },
+      {
+        kind: "paragraph",
+        body: "Many older homes were built for a very different electrical lifestyle. A house that originally powered basic lighting, a refrigerator, and a few appliances may now be expected to support central HVAC, large kitchen appliances, multiple TVs, computers, Wi-Fi systems, security cameras, smart switches, EV charging, and backup generator equipment.",
+      },
+      {
+        kind: "paragraph",
+        body: "ESFI notes that the increased energy demand from modern appliances and devices can overburden older electrical systems, creating fire and shock risks. For Tulsa buyers, this matters because a general home inspection may flag obvious issues but may not fully explain what the electrical system can safely support after you move in.",
+      },
+      {
+        kind: "bullets",
+        lead: "That's especially important if you plan to:",
+        bullets: [
+          "Remodel the kitchen or a bathroom",
+          "Finish a garage or attic",
+          "Add outdoor lighting",
+          "Install a Level 2 EV charger",
+          "Add a standby generator",
+          "Upgrade HVAC equipment",
+          "Add a hot tub, pool equipment, or workshop",
+          "Convert rooms into offices",
+          "Replace old outlets and switches",
+          "Add smart-home devices",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Before you buy, it's worth having a licensed electrician evaluate the system so you know whether you're dealing with minor [electrical repairs](/services/electrical-repair), a [panel upgrade](/services/panel-upgrades), partial [rewiring](/services/home-rewiring), or a larger modernization project.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #1: An Outdated Electrical Panel or Fuse Box",
+        id: "red-flag-panel",
+      },
+      {
+        kind: "paragraph",
+        body: "The electrical panel is one of the first things to check in an older home. It controls how power is distributed throughout the house, and it gives clues about the age, capacity, and condition of the electrical system.",
+      },
+      {
+        kind: "image",
+        src: "photo-1758101755915-462eddc23f57",
+        alt: "Older electrical panel in a Tulsa home being evaluated before purchase",
+        caption:
+          "The panel is one of the first places to look for capacity and safety concerns.",
+      },
+      { kind: "h3", text: "What to look for" },
+      {
+        kind: "paragraph",
+        body: "You don't need to remove the panel cover — in fact, you shouldn't. But from the outside, you can look for warning signs.",
+      },
+      {
+        kind: "bullets",
+        bullets: [
+          "A fuse box instead of a breaker panel",
+          "Rust or corrosion",
+          "Missing panel labels",
+          "Scorch marks",
+          "Buzzing sounds",
+          "A warm or hot panel surface",
+          "Breakers that appear crowded",
+          "A panel with no room for future circuits",
+          "Evidence of amateur modifications",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "An outdated panel may not have enough capacity for modern electrical loads. Across older Tulsa neighborhoods, we still find systems from very different eras — including knob-and-tube or aluminum wiring and undersized 60–100 amp panels in mid-century homes. A panel may need to be repaired, replaced, or [upgraded](/services/panel-upgrades) if it can't safely support the home's current and future electrical needs.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #2: Breakers That Trip Often",
+        id: "red-flag-breakers",
+      },
+      {
+        kind: "paragraph",
+        body: "A breaker that trips once may be doing its job. A breaker that trips repeatedly is a warning sign.",
+      },
+      { kind: "h3", text: "Ask the seller or inspector" },
+      {
+        kind: "bullets",
+        lead: "Ask whether the home has a history of:",
+        bullets: [
+          "Breakers tripping when the AC runs",
+          "Kitchen circuits tripping",
+          "Bathroom outlets losing power",
+          "Garage or outdoor outlets failing",
+          "Lights flickering when appliances start",
+          "Circuits that “just do that sometimes”",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "Repeated breaker trips can point to overloaded circuits, damaged wiring, failing breakers, moisture problems, or a panel that isn't keeping up with the home's demand. Don't accept “just reset it” as the final answer — a breaker trips for a reason, and it's worth an [electrical repair](/services/electrical-repair) diagnosis.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #3: Two-Prong or Ungrounded Outlets",
+        id: "red-flag-grounding",
+      },
+      {
+        kind: "paragraph",
+        body: "Two-prong outlets are common in older homes, but they're a clue that the wiring may be outdated or ungrounded.",
+      },
+      { kind: "h3", text: "What to look for" },
+      {
+        kind: "bullets",
+        lead: "Walk through the home and check for:",
+        bullets: [
+          "Two-prong outlets",
+          "Three-prong outlets in rooms that otherwise look older",
+          "Missing GFCI protection near water",
+          "Loose outlets that don't hold plugs tightly",
+          "Extension cords used because there aren't enough outlets",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "A three-prong outlet doesn't automatically mean the circuit is grounded. Sometimes older outlets are swapped for three-prong versions without ever correcting the underlying grounding issue.",
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "Grounding helps protect people and equipment. ESFI advises that proper grounding and ground-fault protection are important, especially where water and electricity can come into contact. If you're buying an older Tulsa home, have an electrician verify whether outlets are properly grounded instead of assuming they're safe based on appearance — [wiring repair](/services/wiring-repair) is often straightforward once the problem is confirmed.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #4: Warm, Loose, Dead, or Discolored Outlets",
+        id: "red-flag-outlets",
+      },
+      {
+        kind: "paragraph",
+        body: "Outlet problems are easy to overlook during a showing, but they can tell you a lot about the home's electrical health.",
+      },
+      { kind: "h3", text: "Warning signs" },
+      {
+        kind: "bullets",
+        lead: "Pay attention to outlets that are:",
+        bullets: [
+          "Warm to the touch",
+          "Loose in the wall",
+          "Dead",
+          "Sparking or buzzing",
+          "Discolored or cracked",
+          "Missing covers",
+          "Holding plugs loosely",
+          "Located near water without GFCI protection",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "Discolored or warm outlet covers are one of the clearest warning signs we call out in older homes. The fix may be simple, or it may point to loose connections, worn devices, damaged wiring, overloaded circuits, or unsafe DIY work — all worth an [electrical repair](/services/electrical-repair) visit before you rely on them.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #5: Flickering Lights or Dimming When Appliances Start",
+        id: "red-flag-flickering",
+      },
+      {
+        kind: "paragraph",
+        body: "Flickering lights aren't always caused by bad bulbs or “old house charm.” Sometimes they're signs of a loose connection, an overloaded circuit, a panel problem, a utility issue, or old wiring.",
+      },
+      { kind: "h3", text: "When flickering is more concerning" },
+      {
+        kind: "bullets",
+        lead: "Be especially cautious if:",
+        bullets: [
+          "Lights dim when the AC starts",
+          "Lights flicker across multiple rooms",
+          "Flickering happens with several appliances",
+          "Bulbs burn out quickly",
+          "Flickering comes with buzzing, burning smells, or breaker trips",
+          "The seller says “it has always done that”",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "A little momentary dimming can happen when large equipment starts, but recurring flickering should be evaluated before you buy. ESFI identifies flickering and dimming as warning signs of overloaded systems and wiring problems that homeowners should take seriously — and it's a common reason for an [electrical repair](/services/electrical-repair) call.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #6: Old Wiring Types or Visible Wiring Problems",
+        id: "red-flag-wiring",
+      },
+      {
+        kind: "paragraph",
+        body: "Some older wiring may still be functioning, but that doesn't mean it's ideal for modern use.",
+      },
+      { kind: "h3", text: "Wiring concerns to ask about" },
+      {
+        kind: "bullets",
+        lead: "Ask whether the home has, or has ever had:",
+        bullets: [
+          "Knob-and-tube wiring",
+          "Aluminum branch-circuit wiring",
+          "Cloth-insulated wiring",
+          "DIY splices",
+          "Open junction boxes",
+          "Exposed or unlabeled wiring",
+          "Wiring added during past remodels",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "Depending on era and neighborhood, older Tulsa homes can include knob-and-tube and aluminum wiring. Old wiring may affect safety, insurability, remodel plans, grounding, and outlet upgrades — and the cost of future work. A licensed electrician can help determine whether the home needs targeted wiring repair or a more complete [home rewiring](/services/home-rewiring) plan.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #7: Signs of DIY Electrical Work",
+        id: "red-flag-diy",
+      },
+      {
+        kind: "paragraph",
+        body: "Older homes often go through decades of homeowner projects, handyman repairs, remodels, and additions. Some are done well. Others are not.",
+      },
+      { kind: "h3", text: "What DIY electrical work may look like" },
+      {
+        kind: "bullets",
+        lead: "Watch for:",
+        bullets: [
+          "Random switches that don't control anything",
+          "Extension cords routed through walls or floors",
+          "Exposed junction boxes",
+          "Loose outlets or switches",
+          "Mismatched wiring",
+          "Breakers labeled incorrectly",
+          "Lights or outlets added in strange locations",
+          "Outdoor wiring that doesn't look weather-rated",
+          "Garage or shed wiring that looks improvised",
+          "Tape-heavy repairs",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "DIY electrical work can create hidden risk. The [City of Tulsa](https://www.cityoftulsa.org/government/departments/development-services/permits-and-inspections/) allows only licensed tradespeople to apply for trade permits, and its Development Services department issues electrical permits to help ensure work complies with public health and safety codes. If the home has had major electrical work, ask whether it was permitted and inspected.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #8: No GFCI Protection Where Water Is Present",
+        id: "red-flag-gfci",
+      },
+      {
+        kind: "paragraph",
+        body: "GFCI protection is especially important where electricity and water may come into contact.",
+      },
+      { kind: "h3", text: "Common areas to check" },
+      {
+        kind: "bullets",
+        lead: "Look for GFCI outlets or protection in:",
+        bullets: [
+          "Bathrooms",
+          "Kitchens",
+          "Laundry rooms",
+          "Garages",
+          "Exterior outlets",
+          "Unfinished basements or crawlspace-adjacent areas",
+          "Wet bars",
+          "Pool or hot tub areas",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "GFCI protection helps reduce shock risk, and ESFI emphasizes proper ground-fault protection anywhere water and electricity can meet. A missing GFCI may be a simple upgrade, but in an older home it can also reveal broader wiring and grounding issues — which is why [outlet installation and repair](/services/outlet-installation) is a common first project after closing.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #9: Extension Cords Used as Permanent Solutions",
+        id: "red-flag-extension-cords",
+      },
+      {
+        kind: "paragraph",
+        body: "A home that relies on extension cords is telling you something: it probably doesn't have enough outlets where people actually live and work.",
+      },
+      { kind: "h3", text: "What to look for" },
+      {
+        kind: "bullets",
+        lead: "During the showing, look for:",
+        bullets: [
+          "Extension cords behind furniture",
+          "Power strips powering multiple high-demand devices",
+          "Cords running under rugs",
+          "Cords used for window AC units",
+          "Plug adapters on two-prong outlets",
+          "Overloaded outlets in offices, bedrooms, or entertainment areas",
+        ],
+      },
+      { kind: "h3", text: "Why it matters" },
+      {
+        kind: "paragraph",
+        body: "Extension cords are temporary tools, not permanent wiring. A lack of outlets may mean the home needs additional circuits, outlet upgrades, or wiring improvements to support modern life safely — the kind of [electrical repair](/services/electrical-repair) that's far cheaper to plan for before you buy.",
+      },
+
+      {
+        kind: "h2",
+        text: "Red Flag #10: The Home Can't Support Your Future Plans",
+        id: "red-flag-capacity",
+      },
+      {
+        kind: "paragraph",
+        body: "A home may seem fine during the showing, but your plans could change the electrical picture entirely.",
+      },
+      { kind: "h3", text: "Think beyond move-in day" },
+      {
+        kind: "bullets",
+        lead: "Before buying, ask whether the electrical system can support:",
+        bullets: [
+          "A kitchen or bathroom remodel",
+          "A home office",
+          "A detached shop",
+          "Outdoor lighting",
+          "A hot tub or pool equipment",
+          "A Level 2 EV charger",
+          "A standby generator",
+          "New HVAC equipment",
+          "Additional appliances and smart-home upgrades",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "We offer [EV charger installation](/services/ev-charger-installation), [standby generator installation](/services/generator-installation), [panel upgrades](/services/panel-upgrades), rewiring, outlet repair, and lighting across Tulsa. Larger projects like panel upgrades, whole-home rewires, and generator installs usually call for a more in-depth estimate visit — so it helps to scope them before you commit to the house.",
+      },
+
+      {
+        kind: "h2",
+        text: "What a General Home Inspection May Not Tell You",
+        id: "general-inspection",
+      },
+      {
+        kind: "paragraph",
+        body: "A general home inspection is valuable, but it isn't the same as a focused electrical evaluation by a licensed electrician. An inspector may flag visible concerns; an electrician can go deeper.",
+      },
+      {
+        kind: "bullets",
+        lead: "A licensed electrician can assess:",
+        bullets: [
+          "Panel condition and circuit capacity",
+          "Wiring condition",
+          "Grounding and bonding concerns",
+          "GFCI and AFCI protection",
+          "Signs of unsafe modifications",
+          "Capacity for future upgrades",
+          "Whether specific repairs should happen before or after closing",
+          "Whether a panel upgrade or rewiring should be budgeted",
+        ],
+      },
+      {
+        kind: "callout",
+        variant: "tip",
+        body: "If your inspection report mentions the panel, outlets, grounding, wiring, GFCI protection, or recommends “further evaluation by a licensed electrician,” [have M Electric review the electrical concerns](/contact) before closing.",
+      },
+
+      {
+        kind: "h2",
+        text: "Should You Ask for Electrical Repairs Before Closing?",
+        id: "repairs-before-closing",
+      },
+      {
+        kind: "paragraph",
+        body: "Sometimes yes. Sometimes it's better to ask for a credit and choose your own electrician after closing. The right answer depends on the issue, the seller, the timeline, and the severity of the problem.",
+      },
+      { kind: "h3", text: "Issues that may justify further negotiation" },
+      {
+        kind: "bullets",
+        bullets: [
+          "Unsafe panel condition",
+          "An active burning smell or overheating",
+          "Repeated breaker trips",
+          "Exposed wiring or missing junction-box covers",
+          "Unsafe DIY work",
+          "No GFCI protection in key areas",
+          "Old wiring that may require replacement",
+          "A panel that can't support planned use",
+          "Electrical work completed without evidence of permits",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "An [electrical estimate](/contact) gives you a clearer picture of whether you're looking at a small repair, a moderate correction, or a major expense after closing — which is exactly the leverage you want during the inspection period.",
+      },
+
+      {
+        kind: "h2",
+        text: "What to Ask Before Buying an Older Home in Tulsa",
+        id: "buyer-checklist",
+      },
+      {
+        kind: "bullets",
+        lead: "Use this checklist during the inspection period:",
+        bullets: [
+          "Has the panel ever been upgraded?",
+          "What is the electrical service size?",
+          "Are there any known breaker issues?",
+          "Are outlets grounded? Are there two-prong outlets?",
+          "Has any rewiring been done — and was past electrical work permitted?",
+          "Are there GFCI outlets in wet areas?",
+          "Are there any known flickering-light issues?",
+          "Has the home had storm-related electrical damage?",
+          "Is there room for new circuits?",
+          "Can the panel support an EV charger, generator, or remodel?",
+          "Did the inspection report recommend an electrician?",
+          "Are there visible signs of DIY electrical work?",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "The Bottom Line: Don't Let Electrical Surprises Show Up After Closing",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "An older Tulsa home can be a great purchase. But before you buy, make sure the electrical system isn't hiding expensive or unsafe surprises.",
+      },
+      {
+        kind: "paragraph",
+        body: "The most important red flags are outdated panels, repeated breaker trips, warm or discolored outlets, ungrounded circuits, old wiring, DIY electrical work, missing GFCI protection, and a system that can't support your future plans. A focused electrical inspection helps you understand what's urgent, what can wait, and what should be budgeted before you commit.",
+      },
+      {
+        kind: "callout",
+        variant: "tip",
+        title: "Buying an older home in Tulsa?",
+        body: "[Contact M Electric](/contact) to schedule an electrical inspection, panel evaluation, or repair estimate before closing.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Should I get an electrical inspection before buying an older home in Tulsa?",
+        a: "Yes. It's a smart idea, especially if the home is more than 40 years old, has an outdated panel, two-prong outlets, flickering lights, visible DIY work, or an inspection report that recommends further electrical evaluation. ESFI recommends electrical inspections for homes older than 40 years.",
+      },
+      {
+        q: "What are the biggest electrical red flags in an older home?",
+        a: "The biggest red flags include old fuse boxes, outdated panels, repeated breaker trips, warm or discolored outlets, two-prong outlets, ungrounded wiring, exposed wiring, missing GFCI protection, buzzing panels, burning smells, and signs of DIY electrical work.",
+      },
+      {
+        q: "Are two-prong outlets a problem?",
+        a: "Two-prong outlets are common in older homes, but they may indicate ungrounded wiring. They should be evaluated by a licensed electrician, especially if the home has sensitive electronics, modern appliances, or planned upgrades.",
+      },
+      {
+        q: "Can an older electrical panel still be safe?",
+        a: "Possibly, but it depends on the panel's condition, capacity, wiring, grounding, and the home's electrical demand. An electrician can determine whether it is safe, needs repair, or should be upgraded.",
+      },
+      {
+        q: "Should I ask the seller to fix electrical issues before closing?",
+        a: "It depends on the issue. Serious safety concerns may need to be corrected before closing, while other items may be better handled through a credit or negotiated repair allowance. Get an electrician's estimate so you understand the real scope.",
+      },
+      {
+        q: "Does old wiring always mean the house needs to be rewired?",
+        a: "No. Some homes need targeted repairs, while others may need more extensive rewiring. The answer depends on the wiring type, condition, grounding, modifications, and how you plan to use the home.",
+      },
+      {
+        q: "What electrical upgrades are common after buying an older Tulsa home?",
+        a: "Common upgrades include panel upgrades, GFCI outlet installation, grounded outlets, rewiring, added circuits, lighting upgrades, EV charger circuits, surge protection, generator preparation, and outlet or switch repair.",
+      },
+      {
+        q: "Who should inspect electrical concerns after a home inspection?",
+        a: "If the inspection report flags electrical concerns, have a licensed electrician evaluate them. A general home inspection is useful, but an electrician can provide a more detailed diagnosis and estimate.",
+      },
+    ],
+    sources: [
+      {
+        label: "Electrical Safety Foundation International (ESFI)",
+        url: "https://www.esfi.org",
+      },
+      {
+        label: "ESFI — Home Electrical Safety",
+        url: "https://www.esfi.org/resource/home-electrical-safety/",
+      },
+      {
+        label: "City of Tulsa — Permits and Inspections",
+        url: "https://www.cityoftulsa.org/government/departments/development-services/permits-and-inspections/",
+      },
+    ],
+    related: [
+      "signs-you-need-electrical-panel-upgrade-tulsa",
+      "is-whole-home-surge-protection-worth-it-tulsa",
+      "plan-ev-charger-installation-tulsa",
+    ],
+  },
 ];
 
 export const postsBySlug = new Map(posts.map((p) => [p.slug, p]));
