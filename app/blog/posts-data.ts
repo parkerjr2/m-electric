@@ -37,7 +37,8 @@ export type PostSection =
         | "SurgeProtectionCoverage"
         | "PanelUpgradeWarningSigns"
         | "AcBreakerCallChart"
-        | "EvChargerPlanChecklist";
+        | "EvChargerPlanChecklist"
+        | "OlderHomeRedFlags";
       caption?: string;
     }
   | { kind: "image"; src: string; alt: string; caption?: string };
@@ -3568,21 +3569,10 @@ export const posts: PostContent[] = [
         ],
       },
       {
-        kind: "bullets",
-        lead: "The biggest red flags include:",
-        bullets: [
-          "Old fuse boxes or outdated electrical panels",
-          "Breakers that trip often",
-          "Two-prong outlets, or ungrounded three-prong outlets",
-          "Warm, loose, dead, or discolored outlets",
-          "Flickering lights",
-          "Extension cords used as permanent wiring",
-          "Exposed wiring or messy junction boxes",
-          "Old knob-and-tube or aluminum wiring",
-          "Water near electrical equipment",
-          "No GFCI protection in kitchens, bathrooms, garages, laundry rooms, or outdoor areas",
-          "Panel capacity that may not support HVAC, EV chargers, generators, or remodel plans",
-        ],
+        kind: "embed",
+        component: "OlderHomeRedFlags",
+        caption:
+          "The 10 electrical red flags to check before buying an older Tulsa home.",
       },
 
       {

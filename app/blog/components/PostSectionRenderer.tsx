@@ -8,6 +8,7 @@ import { SurgeProtectionCoverage } from "./SurgeProtectionCoverage";
 import { PanelUpgradeWarningSigns } from "./PanelUpgradeWarningSigns";
 import { AcBreakerCallChart } from "./AcBreakerCallChart";
 import { EvChargerPlanChecklist } from "./EvChargerPlanChecklist";
+import { OlderHomeRedFlags } from "./OlderHomeRedFlags";
 
 /**
  * Maps `embed.component` string keys to actual React components. Keeping the
@@ -21,6 +22,7 @@ const EMBEDS = {
   PanelUpgradeWarningSigns,
   AcBreakerCallChart,
   EvChargerPlanChecklist,
+  OlderHomeRedFlags,
 } as const;
 
 const UNSPLASH = (id: string, w = 1600, q = 80) =>
