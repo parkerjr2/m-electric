@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/roof-report" },
+  // Standalone landing page — kept out of search and unlinked from the site.
+  robots: { index: false, follow: false },
   openGraph: {
     type: "website",
     title: TITLE,
@@ -229,7 +231,7 @@ export default function RoofReportPage() {
                   "Pulled-away or crushed meter bases",
                   "Storm-tripped or water-damaged panels",
                   "Partial power after the storm",
-                  "Whole-home surge protection",
+                  "Surge damage to electronics and appliances",
                 ].map((item) => (
                   <li key={item} className="flex gap-3">
                     <span
