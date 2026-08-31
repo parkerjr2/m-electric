@@ -38,7 +38,8 @@ export type PostSection =
         | "PanelUpgradeWarningSigns"
         | "AcBreakerCallChart"
         | "EvChargerPlanChecklist"
-        | "OlderHomeRedFlags";
+        | "OlderHomeRedFlags"
+        | "OutletSwitchTriage";
       caption?: string;
     }
   | { kind: "image"; src: string; alt: string; caption?: string };
@@ -4070,6 +4071,554 @@ export const posts: PostContent[] = [
       "signs-you-need-electrical-panel-upgrade-tulsa",
       "is-whole-home-surge-protection-worth-it-tulsa",
       "plan-ev-charger-installation-tulsa",
+    ],
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "outlet-switch-problems-older-tulsa-homes",
+    title: "The Most Common Outlet and Switch Problems in Older Tulsa Homes",
+    metaTitle: "Outlet & Switch Problems in Older Tulsa Homes",
+    metaDescription:
+      "Loose outlet? Warm switch? GFCI won’t reset? Learn which outlet and switch problems older Tulsa homeowners should not ignore.",
+    excerpt:
+      "Loose outlets, warm switches, dead receptacles, GFCIs that won’t reset — in an older Tulsa home, small outlet and switch problems can be the first sign of a bigger wiring, grounding, or panel issue. Here are 11 to watch, what’s safe to check, and when to call an electrician.",
+    pillar: "older-home",
+    datePublished: "2026-08-31",
+    dateModified: "2026-08-31",
+    author: "marshall-morgan",
+    heroImageId: "photo-1621905251189-08b45d6a269e",
+    heroImageAlt:
+      "Electrician in gloves troubleshooting a wall outlet box in an older Tulsa home",
+    wordCount: 3200,
+    body: [
+      {
+        kind: "paragraph",
+        body: "Older Tulsa homes have a lot of character — original layouts, mature neighborhoods, established trees, and the kind of construction you don't always see in newer subdivisions.",
+      },
+      {
+        kind: "paragraph",
+        body: "But older homes can also have older electrical systems. That often shows up in small ways first: a loose outlet, a switch that buzzes, a GFCI that won't reset, a two-prong outlet in a bedroom, or a light that flickers when something else turns on. Those problems may seem minor, but they can point to bigger issues behind the wall.",
+      },
+      {
+        kind: "paragraph",
+        body: "M Electric provides [electrical repair](/services/electrical-repair) throughout Greater Tulsa — including [outlet installation and repair](/services/outlet-installation), [wiring repair](/services/wiring-repair), [panel upgrades](/services/panel-upgrades), and troubleshooting for homes across [Tulsa](/service-areas/tulsa), [Broken Arrow](/service-areas/broken-arrow), [Owasso](/service-areas/owasso), [Bixby](/service-areas/bixby), [Jenks](/service-areas/jenks), and [Sapulpa](/service-areas/sapulpa). If you live in an older Tulsa home, here are the outlet and switch problems you should not ignore.",
+      },
+      {
+        kind: "callout",
+        variant: "quick-answer",
+        title:
+          "Quick Answer: Which Outlet and Switch Problems Should Tulsa Homeowners Take Seriously?",
+        body: "Call a licensed electrician if an outlet or switch is **warm, discolored, buzzing, sparking, loose, dead, repeatedly tripping a GFCI, giving a shock or tingle, or showing signs of burning.**\n\nThe [Electrical Safety Foundation International](https://www.esfi.org) warns that flickering or dimming lights, burning smells, discolored switches, warm outlets, and mild shocks or tingles can be signs of serious wiring problems.\n\nIf an outlet feels warm, a switch buzzes, or a GFCI keeps tripping, [schedule electrical repair with M Electric](/services/electrical-repair) before the problem gets worse.",
+        jumpLinks: [
+          { label: "Why so common", toId: "why-common" },
+          { label: "GFCI won’t reset", toId: "problem-gfci-reset" },
+          { label: "Two-prong outlets", toId: "problem-two-prong" },
+          { label: "Safe checks", toId: "safe-checks" },
+          { label: "FAQ", toId: "faq" },
+        ],
+      },
+      {
+        kind: "embed",
+        component: "OutletSwitchTriage",
+        caption:
+          "Outlet or switch problem? A quick triage of what to stop using, what to schedule, and what to simply watch.",
+      },
+      {
+        kind: "bullets",
+        lead: "You should also have an electrician evaluate:",
+        bullets: [
+          "Two-prong outlets, or ungrounded three-prong outlets",
+          "GFCIs that won't reset",
+          "Outlets that no longer hold plugs tightly",
+          "Switches that crackle or pop",
+          "Extension cords used as permanent wiring",
+          "Outdoor outlets without proper protection",
+          "Older wiring behind outlets and switches",
+          "Any outlet or switch problem that started after a storm, outage, remodel, or water leak",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Why Outlet and Switch Problems Are Common in Older Tulsa Homes",
+        id: "why-common",
+      },
+      {
+        kind: "paragraph",
+        body: "A lot has changed since many older Tulsa homes were built. Homes that once powered lamps, radios, a refrigerator, and a few appliances now support computers, routers, smart TVs, security systems, chargers, air fryers, microwaves, HVAC equipment, home offices, EV chargers, and smart-home devices. That extra demand matters.",
+      },
+      {
+        kind: "paragraph",
+        body: "Older electrical systems can become overburdened by modern appliances and devices, which can increase shock and fire risks — ESFI specifically warns that older homes may not be prepared for today's electrical loads. That doesn't mean every old outlet requires a full rewire. But it does mean outlet and switch problems deserve attention, especially if the home has outdated wiring, an older panel, past DIY work, or limited circuits. When the wiring itself is the issue, [home rewiring](/services/home-rewiring) may be part of the fix.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #1: Loose Outlets",
+        id: "problem-loose",
+      },
+      {
+        kind: "paragraph",
+        body: "A loose outlet is one of the most common problems in older homes. Sometimes the outlet moves when you plug something in; other times, plugs fall out easily or never seat firmly. It can mean the outlet device is worn, the box isn't secure, the connection is weak, or the wiring has been stressed over time — and loose connections can create heat that damages the outlet, wiring, and surrounding materials.",
+      },
+      {
+        kind: "bullets",
+        lead: "You can safely observe (without touching the wiring) whether:",
+        bullets: [
+          "The outlet moves when used, or plugs fall out",
+          "The cover plate is cracked or missing",
+          "The outlet feels warm",
+          "There's discoloration around the receptacle",
+          "The outlet sparks or buzzes",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Call an electrician for [outlet repair](/services/outlet-installation) if the outlet is loose, warm, sparking, discolored, buzzing, or no longer holds plugs securely.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #2: Warm Outlets or Switches",
+        id: "problem-warm",
+      },
+      {
+        kind: "paragraph",
+        body: "An outlet or switch should not feel hot. Some dimmer switches can feel slightly warm during normal use, but noticeable heat, burning smells, discoloration, or buzzing should be checked. ESFI lists warm outlets, discolored switches, burning smells, and flickering or dimming lights as warning signs of possible wiring problems.",
+      },
+      {
+        kind: "bullets",
+        lead: "Pay attention to:",
+        bullets: [
+          "Warm outlet covers or switch plates",
+          "Burning or fishy smells",
+          "Brown or black discoloration",
+          "Crackling or buzzing sounds",
+          "Flickering lights connected to the switch",
+          "Plugs that feel hot when removed",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Stop using that outlet or switch and call a licensed electrician. Don't keep plugging devices in to “see if it happens again” — M Electric can troubleshoot the circuit and repair the problem safely.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #3: Dead Outlets",
+        id: "problem-dead",
+      },
+      {
+        kind: "paragraph",
+        body: "A dead outlet may be something simple, like a tripped GFCI. But in an older home it can also point to damaged wiring, a loose connection, an overloaded circuit, or past electrical modifications. It's also common for a “dead” outlet to be a switched outlet controlled by a wall switch.",
+      },
+      {
+        kind: "bullets",
+        lead: "You can safely check:",
+        bullets: [
+          "Whether other outlets in the room work",
+          "Whether a nearby GFCI needs to be reset",
+          "Whether the breaker is tripped",
+          "Whether the outlet is controlled by a wall switch",
+          "Whether there are signs of burning, buzzing, or damage",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "Call an electrician if:",
+        bullets: [
+          "Multiple outlets are dead",
+          "The outlet stopped working after a storm",
+          "The outlet smells burned",
+          "A breaker trips when you use it",
+          "A GFCI won't reset",
+          "The outlet is outdoors or near moisture",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #4: GFCI Outlets That Won’t Reset",
+        id: "problem-gfci-reset",
+      },
+      {
+        kind: "paragraph",
+        body: "GFCI outlets help protect people from electric shock, especially where water may be present. ESFI explains that GFCI receptacles shut off power quickly when they detect leakage current that may indicate a ground fault — so a GFCI that won't reset may be doing exactly its job.",
+      },
+      {
+        kind: "bullets",
+        lead: "GFCI protection is commonly important in:",
+        bullets: [
+          "Bathrooms, kitchens, and laundry rooms",
+          "Garages and outdoor outlets",
+          "Wet bars and crawlspace-adjacent areas",
+          "Pool or spa areas",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "A GFCI that won't reset may indicate:",
+        bullets: [
+          "Moisture in the circuit",
+          "A failed GFCI device",
+          "A ground fault",
+          "Damaged wiring or downstream outlet problems",
+          "Outdoor wiring issues or incorrect installation",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Don't bypass the GFCI, don't replace it with a regular outlet, and don't assume it's just “being sensitive.” If a GFCI won't reset — especially in a kitchen, bathroom, garage, or outdoor area — call an electrician for [repair](/services/electrical-repair).",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #5: Two-Prong Outlets",
+        id: "problem-two-prong",
+      },
+      {
+        kind: "paragraph",
+        body: "Two-prong outlets are common in older homes, but they usually indicate an older electrical system that may not have equipment grounding at that outlet. Many modern devices are designed for grounded three-prong outlets, and grounding helps protect people and equipment. ESFI advises ensuring outlets are properly grounded and that ground-fault protection is present where water and electricity may meet.",
+      },
+      {
+        kind: "paragraph",
+        body: "A common shortcut is replacing a two-prong outlet with a three-prong outlet without adding proper grounding or GFCI protection. That can make the outlet look modern while hiding the actual condition of the wiring.",
+      },
+      {
+        kind: "bullets",
+        lead: "Call an electrician if your older Tulsa home has two-prong outlets and you want to:",
+        bullets: [
+          "Add grounded outlets or GFCI protection",
+          "Install home-office equipment or protect electronics",
+          "Remodel a room or add more outlets",
+          "Prepare the home for resale",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Depending on the home, the fix may be as simple as GFCI protection or as involved as [home rewiring](/services/home-rewiring).",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #6: Ungrounded Three-Prong Outlets",
+        id: "problem-ungrounded",
+      },
+      {
+        kind: "paragraph",
+        body: "A three-prong outlet doesn't automatically mean the outlet is grounded. In some older homes, three-prong outlets were installed on older wiring without properly correcting the grounding issue. That can give homeowners a false sense of security — electronics plug in normally, but the outlet may not provide the protection people expect.",
+      },
+      {
+        kind: "bullets",
+        lead: "Ungrounded outlets are often discovered during:",
+        bullets: [
+          "Home inspections and remodels",
+          "Outlet testing or appliance installation",
+          "Surge-protection planning",
+          "Computer, home-office, or EV-charger setup",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Have a licensed electrician evaluate the outlet and wiring. The solution may involve GFCI protection, grounding updates, [wiring repair](/services/wiring-repair), or other code-compliant fixes depending on the home.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #7: Buzzing or Crackling Switches",
+        id: "problem-buzzing-switch",
+      },
+      {
+        kind: "paragraph",
+        body: "A switch should operate quietly. Buzzing, crackling, popping, or arcing sounds shouldn't be ignored. Some dimmers may hum slightly depending on the load and bulb type, but loud buzzing, heat, flickering, or burning smells are warning signs.",
+      },
+      {
+        kind: "bullets",
+        lead: "A buzzing or crackling switch may be caused by:",
+        bullets: [
+          "Loose connections or a worn switch",
+          "An incorrect dimmer or fixture-compatibility problem",
+          "An overloaded circuit or damaged wiring",
+          "A DIY installation issue",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "Call an electrician if a switch:",
+        bullets: [
+          "Buzzes loudly, crackles, or pops",
+          "Feels hot or smells burned",
+          "Controls flickering lights",
+          "Works only intermittently",
+          "Was recently replaced by a non-electrician",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #8: Flickering Lights Connected to a Switch",
+        id: "problem-flickering",
+      },
+      {
+        kind: "paragraph",
+        body: "Flickering lights may seem like a bulb problem, but if changing the bulb doesn't solve it, the issue may be electrical — a loose switch connection, a dimmer-compatibility issue, an overloaded circuit, old wiring, a panel or breaker problem, or even a utility-side voltage issue.",
+      },
+      {
+        kind: "bullets",
+        lead: "Take flickering more seriously if:",
+        bullets: [
+          "It happens in multiple rooms",
+          "It happens when the AC starts",
+          "It's paired with breaker trips or a burning smell",
+          "The switch buzzes",
+          "Lights brighten or dim unexpectedly",
+          "The problem started after a storm or outage",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "ESFI identifies flickering or dimming lights as one of the signs that may point to serious wiring problems, so recurring flickering is worth an [electrical repair](/services/electrical-repair) visit.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #9: Not Enough Outlets",
+        id: "problem-not-enough-outlets",
+      },
+      {
+        kind: "paragraph",
+        body: "Older homes weren't designed for the number of devices most families use today. If you rely on extension cords or power strips in every room — home offices, bedrooms, living rooms, kitchens, garages, workshops, laundry rooms, entertainment centers, and outdoor spaces are common trouble spots — the home may need more outlets or dedicated circuits. ESFI recommends using extension cords only temporarily and making sure outlets are properly grounded.",
+      },
+      {
+        kind: "bullets",
+        lead: "Depending on the home, an electrician may recommend:",
+        bullets: [
+          "Adding outlets or dedicated circuits",
+          "Upgrading GFCI protection",
+          "Repairing old wiring or replacing worn outlets",
+          "Evaluating panel capacity",
+          "Upgrading older two-prong outlets",
+        ],
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #10: Outdoor Outlet Issues",
+        id: "problem-outdoor",
+      },
+      {
+        kind: "paragraph",
+        body: "Outdoor outlets take more abuse than indoor ones. Tulsa storms, humidity, rain, wind, and temperature swings can expose weak spots in exterior electrical systems — and because water and electricity are involved, these problems should be handled carefully.",
+      },
+      {
+        kind: "bullets",
+        lead: "Call an electrician if an outdoor outlet:",
+        bullets: [
+          "Doesn't work or trips the GFCI repeatedly",
+          "Has a broken cover or isn't weather-resistant",
+          "Feels loose, sparks, or buzzes",
+          "Shows corrosion or water intrusion",
+          "Was added with questionable DIY wiring",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Outdoor electrical problems can affect holiday lights, landscape lighting, pool equipment, tools, chargers, patio equipment, and garage circuits — all worth a professional [electrical repair](/services/electrical-repair) rather than a temporary workaround.",
+      },
+
+      {
+        kind: "h2",
+        text: "Problem #11: Outlet or Switch Problems After a Storm",
+        id: "problem-after-storm",
+      },
+      {
+        kind: "paragraph",
+        body: "Storms and outages can reveal electrical problems that were already developing. If problems started after a storm, don't assume the outlet or switch is the only issue — the circuit, wiring, panel, grounding, or surge protection may also need evaluation.",
+      },
+      {
+        kind: "bullets",
+        lead: "Watch for these after storms:",
+        bullets: [
+          "GFCIs that won't reset",
+          "Outdoor outlets that stop working",
+          "Lights that flicker after power returns",
+          "Breakers that trip repeatedly",
+          "Outlets that smell burned or switches that buzz",
+          "Electronics failing unexpectedly, or partial power in the home",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Storm-related damage often runs deeper than a single device — [electrical repair](/services/electrical-repair) and, where needed, [home rewiring](/services/home-rewiring) restore the system safely.",
+      },
+
+      {
+        kind: "h2",
+        text: "What Homeowners Can Safely Check",
+        id: "safe-checks",
+      },
+      {
+        kind: "paragraph",
+        body: "You can do a few simple checks without opening outlets, switches, or panels.",
+      },
+      {
+        kind: "bullets",
+        lead: "Safe to check:",
+        bullets: [
+          "Look for discoloration and feel for unusual warmth on the cover plate",
+          "Notice buzzing, crackling, or popping",
+          "Check whether plugs fit tightly",
+          "Test and reset a GFCI once",
+          "Check whether a nearby switch controls the outlet, or whether other outlets in the room work",
+          "Note when the problem happens — and whether it started after a storm, outage, or new appliance",
+        ],
+      },
+      {
+        kind: "callout",
+        variant: "warning",
+        title: "Stop and call an electrician if you notice:",
+        body: "Burning smell · heat · sparks · buzzing · repeated tripping · a GFCI that won't reset · a mild shock or tingle · discoloration · water near the outlet or switch · multiple dead outlets.\n\nDon't remove outlet covers, pull devices from the wall, touch wiring, or replace outlets if you aren't qualified.",
+      },
+
+      {
+        kind: "h2",
+        text: "When Outlet Problems Point to a Bigger Wiring Issue",
+        id: "bigger-issue",
+      },
+      {
+        kind: "paragraph",
+        body: "Sometimes the outlet is the problem. Sometimes the outlet is just the symptom.",
+      },
+      {
+        kind: "bullets",
+        lead: "Signs the issue may be bigger than one outlet:",
+        bullets: [
+          "Multiple outlets are affected, or lights flicker in multiple rooms",
+          "Breakers trip repeatedly",
+          "There are two-prong outlets throughout the home",
+          "Outlets are loose or worn in several rooms",
+          "There's visible DIY wiring, or the panel is old or full",
+          "Problems happen when large appliances run",
+          "The home has old wiring types, or issues started after remodeling or storm damage",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Older Tulsa homes may have older wiring systems, and M Electric provides [home rewiring](/services/home-rewiring) and [wiring repair](/services/wiring-repair) throughout the Tulsa metro.",
+      },
+
+      {
+        kind: "h2",
+        text: "Should You Repair the Outlet, Upgrade the Circuit, or Rewire?",
+        id: "repair-vs-rewire",
+      },
+      {
+        kind: "paragraph",
+        body: "The right fix depends on what's actually causing the problem.",
+      },
+      {
+        kind: "bullets",
+        lead: "A simple outlet replacement may be enough when:",
+        bullets: [
+          "The outlet is worn or the device is loose",
+          "The receptacle no longer holds plugs",
+          "The wiring and circuit are otherwise safe",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "A circuit repair may be needed when:",
+        bullets: [
+          "Multiple outlets are affected",
+          "GFCIs or breakers keep tripping",
+          "There's damaged wiring or loose connections",
+          "The issue started after a storm or water leak",
+        ],
+      },
+      {
+        kind: "bullets",
+        lead: "Rewiring or panel work may be needed when:",
+        bullets: [
+          "The home has widespread two-prong outlets",
+          "Wiring is outdated or damaged",
+          "The panel is undersized or circuits are overloaded",
+          "You're remodeling, need more outlets or dedicated circuits, or plan to add large electrical loads",
+        ],
+      },
+      {
+        kind: "paragraph",
+        body: "Not sure which one you're facing? [Electrical repair](/services/electrical-repair), [panel upgrades](/services/panel-upgrades), and [home rewiring](/services/home-rewiring) all start with the same diagnosis.",
+      },
+
+      {
+        kind: "h2",
+        text: "Bottom Line: Don’t Ignore Small Electrical Warning Signs",
+        id: "bottom-line",
+      },
+      {
+        kind: "paragraph",
+        body: "A loose outlet, buzzing switch, dead receptacle, or GFCI that won't reset might seem like a small issue. Sometimes it is. But in an older Tulsa home, it can also be the first visible sign of a wiring, grounding, circuit, or panel problem.",
+      },
+      {
+        kind: "paragraph",
+        body: "The safest move is simple: don't guess, don't keep resetting breakers or GFCIs, and don't open outlets or switches yourself. Have a licensed electrician inspect the issue and explain whether it's a simple repair or part of a bigger electrical concern.",
+      },
+      {
+        kind: "callout",
+        variant: "tip",
+        title: "Loose outlets, warm switches, or a GFCI that won’t reset?",
+        body: "[Contact M Electric](/contact) to schedule electrical repair or troubleshooting anywhere in the Tulsa metro.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Why does my outlet feel warm?",
+        a: "An outlet may feel warm because of a loose connection, overloaded circuit, worn outlet, damaged wiring, or high-demand device. ESFI lists warm outlets as a possible sign of a serious wiring problem, so it should be checked by a licensed electrician.",
+      },
+      {
+        q: "Is a loose outlet dangerous?",
+        a: "A loose outlet can be dangerous if it causes weak contact, heat, arcing, or damaged wiring. If the outlet moves, does not hold plugs tightly, sparks, or feels warm, stop using it and call an electrician.",
+      },
+      {
+        q: "Why will my GFCI outlet not reset?",
+        a: "A GFCI may not reset because the device has failed, moisture is present, there is a ground fault, or there is a wiring problem downstream. Do not bypass it or replace it with a regular outlet.",
+      },
+      {
+        q: "Are two-prong outlets safe?",
+        a: "Two-prong outlets may still work, but they often indicate older ungrounded wiring. They should be evaluated before using sensitive electronics, adding surge protection, remodeling, or replacing them with three-prong outlets.",
+      },
+      {
+        q: "Can I replace a two-prong outlet with a three-prong outlet?",
+        a: "Not without addressing the grounding and code requirements. Simply swapping the device can make the outlet look grounded when it is not. Have a licensed electrician evaluate the circuit.",
+      },
+      {
+        q: "Why do my lights flicker when I use a switch?",
+        a: "Flickering can come from a loose bulb, bad fixture, worn switch, dimmer compatibility issue, loose wiring, overloaded circuit, or panel issue. If flickering happens repeatedly or across multiple rooms, call an electrician.",
+      },
+      {
+        q: "Should I call an electrician for a dead outlet?",
+        a: "Yes, especially if the outlet smells burned, feels warm, is near water, stopped working after a storm, or multiple outlets are affected. A dead outlet may be a simple device failure or a sign of a bigger wiring issue.",
+      },
+      {
+        q: "Are power strips okay in an older home?",
+        a: "Power strips can be useful temporarily, but they should not replace permanent outlets or circuits. If your home relies on power strips in every room, an electrician should evaluate whether you need more outlets or dedicated circuits.",
+      },
+    ],
+    sources: [
+      {
+        label: "Electrical Safety Foundation International (ESFI)",
+        url: "https://www.esfi.org",
+      },
+      {
+        label: "ESFI — Home Electrical Safety",
+        url: "https://www.esfi.org/resource/home-electrical-safety/",
+      },
+    ],
+    related: [
+      "electrical-red-flags-buying-older-home-tulsa",
+      "signs-you-need-electrical-panel-upgrade-tulsa",
+      "what-to-do-after-power-outage-tulsa",
     ],
   },
 ];
