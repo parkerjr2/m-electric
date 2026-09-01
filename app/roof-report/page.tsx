@@ -126,52 +126,16 @@ export default function RoofReportPage() {
             claim or pay for an inspection.
           </p>
 
-          {/* Instant roof report (provider embed, verbatim styling) */}
+          {/* Instant roof report — Zeus widget (address box with live suggestions) */}
           <div className="mt-10 flex justify-center">
-            <form
-              action="https://getzeusai.com/roof/test-roofing"
-              method="get"
-              style={{
-                display: "flex",
-                gap: "8px",
-                maxWidth: "460px",
-                fontFamily: "sans-serif",
-              }}
-            >
-              <label htmlFor="roof-address" className="sr-only">
-                Home address
-              </label>
-              <input
-                id="roof-address"
-                name="address"
-                required
-                placeholder="Enter your home address"
-                style={{
-                  flex: 1,
-                  minWidth: 0,
-                  padding: "12px",
-                  border: "1px solid #ccc",
-                  borderRadius: "8px",
-                  fontSize: "16px",
-                }}
-              />
-              <button
-                type="submit"
-                style={{
-                  padding: "12px 18px",
-                  border: "none",
-                  borderRadius: "8px",
-                  background: "#5aa88f",
-                  color: "#fff",
-                  fontWeight: 700,
-                  fontSize: "15px",
-                  cursor: "pointer",
-                }}
-              >
-                Get my roof report
-              </button>
-            </form>
+            <div
+              className="zeus-roof-widget"
+              data-slug="test-roofing"
+              data-accent="#5aa88f"
+              data-button-text="Get my roof report"
+            />
           </div>
+          <script async src="https://getzeusai.com/roof-widget.js" />
 
           <p className="mt-4 text-sm text-neutral-400">
             Free · Instant · No obligation
