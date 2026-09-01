@@ -126,31 +126,52 @@ export default function RoofReportPage() {
             claim or pay for an inspection.
           </p>
 
-          {/* The embed — restyled to match M Electric */}
-          <form
-            action="https://getzeusai.com/roof/test-roofing"
-            method="get"
-            className="mt-10 flex flex-col sm:flex-row gap-3 max-w-xl mx-auto text-left"
-          >
-            <label htmlFor="roof-address" className="sr-only">
-              Home address
-            </label>
-            <input
-              id="roof-address"
-              name="address"
-              required
-              autoComplete="street-address"
-              placeholder="Enter your home address"
-              className="flex-1 min-w-0 rounded-md border border-neutral-700 bg-neutral-950 px-4 py-3.5 text-base text-white placeholder:text-neutral-500 transition-colors focus:border-red-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-red-600 hover:bg-red-500 px-6 py-3.5 font-bold text-base text-white transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400"
+          {/* Instant roof report (provider embed, verbatim styling) */}
+          <div className="mt-10 flex justify-center">
+            <form
+              action="https://getzeusai.com/roof/test-roofing"
+              method="get"
+              style={{
+                display: "flex",
+                gap: "8px",
+                maxWidth: "460px",
+                fontFamily: "sans-serif",
+              }}
             >
-              Get my roof report
-              <ArrowRightIcon className="size-4" />
-            </button>
-          </form>
+              <label htmlFor="roof-address" className="sr-only">
+                Home address
+              </label>
+              <input
+                id="roof-address"
+                name="address"
+                required
+                placeholder="Enter your home address"
+                style={{
+                  flex: 1,
+                  minWidth: 0,
+                  padding: "12px",
+                  border: "1px solid #ccc",
+                  borderRadius: "8px",
+                  fontSize: "16px",
+                }}
+              />
+              <button
+                type="submit"
+                style={{
+                  padding: "12px 18px",
+                  border: "none",
+                  borderRadius: "8px",
+                  background: "#5aa88f",
+                  color: "#fff",
+                  fontWeight: 700,
+                  fontSize: "15px",
+                  cursor: "pointer",
+                }}
+              >
+                Get my roof report
+              </button>
+            </form>
+          </div>
 
           <p className="mt-4 text-sm text-neutral-400">
             Free · Instant · No obligation
